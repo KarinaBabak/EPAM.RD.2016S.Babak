@@ -1,0 +1,17 @@
+D:\Epam\Laba\11.07.2016\ConsoleApplication\Iterator\bin\Debug\Iterator.dll
+D:\Epam\Laba\11.07.2016\ConsoleApplication\Iterator\bin\Debug\Iterator.pdb
+D:\Epam\Laba\11.07.2016\ConsoleApplication\Iterator\obj\Debug\Iterator.dll
+D:\Epam\Laba\11.07.2016\ConsoleApplication\Iterator\obj\Debug\Iterator.pdb
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\Iterator\bin\Debug\Iterator.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\Iterator\bin\Debug\Iterator.pdb
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\Iterator\obj\Debug\Iterator.csprojResolveAssemblyReference.cache
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\Iterator\obj\Debug\Iterator.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\Iterator\obj\Debug\Iterator.pdb
+D:\Epam\Laba\Day1\Iterator\bin\Debug\Iterator.dll
+D:\Epam\Laba\Day1\Iterator\bin\Debug\Iterator.pdb
+D:\Epam\Laba\Day1\Iterator\obj\Debug\Iterator.dll
+D:\Epam\Laba\Day1\Iterator\obj\Debug\Iterator.pdb
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\Iterator\bin\Debug\Iterator.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\Iterator\bin\Debug\Iterator.pdb
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\Iterator\obj\Debug\Iterator.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\Iterator\obj\Debug\Iterator.pdb

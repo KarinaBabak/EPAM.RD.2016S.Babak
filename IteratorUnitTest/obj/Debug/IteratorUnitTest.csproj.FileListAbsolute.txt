@@ -1,0 +1,15 @@
+D:\Epam\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\IteratorUnitTest.dll
+D:\Epam\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\IteratorUnitTest.pdb
+D:\Epam\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\obj\Debug\IteratorUnitTest.csprojResolveAssemblyReference.cache
+D:\Epam\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\obj\Debug\IteratorUnitTest.dll
+D:\Epam\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\obj\Debug\IteratorUnitTest.pdb
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\IteratorUnitTest.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\IteratorUnitTest.pdb
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\Iterator.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\Iterator.pdb
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\obj\Debug\IteratorUnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\obj\Debug\IteratorUnitTest.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\obj\Debug\IteratorUnitTest.pdb
+D:\Epam\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\Iterator.dll
+D:\Epam\Laba\11.07.2016\ConsoleApplication\IteratorUnitTest\bin\Debug\Iterator.pdb

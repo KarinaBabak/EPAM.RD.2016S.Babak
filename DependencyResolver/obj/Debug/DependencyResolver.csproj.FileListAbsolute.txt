@@ -1,0 +1,7 @@
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\DependencyResolver\bin\Debug\DependencyResolver.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\DependencyResolver\bin\Debug\DependencyResolver.pdb
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\DependencyResolver\bin\Debug\Ninject.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\DependencyResolver\bin\Debug\Ninject.xml
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\DependencyResolver\obj\Debug\DependencyResolver.csprojResolveAssemblyReference.cache
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\DependencyResolver\obj\Debug\DependencyResolver.dll
+C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\DependencyResolver\obj\Debug\DependencyResolver.pdb
