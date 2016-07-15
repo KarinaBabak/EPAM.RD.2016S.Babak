@@ -15,3 +15,7 @@ C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\Iterator\b
 C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\Iterator\bin\Debug\Iterator.pdb
 C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\Iterator\obj\Debug\Iterator.dll
 C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\Iterator\obj\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\Iterator\bin\Debug\Iterator.dll
+D:\Epam\!Lab\Project\Iterator\bin\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\Iterator\obj\Debug\Iterator.dll
+D:\Epam\!Lab\Project\Iterator\obj\Debug\Iterator.pdb

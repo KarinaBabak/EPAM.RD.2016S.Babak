@@ -18,7 +18,7 @@ namespace UserStorage.Validator
                 return false;
             }
 
-            if(newUser.DateOfBirth.Year < 1900 || newUser.DateOfBirth.Day < 1 || newUser.DateOfBirth.Month < 1)
+            if(newUser.DateOfBirth.Year < 1900)
             {
                 return false;
             }

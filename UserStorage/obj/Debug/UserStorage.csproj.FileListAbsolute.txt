@@ -22,3 +22,10 @@ C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\UserStorag
 C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\UserStorage\bin\Debug\Iterator.pdb
 D:\Epam\Laba\Day1\UserStorage\bin\Debug\Iterator.dll
 D:\Epam\Laba\Day1\UserStorage\bin\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\UserStorage\bin\Debug\UserStorage.dll
+D:\Epam\!Lab\Project\UserStorage\bin\Debug\UserStorage.pdb
+D:\Epam\!Lab\Project\UserStorage\bin\Debug\Iterator.dll
+D:\Epam\!Lab\Project\UserStorage\bin\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\UserStorage\obj\Debug\UserStorage.csprojResolveAssemblyReference.cache
+D:\Epam\!Lab\Project\UserStorage\obj\Debug\UserStorage.dll
+D:\Epam\!Lab\Project\UserStorage\obj\Debug\UserStorage.pdb

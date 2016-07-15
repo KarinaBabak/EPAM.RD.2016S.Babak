@@ -16,3 +16,12 @@ D:\Epam\Laba\Day1\UserService\bin\Debug\Iterator.pdb
 D:\Epam\Laba\Day1\UserService\obj\Debug\UserService.csprojResolveAssemblyReference.cache
 D:\Epam\Laba\Day1\UserService\obj\Debug\UserService.dll
 D:\Epam\Laba\Day1\UserService\obj\Debug\UserService.pdb
+D:\Epam\!Lab\Project\UserService\bin\Debug\UserService.dll
+D:\Epam\!Lab\Project\UserService\bin\Debug\UserService.pdb
+D:\Epam\!Lab\Project\UserService\bin\Debug\UserStorage.dll
+D:\Epam\!Lab\Project\UserService\bin\Debug\Iterator.dll
+D:\Epam\!Lab\Project\UserService\bin\Debug\UserStorage.pdb
+D:\Epam\!Lab\Project\UserService\bin\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\UserService\obj\Debug\UserService.csprojResolveAssemblyReference.cache
+D:\Epam\!Lab\Project\UserService\obj\Debug\UserService.dll
+D:\Epam\!Lab\Project\UserService\obj\Debug\UserService.pdb

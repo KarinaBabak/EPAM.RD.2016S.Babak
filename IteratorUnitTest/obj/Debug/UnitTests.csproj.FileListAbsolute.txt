@@ -28,3 +28,15 @@ C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\IteratorUn
 C:\Users\Karyna_Babak\Downloads\Laba\11.07.2016\EPAM.RD.2016.S-master\IteratorUnitTest\obj\Debug\IteratorUnitTest.pdb
 D:\Epam\Laba\Day1\IteratorUnitTest\bin\Debug\UserService.dll
 D:\Epam\Laba\Day1\IteratorUnitTest\bin\Debug\UserService.pdb
+D:\Epam\!Lab\Project\IteratorUnitTest\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\Epam\!Lab\Project\IteratorUnitTest\obj\Debug\IteratorUnitTest.dll
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\IteratorUnitTest.dll.config
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\IteratorUnitTest.dll
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\IteratorUnitTest.pdb
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\Iterator.dll
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\UserService.dll
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\UserStorage.dll
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\UserService.pdb
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\UserStorage.pdb
+D:\Epam\!Lab\Project\IteratorUnitTest\obj\Debug\IteratorUnitTest.pdb

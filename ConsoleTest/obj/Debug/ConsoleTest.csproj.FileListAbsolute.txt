@@ -25,3 +25,15 @@ D:\Epam\Laba\Day1\ConsoleTest\bin\Debug\UserStorage.pdb
 D:\Epam\Laba\Project\Project\ConsoleTest\bin\Debug\ConsoleTest.exe.config
 D:\Epam\Laba\Project\Project\ConsoleTest\obj\Debug\ConsoleTest.exe
 D:\Epam\Laba\Project\Project\ConsoleTest\obj\Debug\ConsoleTest.pdb
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\ConsoleTest.exe.config
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\ConsoleTest.exe
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\ConsoleTest.pdb
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\Iterator.dll
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\UserService.dll
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\UserStorage.dll
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\UserService.pdb
+D:\Epam\!Lab\Project\ConsoleTest\bin\Debug\UserStorage.pdb
+D:\Epam\!Lab\Project\ConsoleTest\obj\Debug\ConsoleTest.csprojResolveAssemblyReference.cache
+D:\Epam\!Lab\Project\ConsoleTest\obj\Debug\ConsoleTest.exe
+D:\Epam\!Lab\Project\ConsoleTest\obj\Debug\ConsoleTest.pdb

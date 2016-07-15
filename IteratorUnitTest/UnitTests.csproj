@@ -53,7 +53,6 @@
     <Compile Include="IteratorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserTests.cs" />
-    <Compile Include="XmlWorkerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Iterator\Iterator.csproj">
@@ -68,6 +67,9 @@
       <Project>{947bad73-c839-4ca2-94c0-b9f4b77fec0d}</Project>
       <Name>UserStorage</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
