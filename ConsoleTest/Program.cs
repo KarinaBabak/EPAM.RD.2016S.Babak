@@ -14,8 +14,10 @@ namespace ConsoleTest
         static void Main(string[] args)
         {
             UserRepository rep = new UserRepository();
-            rep.Add(new User("Bogdanovich", "Max", new DateTime(1960, 7, 20, 18, 30, 25),
-                Gender.Male));
+            User user = new User("Bogdanovich", "Max", new DateTime(1960, 7, 20, 18, 30, 25),
+                Gender.Male);
+            rep.Add(new User());
+            
             rep.WriteToXML();
             
         }

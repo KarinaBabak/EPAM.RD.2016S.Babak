@@ -9,7 +9,8 @@ namespace UserStorage
 {
     [Serializable]
     public class User
-    {            
+    {
+        private ICustomerIterator iterator;  
         #region Properties
 
         public int Id { get; set; }
@@ -39,11 +40,11 @@ namespace UserStorage
         #region ctors
         public User()
         {            
-            VisaRecords = new List<VisaRecord>();
+            VisaRecords = new List<VisaRecord>();            
         }
 
         public User(string firstName, string lastName, DateTime dateOfBirth, Gender gender, VisaRecord[] visaRecords = null)
-        {            
+        {                      
             FirstName = firstName;
             LastName = lastName;
             DateOfBirth = dateOfBirth;
@@ -83,9 +84,12 @@ namespace UserStorage
             }
             return base.GetHashCode();
         }
-       
-
-
+        
+        public override string ToString()
+        {
+            string userInfo = Id + " " + FirstName + " " + LastName + " " + DateOfBirth + " " + UserGender;
+            return userInfo;
+        }      
 
     }
 }

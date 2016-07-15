@@ -8,14 +8,19 @@ using System.Xml.Serialization;
 using System.Configuration;
 using Iterator;
 using UserStorage.Validator;
+using NLog;
 
 namespace UserStorage.Repository
-{    
-    public class UserRepository: IUserRepository
+{
+    public class UserRepository : IUserRepository
     {
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
+        #region Public Properties
         private List<User> Users { get; set; }
         private ICustomerIterator iterator;
         private UserValidator validator;
+        #endregion
 
         public UserRepository()
         {
@@ -29,10 +34,10 @@ namespace UserStorage.Repository
         /// </summary>
         /// <param name="user"></param>
         public void Delete(User user)
-        {
+        {            
             if (user == null)
                 throw new ArgumentNullException();
-
+            
             User userForRemoving = Users.FirstOrDefault(u => u.Id == user.Id);
             if (userForRemoving != null)
                 Users.Remove(userForRemoving);
@@ -40,9 +45,10 @@ namespace UserStorage.Repository
 
         public int Add(User user)
         {
+            logger.Trace("UserRepository.Add called");
             if (!validator.Validate(user))
             {
-                throw new ArgumentException("The age is wrong");
+                throw new ArgumentException("The validation is failed");
             }
             if (Users.Contains(user))
             {
@@ -54,9 +60,17 @@ namespace UserStorage.Repository
         }
 
         public IEnumerable<User> GetAll()
-        {            
+        {
+            logger.Trace("UserRepository.GetAll called");
             return Users;
         }
+
+        public void Clear()
+        {
+            logger.Trace("UserRepository.Clear called");
+            Users.Clear();
+        }
+
         #region Search User
         public User GetById(int id)
         {
@@ -69,15 +83,15 @@ namespace UserStorage.Repository
             if (ReferenceEquals(newUser, null))
                 return null;
             return newUser;
-            
+
         }
 
         public IEnumerable<int> SearchForUser(Predicate<User> criteria)
-        {            
+        {
             List<User> usersFromSearch = Users.FindAll(criteria);
             if (usersFromSearch == null) return null;
             int[] usersID = new int[usersFromSearch.Count];
-            for(int i = 0; i < usersID.Length; i++)
+            for (int i = 0; i < usersID.Length; i++)
             {
                 usersID[i] = usersFromSearch[i].Id;
             }
@@ -86,8 +100,10 @@ namespace UserStorage.Repository
         }
         #endregion
 
+        #region Work with XML
         public void WriteToXML()
         {
+            logger.Trace("UserRepository.WriteToXML called");
             XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
             string path = ConfigurationManager.AppSettings["xmlPath"];
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
@@ -98,6 +114,7 @@ namespace UserStorage.Repository
 
         public void ReadFromXML()
         {
+            logger.Trace("UserRepository.ReadFromXML called");
             XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
             string path = ConfigurationManager.AppSettings["xmlPath"];
 
@@ -107,6 +124,7 @@ namespace UserStorage.Repository
                 Users = newUsers;
             }
         }
+        #endregion
 
     }
 }

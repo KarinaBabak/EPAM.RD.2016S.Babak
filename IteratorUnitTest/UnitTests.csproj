@@ -53,6 +53,7 @@
     <Compile Include="IteratorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserTests.cs" />
+    <Compile Include="ValidationTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Iterator\Iterator.csproj">

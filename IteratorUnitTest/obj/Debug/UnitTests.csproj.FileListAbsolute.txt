@@ -40,3 +40,6 @@ D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\Iterator.pdb
 D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\UserService.pdb
 D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\UserStorage.pdb
 D:\Epam\!Lab\Project\IteratorUnitTest\obj\Debug\IteratorUnitTest.pdb
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\NLog.config
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\NLog.dll
+D:\Epam\!Lab\Project\IteratorUnitTest\bin\Debug\NLog.xml

@@ -29,3 +29,6 @@ D:\Epam\!Lab\Project\UserStorage\bin\Debug\Iterator.pdb
 D:\Epam\!Lab\Project\UserStorage\obj\Debug\UserStorage.csprojResolveAssemblyReference.cache
 D:\Epam\!Lab\Project\UserStorage\obj\Debug\UserStorage.dll
 D:\Epam\!Lab\Project\UserStorage\obj\Debug\UserStorage.pdb
+D:\Epam\!Lab\Project\UserStorage\bin\Debug\NLog.config
+D:\Epam\!Lab\Project\UserStorage\bin\Debug\NLog.dll
+D:\Epam\!Lab\Project\UserStorage\bin\Debug\NLog.xml

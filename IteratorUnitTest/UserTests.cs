@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using UserStorage;
+using UserStorage.Repository;
 using UserStorage.Validator;
 
 namespace IteratorUnitTest
@@ -33,39 +34,11 @@ namespace IteratorUnitTest
         public void Add_NewUser_ReturnIdTwo()
         {
             User user = new User();
-            var result = user.Id;
+            UserRepository rep = new UserRepository();
+            var result = rep.Add(user);  
             Assert.AreEqual(2, result);
         }
 
-        #region Validation Test
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
-        public void Validate_UserNull_ReturnException()
-        {
-            UserValidator validator = new UserValidator();            
-            var result = validator.Validate((User)null);            
-        }
-
-        [TestMethod]        
-        public void Validate_FirstNameIsNull_ReturnFalse()
-        {
-            UserValidator validator = new UserValidator();
-            User user = new User();            
-            user.DateOfBirth = new DateTime(1960, 7, 20, 18, 30, 25); 
-            var result = validator.Validate(user);
-            Assert.AreEqual(false, result);
-        }
-
-        [TestMethod]
-        public void Validate_AgeIsNotValid_ReturnFalse()
-        {
-            UserValidator validator = new UserValidator();
-            User user = new User("Bogdanovich", "Max", new DateTime(1800, 7, 20, 18, 30, 25),
-                Gender.Male);
-            
-            var result = validator.Validate(user);
-            Assert.AreEqual(false, result);
-        }
-        #endregion
+       
     }
 }
