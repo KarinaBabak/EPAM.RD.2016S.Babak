@@ -48,12 +48,15 @@ namespace UserStorage.Repository
             logger.Trace("UserRepository.Add called");
             if (!validator.Validate(user))
             {
+                logger.Error("The validation of new user is failed");
                 throw new ArgumentException("The validation is failed");
             }
             if (Users.Contains(user))
             {
-                throw new InvalidOperationException("User already exist");
+                logger.Error("The user already exists");
+                throw new InvalidOperationException("User already exists");
             }
+
             user.Id = iterator.GetNext();
             Users.Add(user);
             return user.Id;
@@ -104,24 +107,42 @@ namespace UserStorage.Repository
         public void WriteToXML()
         {
             logger.Trace("UserRepository.WriteToXML called");
-            XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
-            string path = ConfigurationManager.AppSettings["xmlPath"];
-            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            try
             {
-                formatter.Serialize(fs, Users);
+                XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
+                string path = ConfigurationManager.AppSettings["xmlPath"];
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                {
+                    formatter.Serialize(fs, Users);
+                }
+            }
+            catch(InvalidOperationException ex)
+            {
+                logger.Error("Write to Xml " + ex.Message);
+            }
+            catch(ConfigurationErrorsException exception)
+            {
+                logger.Error("Write to Xml " + exception.Message);
             }
         }
 
         public void ReadFromXML()
         {
             logger.Trace("UserRepository.ReadFromXML called");
-            XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
-            string path = ConfigurationManager.AppSettings["xmlPath"];
-
-            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            try
             {
-                List<User> newUsers = (List<User>)formatter.Deserialize(fs);
-                Users = newUsers;
+                XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
+                string path = ConfigurationManager.AppSettings["xmlPath"];
+
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                {
+                    List<User> newUsers = (List<User>)formatter.Deserialize(fs);
+                    Users = newUsers;
+                }
+            }
+            catch (InvalidOperationException ex)
+            {
+                logger.Error("Read to Xml " + ex.Message);
             }
         }
         #endregion

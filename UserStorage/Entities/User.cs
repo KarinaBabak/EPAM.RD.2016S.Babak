@@ -34,7 +34,7 @@ namespace UserStorage
             get; set;
         }
 
-        public IEnumerable<VisaRecord> VisaRecords { get; set; }
+        public List<VisaRecord> VisaRecords { get; set; }
         #endregion
 
         #region ctors
@@ -43,7 +43,7 @@ namespace UserStorage
             VisaRecords = new List<VisaRecord>();            
         }
 
-        public User(string firstName, string lastName, DateTime dateOfBirth, Gender gender, VisaRecord[] visaRecords = null)
+        public User(string firstName, string lastName, DateTime dateOfBirth, Gender gender, List<VisaRecord> visaRecords = null)
         {                      
             FirstName = firstName;
             LastName = lastName;
