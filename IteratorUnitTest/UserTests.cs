@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using System.Linq;
 using UserStorage;
 using UserStorage.Repository;
 using UserStorage.Validator;
@@ -37,6 +37,19 @@ namespace IteratorUnitTest
             UserRepository rep = new UserRepository();
             var result = rep.Add(user);  
             Assert.AreEqual(2, result);
+        }
+
+        [TestMethod]
+        public void Delete_ReturnTrue()
+        {
+            User user = new User();
+            UserRepository rep = new UserRepository();
+            int id = rep.Add(user);
+            rep.Delete(user);
+            bool resultIsUserExist = true; 
+            if (rep.SearchForUser(u => u.Id == user.Id).FirstOrDefault().ToString() == id.ToString())
+                resultIsUserExist = false;
+            Assert.AreEqual(true, resultIsUserExist);
         }
 
        

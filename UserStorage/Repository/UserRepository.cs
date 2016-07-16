@@ -10,23 +10,24 @@ using Iterator;
 using UserStorage.Validator;
 using NLog;
 
+
+
 namespace UserStorage.Repository
 {
     public class UserRepository : IUserRepository
     {
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
-        #region Public Properties
+        
         private List<User> Users { get; set; }
-        private ICustomerIterator iterator;
-        private UserValidator validator;
-        #endregion
+        private ICustomerIterator iterator;        
+        private UserValidator validator;        
 
         public UserRepository()
         {
             Users = new List<User>();
             iterator = new CustomIterator();
-            validator = new UserValidator();
+            validator = new UserValidator();            
         }
 
         /// <summary>
@@ -37,10 +38,12 @@ namespace UserStorage.Repository
         {            
             if (user == null)
                 throw new ArgumentNullException();
-            
+
             User userForRemoving = Users.FirstOrDefault(u => u.Id == user.Id);
             if (userForRemoving != null)
                 Users.Remove(userForRemoving);
+            else
+                throw new ArgumentException("The user is not exist");
         }
 
         public int Add(User user)

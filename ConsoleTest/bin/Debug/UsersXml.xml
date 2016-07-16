@@ -7,4 +7,10 @@
     <DateOfBirth>1960-07-20T18:30:25</DateOfBirth>
     <UserGender>Male</UserGender>
   </User>
+  <User>
+    <Id>3</Id>
+    <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    <UserGender>None</UserGender>
+    <VisaRecords />
+  </User>
 </ArrayOfUser>

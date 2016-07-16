@@ -17,19 +17,18 @@ namespace UserService
     {
         private static int CountSlaves { get; set; }
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
-        private IUserRepository repository;
-        private IObservable master;
+        private IUserRepository repository;        
         
         public SlaveService(IUserRepository rep)
         {
             var value = Convert.ToInt32(ConfigurationManager.AppSettings["SlavesNumber"]);
-            if (CountSlaves > value)
+            if (CountSlaves >= value || CountSlaves < 0)
             {
                 logger.Error("The count of slaves can not be more than {0}", value);
-                throw new ArgumentException("The count of slaves can not be more than {0}",
+                throw new InvalidOperationException("The count of slaves can not be more than " +
                     value.ToString());
             }
-            master.RegisterObserver(this);
+            
             CountSlaves++;
             repository = rep;
         }
