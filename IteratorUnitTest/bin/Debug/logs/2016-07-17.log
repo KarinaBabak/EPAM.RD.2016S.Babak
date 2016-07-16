@@ -38,3 +38,344 @@
 2016-07-16 21:14:30 UserRepository.Add called
 2016-07-16 21:14:40 UserRepository.Add called
 2016-07-16 21:15:37 UserRepository.Add called
+2016-07-16 21:17:13 UserRepository.Add called
+2016-07-16 21:17:14 MasterService.NotifyObservers called
+2016-07-16 21:17:14 The count of slaves can not be more than 3
+2016-07-16 21:17:14 The count of masters can not be more than 1 and less 1
+2016-07-16 21:17:14 UserRepository.Add called
+2016-07-16 21:17:14 UserRepository.Add called
+2016-07-16 21:21:03 MasterService.RegisterObserver called
+2016-07-16 21:21:03 UserRepository.Add called
+2016-07-16 21:21:03 MasterService.NotifyObservers called
+2016-07-16 21:21:03 The count of masters can not be more than 1 and less 1
+2016-07-16 21:21:03 The count of masters can not be more than 1 and less 1
+2016-07-16 21:21:03 The count of masters can not be more than 1 and less 1
+2016-07-16 21:21:03 UserRepository.Add called
+2016-07-16 21:21:03 UserRepository.Add called
+2016-07-16 21:25:16 UserRepository.Add called
+2016-07-16 21:25:16 UserRepository.Add called
+2016-07-16 21:25:17 UserRepository.Add called
+2016-07-16 21:25:17 UserRepository.Add called
+2016-07-16 21:27:07 UserRepository.Add called
+2016-07-16 21:27:07 UserRepository.Add called
+2016-07-16 21:27:10 UserRepository.Add called
+2016-07-16 21:27:10 UserRepository.Add called
+2016-07-16 21:27:25 UserRepository.Add called
+2016-07-16 21:27:25 UserRepository.Add called
+2016-07-16 21:30:04 UserRepository.Add called
+2016-07-16 21:30:04 UserRepository.Add called
+2016-07-16 21:30:19 UserRepository.Add called
+2016-07-16 21:30:19 UserRepository.Add called
+2016-07-16 21:30:28 MasterService.RegisterObserver called
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:30:28 MasterService.NotifyObservers called
+2016-07-16 21:30:28 The count of masters can not be more than 1 and less 1
+2016-07-16 21:30:28 The count of masters can not be more than 1 and less 1
+2016-07-16 21:30:28 The count of masters can not be more than 1 and less 1
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:30:28 UserRepository.Add called
+2016-07-16 21:31:55 UserRepository.Add called
+2016-07-16 21:31:55 UserRepository.Add called
+2016-07-16 21:31:55 UserRepository.Add called
+2016-07-16 21:31:57 UserRepository.Add called
+2016-07-16 21:31:57 UserRepository.Add called
+2016-07-16 21:33:26 UserRepository.Add called
+2016-07-16 21:33:26 UserRepository.Add called
+2016-07-16 21:33:27 UserRepository.Add called
+2016-07-16 21:33:48 UserRepository.Add called
+2016-07-16 21:33:48 UserRepository.Add called
+2016-07-16 21:33:48 UserRepository.Add called
+2016-07-16 21:33:50 MasterService.RegisterObserver called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 MasterService.NotifyObservers called
+2016-07-16 21:33:50 The count of masters can not be more than 1 and less 1
+2016-07-16 21:33:50 The count of masters can not be more than 1 and less 1
+2016-07-16 21:33:50 The count of masters can not be more than 1 and less 1
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:33:50 UserRepository.Add called
+2016-07-16 21:34:35 UserRepository.Add called
+2016-07-16 21:34:36 UserRepository.Add called
+2016-07-16 21:34:36 UserRepository.Add called
+2016-07-16 21:41:29 MasterService.RegisterObserver called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 MasterService.NotifyObservers called
+2016-07-16 21:41:29 The count of masters can not be more than 1 and less 1
+2016-07-16 21:41:29 The count of masters can not be more than 1 and less 1
+2016-07-16 21:41:29 The count of masters can not be more than 1 and less 1
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 The user already exists
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:29 UserRepository.Add called
+2016-07-16 21:41:31 UserRepository.Add called
+2016-07-16 21:41:32 UserRepository.Add called
+2016-07-16 21:41:32 UserRepository.Add called
+2016-07-16 21:41:32 The user already exists
+2016-07-16 21:41:42 MasterService.RegisterObserver called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 MasterService.NotifyObservers called
+2016-07-16 21:41:42 The count of masters can not be more than 1 and less 1
+2016-07-16 21:41:42 The count of masters can not be more than 1 and less 1
+2016-07-16 21:41:42 The count of masters can not be more than 1 and less 1
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 The user already exists
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:41:42 UserRepository.Add called
+2016-07-16 21:48:37 MasterService.RegisterObserver called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 MasterService.NotifyObservers called
+2016-07-16 21:48:37 The count of masters can not be more than 1 and less 1
+2016-07-16 21:48:37 The count of masters can not be more than 1 and less 1
+2016-07-16 21:48:37 The count of masters can not be more than 1 and less 1
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 The user already exists
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:37 UserRepository.Add called
+2016-07-16 21:48:38 UserRepository.Add called
+2016-07-16 21:48:38 MasterService.RegisterObserver called
+2016-07-16 21:48:39 UserRepository.Add called
+2016-07-16 21:48:39 MasterService.NotifyObservers called
+2016-07-16 21:48:39 The count of masters can not be more than 1 and less 1
+2016-07-16 21:48:39 The count of masters can not be more than 1 and less 1
+2016-07-16 21:48:39 The count of masters can not be more than 1 and less 1
+2016-07-16 21:48:39 UserRepository.Add called
+2016-07-16 21:48:39 UserRepository.Add called
+2016-07-16 21:51:12 UserRepository.Add called
+2016-07-16 21:51:12 UserRepository.Add called
+2016-07-16 21:51:12 UserRepository.GetAll called
+2016-07-16 21:51:12 UserRepository.WriteToXML called
+2016-07-16 21:51:15 UserRepository.ReadFromXML called
+2016-07-16 21:51:16 UserRepository.GetAll called
+2016-07-16 21:51:47 MasterService.RegisterObserver called
+2016-07-16 21:51:47 UserRepository.Add called
+2016-07-16 21:51:47 MasterService.NotifyObservers called
+2016-07-16 21:51:47 The count of masters can not be more than 1 and less 1
+2016-07-16 21:51:47 The count of masters can not be more than 1 and less 1
+2016-07-16 21:51:47 The count of masters can not be more than 1 and less 1
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 The user already exists
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.Add called
+2016-07-16 21:51:48 UserRepository.GetAll called
+2016-07-16 21:51:48 UserRepository.WriteToXML called
+2016-07-16 21:51:48 UserRepository.ReadFromXML called
+2016-07-16 21:51:48 UserRepository.GetAll called
+2016-07-16 21:52:05 MasterService.RegisterObserver called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 MasterService.NotifyObservers called
+2016-07-16 21:52:05 The count of masters can not be more than 1 and less 1
+2016-07-16 21:52:05 The count of masters can not be more than 1 and less 1
+2016-07-16 21:52:05 The count of masters can not be more than 1 and less 1
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 The user already exists
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.Add called
+2016-07-16 21:52:05 UserRepository.GetAll called
+2016-07-16 21:52:05 UserRepository.WriteToXML called
+2016-07-16 21:52:05 UserRepository.ReadFromXML called
+2016-07-16 21:52:05 UserRepository.GetAll called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 MasterService.RegisterObserver called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 MasterService.NotifyObservers called
+2016-07-16 21:56:45 The count of masters can not be more than 1 and less 1
+2016-07-16 21:56:45 The count of masters can not be more than 1 and less 1
+2016-07-16 21:56:45 The count of masters can not be more than 1 and less 1
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 The user already exists
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.Add called
+2016-07-16 21:56:45 UserRepository.GetAll called
+2016-07-16 21:56:45 UserRepository.WriteToXML called
+2016-07-16 21:56:45 UserRepository.ReadFromXML called
+2016-07-16 21:56:45 UserRepository.GetAll called
+2016-07-16 21:56:46 UserRepository.Add called
+2016-07-16 21:56:46 UserRepository.Add called
+2016-07-16 21:56:46 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 MasterService.RegisterObserver called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 MasterService.NotifyObservers called
+2016-07-16 21:56:59 The count of masters can not be more than 1 and less 1
+2016-07-16 21:56:59 The count of masters can not be more than 1 and less 1
+2016-07-16 21:56:59 The count of masters can not be more than 1 and less 1
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 The user already exists
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.Add called
+2016-07-16 21:56:59 UserRepository.GetAll called
+2016-07-16 21:56:59 UserRepository.WriteToXML called
+2016-07-16 21:56:59 UserRepository.ReadFromXML called
+2016-07-16 21:56:59 UserRepository.GetAll called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 MasterService.RegisterObserver called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 MasterService.NotifyObservers called
+2016-07-16 21:57:08 The count of masters can not be more than 1 and less 1
+2016-07-16 21:57:08 The count of masters can not be more than 1 and less 1
+2016-07-16 21:57:08 The count of masters can not be more than 1 and less 1
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 The user already exists
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:08 UserRepository.Add called
+2016-07-16 21:57:09 UserRepository.GetAll called
+2016-07-16 21:57:09 UserRepository.WriteToXML called
+2016-07-16 21:57:09 UserRepository.ReadFromXML called
+2016-07-16 21:57:09 UserRepository.GetAll called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 MasterService.RegisterObserver called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 MasterService.NotifyObservers called
+2016-07-16 21:57:17 The count of masters can not be more than 1 and less 1
+2016-07-16 21:57:17 The count of masters can not be more than 1 and less 1
+2016-07-16 21:57:17 The count of masters can not be more than 1 and less 1
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 The user already exists
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.Add called
+2016-07-16 21:57:17 UserRepository.GetAll called
+2016-07-16 21:57:17 UserRepository.WriteToXML called
+2016-07-16 21:57:17 UserRepository.ReadFromXML called
+2016-07-16 21:57:17 UserRepository.GetAll called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 MasterService.RegisterObserver called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 MasterService.NotifyObservers called
+2016-07-16 22:02:29 The count of masters can not be more than 1 and less 1
+2016-07-16 22:02:29 The count of masters can not be more than 1 and less 1
+2016-07-16 22:02:29 The count of masters can not be more than 1 and less 1
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 The user already exists
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.Add called
+2016-07-16 22:02:29 UserRepository.GetAll called
+2016-07-16 22:02:29 UserRepository.WriteToXML called
+2016-07-16 22:02:29 UserRepository.ReadFromXML called
+2016-07-16 22:02:29 UserRepository.GetAll called

@@ -9,8 +9,9 @@
   </User>
   <User>
     <Id>3</Id>
-    <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
-    <UserGender>None</UserGender>
-    <VisaRecords />
+    <FirstName>Mirnyi</FirstName>
+    <LastName>Max</LastName>
+    <DateOfBirth>1970-07-20T18:30:25</DateOfBirth>
+    <UserGender>Male</UserGender>
   </User>
 </ArrayOfUser>

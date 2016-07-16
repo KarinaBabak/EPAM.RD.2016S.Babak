@@ -89,7 +89,6 @@ namespace UserStorage.Repository
             if (ReferenceEquals(newUser, null))
                 return null;
             return newUser;
-
         }
 
         public IEnumerable<int> SearchForUser(Predicate<User> criteria)

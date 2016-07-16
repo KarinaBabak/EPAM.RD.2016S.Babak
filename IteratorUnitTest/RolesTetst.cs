@@ -12,7 +12,7 @@ namespace IteratorUnitTest
 {
     [TestClass]
     public class RolesTetst
-    {       
+    {        
         [TestMethod]
         public void NotifyObservers_ReturnTrue()
         {
