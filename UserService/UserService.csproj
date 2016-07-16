@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Interfaces\IRole.cs" />
     <Compile Include="MasterService.cs" />
+    <Compile Include="Observer\IObservable.cs" />
+    <Compile Include="Observer\IObserver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlaveService.cs" />
   </ItemGroup>

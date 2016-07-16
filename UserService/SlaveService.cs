@@ -9,14 +9,16 @@ using System.Configuration;
 using UserStorage;
 using UserStorage.Repository;
 using UserService.Interfaces;
+using UserService.Observer;
 
 namespace UserService
 {
-    public class SlaveService: IRole
+    public class SlaveService : IRole, IObserver
     {
         private static int CountSlaves { get; set; }
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         private IUserRepository repository;
+        private IObservable master;
         
         public SlaveService(IUserRepository rep)
         {
@@ -27,7 +29,7 @@ namespace UserService
                 throw new ArgumentException("The count of slaves can not be more than {0}",
                     value.ToString());
             }
-
+            master.RegisterObserver(this);
             CountSlaves++;
             repository = rep;
         }
@@ -47,6 +49,11 @@ namespace UserService
         public IEnumerable<int> SearchForUser(Predicate<User> criteria)
         {
             return repository.SearchForUser(criteria);
+        }
+
+        public void Update(IUserRepository repository)
+        {
+            this.repository = repository;
         }
     }
 }
