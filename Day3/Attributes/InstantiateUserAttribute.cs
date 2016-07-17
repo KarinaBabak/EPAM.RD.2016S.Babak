@@ -14,32 +14,27 @@ namespace Attributes
 
         #region ctors
         public InstantiateUserAttribute() { }
-
-        public InstantiateUserAttribute(string firstName, string lastName)
-        {
-            Type userclass = typeof(User);
-            InstantiateUserAttribute[] instantiateUserAttributes =
-                (InstantiateUserAttribute[])Attribute.GetCustomAttributes(userclass, typeof(InstantiateUserAttribute));
-
-            MatchParameterWithPropertyAttribute[] matchParameter =
-                (MatchParameterWithPropertyAttribute[])Attribute.GetCustomAttributes(userclass.GetConstructors()[0], typeof(MatchParameterWithPropertyAttribute));
-
-            AttributeCollection attributes = TypeDescriptor.GetProperties(this)["Id"].Attributes;
-            DefaultValueAttribute myAttribute = (DefaultValueAttribute)attributes[typeof(DefaultValueAttribute)];
-            
-            Id = (int)myAttribute.Value;
-            //User user = new User(Id);
-            ProperyFirstName = firstName;
-            PropertyLastName = lastName;
-        }
-
         public InstantiateUserAttribute(int id, string firstName, string lastName)
         {
             Id = id;
-            //User user = new User(id);
             ProperyFirstName = firstName;
             PropertyLastName = lastName;
         }
+
+        public InstantiateUserAttribute(string firstName, string lastName)            
+        {
+            Type userclass = typeof(User);
+            MatchParameterWithPropertyAttribute[] matchParameter =
+                (MatchParameterWithPropertyAttribute[])Attribute.GetCustomAttributes(userclass.GetConstructors()[0], typeof(MatchParameterWithPropertyAttribute));
+
+            var proper = userclass.GetProperty(matchParameter[0].Value2);
+            DefaultValueAttribute[] propertyAttributes =
+                (DefaultValueAttribute[])Attribute.GetCustomAttributes(proper, typeof(DefaultValueAttribute));
+            
+            Id = (int)propertyAttributes[0].Value;
+            ProperyFirstName = firstName;
+            PropertyLastName = lastName;
+        }        
         #endregion
     }
 }

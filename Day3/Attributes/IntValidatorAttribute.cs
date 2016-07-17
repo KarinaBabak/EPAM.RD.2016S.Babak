@@ -6,14 +6,14 @@ namespace Attributes
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class IntValidatorAttribute : Attribute
     {
-        private int min;
-        private int max;
+        public int Min { get; set; }
+        public  int Max { get; set; }
 
         public IntValidatorAttribute() { }
         public IntValidatorAttribute(int n1, int n2)
         {
-            min = n1;
-            max = n2;
+            Min = n1;
+            Max = n2;
             
         }      
     }
