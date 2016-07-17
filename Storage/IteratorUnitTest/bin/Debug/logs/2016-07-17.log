@@ -379,3 +379,31 @@
 2016-07-16 22:02:29 UserRepository.WriteToXML called
 2016-07-16 22:02:29 UserRepository.ReadFromXML called
 2016-07-16 22:02:29 UserRepository.GetAll called
+2016-07-17 20:37:03 UserRepository.Add called
+2016-07-17 20:37:04 MasterService.NotifyObservers called
+2016-07-17 20:37:04 The count of slaves can not be more than 3
+2016-07-17 20:37:04 The count of masters can not be more than 1 and less 1
+2016-07-17 20:37:04 The count of masters can not be more than 1 and less 1
+2016-07-17 20:37:04 The count of masters can not be more than 1 and less 1
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 The user already exists
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.Add called
+2016-07-17 20:37:04 UserRepository.GetAll called
+2016-07-17 20:37:04 UserRepository.WriteToXML called
+2016-07-17 20:37:07 UserRepository.ReadFromXML called
+2016-07-17 20:37:08 UserRepository.GetAll called
+2016-07-17 20:37:08 UserRepository.Add called
+2016-07-17 20:37:08 UserRepository.Add called
+2016-07-17 20:37:08 UserRepository.Add called
+2016-07-17 20:37:08 UserRepository.Add called
+2016-07-17 20:37:08 UserRepository.Add called
+2016-07-17 20:37:08 UserRepository.Add called
+2016-07-17 20:37:08 UserRepository.Add called

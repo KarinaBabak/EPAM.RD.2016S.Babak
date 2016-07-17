@@ -9,6 +9,7 @@ using System.Configuration;
 using Iterator;
 using UserStorage.Validator;
 using NLog;
+using System.Diagnostics;
 
 
 
@@ -17,7 +18,7 @@ namespace UserStorage.Repository
     public class UserRepository : IUserRepository
     {
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
-
+        private static readonly BooleanSwitch boolSwitch = new BooleanSwitch("Switch", string.Empty);
         
         private List<User> Users { get; set; }
         private ICustomerIterator iterator;        
@@ -48,15 +49,22 @@ namespace UserStorage.Repository
 
         public int Add(User user)
         {
-            logger.Trace("UserRepository.Add called");
+            logger.Trace("UserRepository.Add called. Create the user: "+ user.ToString());            
+           
             if (!validator.Validate(user))
             {
-                logger.Error("The validation of new user is failed");
+                if (boolSwitch.Enabled)
+                {
+                    logger.Error("The validation of new user is failed");
+                }
                 throw new ArgumentException("The validation is failed");
             }
             if (Users.Contains(user))
             {
-                logger.Error("The user already exists");
+                if (boolSwitch.Enabled)
+                {
+                    logger.Error("The user already exists");
+                }
                 throw new InvalidOperationException("User already exists");
             }
 
@@ -67,7 +75,7 @@ namespace UserStorage.Repository
 
         public IEnumerable<User> GetAll()
         {
-            logger.Trace("UserRepository.GetAll called");
+            logger.Trace("UserRepository.GetAll called");           
             return Users;
         }
 
@@ -120,11 +128,17 @@ namespace UserStorage.Repository
             }
             catch(InvalidOperationException ex)
             {
-                logger.Error("Write to Xml " + ex.Message);
+                if (boolSwitch.Enabled)
+                {
+                    logger.Error("Write to Xml " + ex.Message);
+                }
             }
             catch(ConfigurationErrorsException exception)
             {
-                logger.Error("Write to Xml " + exception.Message);
+                if (boolSwitch.Enabled)
+                {
+                    logger.Error("Write to Xml " + exception.Message);
+                }
             }
         }
 

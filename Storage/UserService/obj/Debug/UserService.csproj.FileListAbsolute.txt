@@ -28,3 +28,17 @@ D:\Epam\!Lab\Project\UserService\obj\Debug\UserService.pdb
 D:\Epam\!Lab\Project\UserService\bin\Debug\NLog.config
 D:\Epam\!Lab\Project\UserService\bin\Debug\NLog.dll
 D:\Epam\!Lab\Project\UserService\bin\Debug\NLog.xml
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\NLog.config
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\UserService.dll
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\UserService.pdb
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\Iterator.dll
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\NLog.dll
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\UserStorage.dll
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\UserStorage.pdb
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\NLog.xml
+D:\Epam\!Lab\Project\Storage\UserService\obj\Debug\UserService.csprojResolveAssemblyReference.cache
+D:\Epam\!Lab\Project\Storage\UserService\obj\Debug\UserService.dll
+D:\Epam\!Lab\Project\Storage\UserService\obj\Debug\UserService.pdb
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\ConfigurationService.dll
+D:\Epam\!Lab\Project\Storage\UserService\bin\Debug\ConfigurationService.pdb

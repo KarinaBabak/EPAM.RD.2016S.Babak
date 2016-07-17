@@ -54,6 +54,10 @@
     <Compile Include="SlaveService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConfigurationService\ConfigurationService.csproj">
+      <Project>{b85c6d51-834c-4328-b9c5-81e252f93649}</Project>
+      <Name>ConfigurationService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Iterator\Iterator.csproj">
       <Project>{02e8a2ef-7836-4b82-8665-6e48ccbb9f8a}</Project>
       <Name>Iterator</Name>

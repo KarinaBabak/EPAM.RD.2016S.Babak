@@ -10,19 +10,27 @@ using UserStorage;
 using UserStorage.Repository;
 using UserService.Interfaces;
 using UserService.Observer;
+using System.Diagnostics;
+using ConfigurationService;
 
 namespace UserService
 {
     public class MasterService : IRole, IObservable
     {
         private static int CountMaster { get; set; }
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();        
         private IUserRepository repository;
         private List<IObserver> observers;
 
         public MasterService(UserRepository rep)
         {
-            var value = Convert.ToInt32(ConfigurationManager.AppSettings["MastersNumber"]);
+            //var value = Convert.ToInt32(ConfigurationManager.AppSettings["MastersNumber"]);
+            int value = 0;
+            var section = (ServiceConfigSection)ConfigurationManager.GetSection("ServiceConfig");            
+            if (section != null)
+            {
+                value = Convert.ToInt32(section.ServiceItems[0].Number);
+            }
             if (CountMaster >= value || CountMaster < 0)
             {
                 logger.Error("The count of masters can not be more than {0} and less 1", value);
