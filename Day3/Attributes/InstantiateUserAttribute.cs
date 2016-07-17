@@ -17,17 +17,18 @@ namespace Attributes
 
         public InstantiateUserAttribute(string firstName, string lastName)
         {
+            Type userclass = typeof(User);
+            InstantiateUserAttribute[] instantiateUserAttributes =
+                (InstantiateUserAttribute[])Attribute.GetCustomAttributes(userclass, typeof(InstantiateUserAttribute));
 
-            //Type userclass = typeof(User);
-            //InstantiateUserAttribute[] instantiateUserAttributes =
-            //    (InstantiateUserAttribute[])Attribute.GetCustomAttributes(userclass, typeof(InstantiateUserAttribute));
+            MatchParameterWithPropertyAttribute[] matchParameter =
+                (MatchParameterWithPropertyAttribute[])Attribute.GetCustomAttributes(userclass.GetConstructors()[0], typeof(MatchParameterWithPropertyAttribute));
 
-            //MatchParameterWithPropertyAttribute[] matchParameter =
-            //    (MatchParameterWithPropertyAttribute[])Attribute.GetCustomAttributes(userclass.GetConstructors()[0], typeof(MatchParameterWithPropertyAttribute));
-
-            //AttributeCollection attributes = TypeDescriptor.GetProperties(this)["Id"].Attributes;
-            //DefaultValueAttribute myAttribute = (DefaultValueAttribute)attributes[typeof(DefaultValueAttribute)];
-            //User user = new User((int)myAttribute.Value);
+            AttributeCollection attributes = TypeDescriptor.GetProperties(this)["Id"].Attributes;
+            DefaultValueAttribute myAttribute = (DefaultValueAttribute)attributes[typeof(DefaultValueAttribute)];
+            
+            Id = (int)myAttribute.Value;
+            //User user = new User(Id);
             ProperyFirstName = firstName;
             PropertyLastName = lastName;
         }
