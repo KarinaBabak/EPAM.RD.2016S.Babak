@@ -13,7 +13,7 @@ namespace MutexMain
         static void Main(string[] args)
         {
             bool createdNew = false;
-            Mutex mutex = null;
+            Mutex mutex = new Mutex(true, "MyMutex", out createdNew);
 
             // TODO: mutex = new Mutex(..., "MyMutex", ...);
 
@@ -22,7 +22,7 @@ namespace MutexMain
             Console.ReadLine();
 
             // TODO: Release mutex.
-
+            mutex.ReleaseMutex();
             Console.WriteLine("Mutex is release. Press any key to exit.");
             Console.ReadLine();
         }

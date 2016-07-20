@@ -1,0 +1,6 @@
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexClient\bin\Debug\MutexClient.exe.config
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexClient\bin\Debug\MutexClient.exe
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexClient\bin\Debug\MutexClient.pdb
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexClient\obj\Debug\MutexClient.csprojResolveAssemblyReference.cache
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexClient\obj\Debug\MutexClient.exe
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexClient\obj\Debug\MutexClient.pdb

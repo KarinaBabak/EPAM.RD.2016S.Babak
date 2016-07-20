@@ -7,23 +7,23 @@ namespace ReadWrite
     class Program
     {
         // TODO: replace Object type with appropriate type for slim version of manual reset event.
-        private static IList<Thread> CreateWorkers(Object mres, Action action, int threadsNum, int cycles)
+        private static IList<Thread> CreateWorkers(ManualResetEventSlim mres, Action action, int threadsNum, int cycles)
         {
             var threads = new Thread[threadsNum];
-
+            
             for (int i = 0; i < threadsNum; i++)
             {
                 Action d = () =>
                 {
                     // TODO: Wait for signal.
-
+                    mres.Wait();
                     for (int j = 0; j < cycles; j++)
                     {
                         action();
                     }
                 };
 
-                Thread thread = null; // TODO: Create a new thread that will run the delegate above here.
+                Thread thread = new Thread(new ThreadStart(d)); // TODO: Create a new thread that will run the delegate above here.
 
                 threads[i] = thread;
             }
@@ -36,7 +36,7 @@ namespace ReadWrite
             var list = new MyList();
 
             // TODO: Replace Object type with slim version of manual reset event here.
-            Object mres = null;
+            ManualResetEventSlim mres = new ManualResetEventSlim(false);
 
             var threads = new List<Thread>();
 
@@ -46,6 +46,7 @@ namespace ReadWrite
 
             foreach (var thread in threads)
             {
+                thread.Start();
                 // TODO: Start all threads.
             }
 
@@ -54,9 +55,10 @@ namespace ReadWrite
 
             // NOTE: When an user presses the key all waiting worker threads should begin their work.
             // TODO: Send a signal to all worker threads that they can run.
-
+            mres.Set();
             foreach (var thread in threads)
             {
+                thread.Join();
                 // TODO: Wait for all working threads
             }
 

@@ -1,0 +1,6 @@
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexMain\bin\Debug\MutexMain.exe.config
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexMain\bin\Debug\MutexMain.exe
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexMain\bin\Debug\MutexMain.pdb
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexMain\obj\Debug\MutexMain.csprojResolveAssemblyReference.cache
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexMain\obj\Debug\MutexMain.exe
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\MutexMain\obj\Debug\MutexMain.pdb

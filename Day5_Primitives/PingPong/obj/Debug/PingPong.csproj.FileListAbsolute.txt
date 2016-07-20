@@ -1,0 +1,6 @@
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\PingPong\bin\Debug\PingPong.exe.config
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\PingPong\bin\Debug\PingPong.exe
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\PingPong\bin\Debug\PingPong.pdb
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\PingPong\obj\Debug\PingPong.csprojResolveAssemblyReference.cache
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\PingPong\obj\Debug\PingPong.exe
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\PingPong\obj\Debug\PingPong.pdb

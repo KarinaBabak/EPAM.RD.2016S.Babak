@@ -1,0 +1,5 @@
+C:\Users\Karyna_Babak\Downloads\Training\Day6_LINQ\immutableValType\immutableValType\bin\Debug\immutableValType.exe.config
+C:\Users\Karyna_Babak\Downloads\Training\Day6_LINQ\immutableValType\immutableValType\bin\Debug\immutableValType.exe
+C:\Users\Karyna_Babak\Downloads\Training\Day6_LINQ\immutableValType\immutableValType\bin\Debug\immutableValType.pdb
+C:\Users\Karyna_Babak\Downloads\Training\Day6_LINQ\immutableValType\immutableValType\obj\Debug\immutableValType.exe
+C:\Users\Karyna_Babak\Downloads\Training\Day6_LINQ\immutableValType\immutableValType\obj\Debug\immutableValType.pdb

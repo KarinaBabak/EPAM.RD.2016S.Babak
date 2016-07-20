@@ -4,3 +4,9 @@ C:\Users\Karyna_Babak\Downloads\Training\Day5_Primitives\Monitor\bin\Debug\Monit
 C:\Users\Karyna_Babak\Downloads\Training\Day5_Primitives\Monitor\obj\Debug\Monitor.csprojResolveAssemblyReference.cache
 C:\Users\Karyna_Babak\Downloads\Training\Day5_Primitives\Monitor\obj\Debug\Monitor.exe
 C:\Users\Karyna_Babak\Downloads\Training\Day5_Primitives\Monitor\obj\Debug\Monitor.pdb
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\Monitor\bin\Debug\Monitor.exe.config
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\Monitor\obj\Debug\Monitor.exe
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\Monitor\obj\Debug\Monitor.pdb
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\Monitor\bin\Debug\Monitor.exe
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\Monitor\bin\Debug\Monitor.pdb
+C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Day5_Primitives\Monitor\obj\Debug\Monitor.csprojResolveAssemblyReference.cache
