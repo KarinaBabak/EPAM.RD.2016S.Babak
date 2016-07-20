@@ -23,14 +23,15 @@ namespace UserService
         private List<IObserver> observers;
 
         public MasterService(UserRepository rep)
-        {
-            //var value = Convert.ToInt32(ConfigurationManager.AppSettings["MastersNumber"]);
+        {            
             int value = 0;
             var section = (ServiceConfigSection)ConfigurationManager.GetSection("ServiceConfig");            
-            if (section != null)
-            {
-                value = Convert.ToInt32(section.ServiceItems[0].Number);
-            }
+            //if (section != null)
+            //{                
+            //    value = Convert.ToInt32(section.ServiceItems[0].Login);
+
+            //}
+            //AppDomain domain = AppDomain.CreateDomain(section.ServiceItems[0].Login.ToString());
             if (CountMaster >= value || CountMaster < 0)
             {
                 logger.Error("The count of masters can not be more than {0} and less 1", value);

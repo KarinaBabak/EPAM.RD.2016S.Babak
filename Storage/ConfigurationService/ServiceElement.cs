@@ -25,11 +25,11 @@ namespace ConfigurationService
         /// <summary>
         /// Count of services
         /// </summary>
-        [ConfigurationProperty("number", DefaultValue = 0, IsKey = false, IsRequired = false)]
-        public int Number
+        [ConfigurationProperty("login", DefaultValue = "", IsKey = false, IsRequired = false)]
+        public string Login
         {
-            get { return ((int)(base["number"])); }
-            set { base["number"] = value; }
+            get { return ((string)(base["login"])); }
+            set { base["login"] = value; }
         }
     }
 }
