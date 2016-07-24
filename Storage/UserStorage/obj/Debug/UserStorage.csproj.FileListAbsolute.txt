@@ -42,3 +42,6 @@ D:\Epam\!Lab\Project\Storage\UserStorage\bin\Debug\NLog.xml
 D:\Epam\!Lab\Project\Storage\UserStorage\obj\Debug\UserStorage.csprojResolveAssemblyReference.cache
 D:\Epam\!Lab\Project\Storage\UserStorage\obj\Debug\UserStorage.dll
 D:\Epam\!Lab\Project\Storage\UserStorage\obj\Debug\UserStorage.pdb
+D:\Epam\!Lab\Project\Storage\UserStorage\bin\Debug\ConfigurationService.dll
+D:\Epam\!Lab\Project\Storage\UserStorage\bin\Debug\ConfigurationService.pdb
+D:\Epam\!Lab\Project\Storage\UserStorage\bin\Debug\UserStorage.dll.config

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Iterator
 {
-    public class CustomIterator: ICustomerIterator
+    public class CustomIterator: ICustomIterator
     {
         public int Current
         {
@@ -44,14 +44,9 @@ namespace Iterator
             return false;
         }
 
-        public IEnumerable<int> GetPrimes(int limit)
+        public IEnumerable<int> GetPrimes()
         {
-            if (limit <= 0)
-            {
-                throw new ArgumentException("Limit is below zero");
-            }
-
-            for (int i = 2; i <= limit; i++)
+            for (int i = 2; i <= Int32.MaxValue; i++)
             {
                 if (i.IsPrime())
                 {

@@ -48,11 +48,9 @@ D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\IteratorUnitTest.dll.con
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\IteratorUnitTest.dll
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\IteratorUnitTest.pdb
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\Iterator.dll
-D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\UserService.dll
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\UserStorage.dll
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\NLog.dll
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\Iterator.pdb
-D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\UserService.pdb
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\UserStorage.pdb
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\bin\Debug\NLog.xml
 D:\Epam\!Lab\Project\Storage\IteratorUnitTest\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache

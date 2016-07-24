@@ -1,0 +1,305 @@
+2016-07-24 16:31:14 Domain for Slave is created
+2016-07-24 16:31:14 MasterService.RegisterObserver called
+2016-07-24 16:31:14 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 16:31:14 MasterService.NotifyObservers called
+2016-07-24 16:31:14 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-24 16:31:14 MasterService.NotifyObservers called
+2016-07-24 16:31:14 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-24 16:31:14 MasterService.NotifyObservers called
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:14 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:28 Domain for Slave is created
+2016-07-24 16:31:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:28 MasterService.RegisterObserver called
+2016-07-24 16:31:28 UserRepository.Clear called
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 MasterService.NotifyObservers called
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:31:29 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:27 Domain for Slave is created
+2016-07-24 16:32:27 MasterService.RegisterObserver called
+2016-07-24 16:32:27 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 16:32:27 MasterService.NotifyObservers called
+2016-07-24 16:32:27 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-24 16:32:27 MasterService.NotifyObservers called
+2016-07-24 16:32:27 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-24 16:32:27 MasterService.NotifyObservers called
+2016-07-24 16:32:27 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:27 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:27 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:27 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:28 The count of masters can not be more than 1 and less 1
+2016-07-24 16:32:36 Domain for Slave is created
+2016-07-24 16:32:37 MasterService.RegisterObserver called
+2016-07-24 16:32:37 UserRepository.Clear called
+2016-07-24 16:32:37 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-24 16:32:37 MasterService.NotifyObservers called
+2016-07-24 16:32:41 Domain for Slave is created
+2016-07-24 16:32:41 MasterService.RegisterObserver called
+2016-07-24 16:32:41 UserRepository.Clear called
+2016-07-24 16:32:41 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-24 16:32:41 MasterService.NotifyObservers called
+2016-07-24 16:33:02 Domain for Slave is created
+2016-07-24 16:33:02 MasterService.RegisterObserver called
+2016-07-24 16:33:02 UserRepository.Clear called
+2016-07-24 16:33:02 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 16:33:02 MasterService.NotifyObservers called
+2016-07-24 16:33:02 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-24 16:33:02 MasterService.NotifyObservers called
+2016-07-24 16:33:02 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 16:33:02 The user already exists
+2016-07-24 16:33:05 Domain for Slave is created
+2016-07-24 16:33:05 MasterService.RegisterObserver called
+2016-07-24 16:33:05 UserRepository.Clear called
+2016-07-24 16:33:05 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 16:33:05 MasterService.NotifyObservers called
+2016-07-24 16:33:05 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-24 16:33:05 MasterService.NotifyObservers called
+2016-07-24 16:33:05 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 16:33:05 The user already exists
+2016-07-24 16:33:19 Domain for Slave is created
+2016-07-24 16:33:19 MasterService.RegisterObserver called
+2016-07-24 16:33:19 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 16:33:19 MasterService.NotifyObservers called
+2016-07-24 16:33:19 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-24 16:33:19 MasterService.NotifyObservers called
+2016-07-24 16:33:19 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-24 16:33:19 MasterService.NotifyObservers called
+2016-07-24 16:33:19 The count of masters can not be more than 1 and less 1
+2016-07-24 16:33:19 The count of masters can not be more than 1 and less 1
+2016-07-24 16:33:19 The count of masters can not be more than 1 and less 1
+2016-07-24 16:33:19 The count of masters can not be more than 1 and less 1
+2016-07-24 16:33:19 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 Domain for Slave is created
+2016-07-24 16:34:02 MasterService.RegisterObserver called
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:02 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:03 Domain for Slave is created
+2016-07-24 16:34:03 MasterService.RegisterObserver called
+2016-07-24 16:34:03 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:03 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:03 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:03 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:03 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:03 The count of masters can not be more than 1 and less 1
+2016-07-24 16:34:56 Domain for Slave is created
+2016-07-24 16:34:56 MasterService.RegisterObserver called
+2016-07-24 16:35:10 Domain for Slave is created
+2016-07-24 16:35:10 MasterService.RegisterObserver called
+2016-07-24 16:35:21 Domain for Slave is created
+2016-07-24 16:35:21 MasterService.RegisterObserver called
+2016-07-24 16:35:34 Domain for Slave is created
+2016-07-24 16:35:34 MasterService.RegisterObserver called
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:34 The count of masters can not be more than 1 and less 1
+2016-07-24 16:35:48 Domain for Slave is created
+2016-07-24 16:35:48 MasterService.RegisterObserver called
+2016-07-24 16:35:48 UserRepository.Clear called
+2016-07-24 16:35:48 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-24 16:35:48 MasterService.NotifyObservers called
+2016-07-24 16:37:05 Domain for Slave is created
+2016-07-24 16:37:05 MasterService.RegisterObserver called
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:37:05 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 Domain for Slave is created
+2016-07-24 16:39:06 MasterService.RegisterObserver called
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:06 The count of masters can not be more than 1 and less 1
+2016-07-24 16:39:07 Domain for Slave is created
+2016-07-24 16:39:07 MasterService.RegisterObserver called
+2016-07-24 16:40:07 Domain for Slave is created
+2016-07-24 16:40:07 MasterService.RegisterObserver called
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:07 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:08 Domain for Slave is created
+2016-07-24 16:40:08 MasterService.RegisterObserver called
+2016-07-24 16:40:40 Domain for Slave is created
+2016-07-24 16:40:40 MasterService.RegisterObserver called
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:40 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 Domain for Slave is created
+2016-07-24 16:40:53 MasterService.RegisterObserver called
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:40:53 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 Domain for Slave is created
+2016-07-24 16:41:13 MasterService.RegisterObserver called
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:13 The count of masters can not be more than 1 and less 1
+2016-07-24 16:41:15 Domain for Slave is created
+2016-07-24 16:41:15 MasterService.RegisterObserver called
+2016-07-24 17:02:21 Domain for Slave is created
+2016-07-24 17:02:21 MasterService.RegisterObserver called
+2016-07-24 17:02:21 UserRepository.Clear called
+2016-07-24 17:02:21 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 17:02:21 MasterService.NotifyObservers called
+2016-07-24 17:02:21 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-24 17:02:21 MasterService.NotifyObservers called
+2016-07-24 17:02:21 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 17:02:22 The user already exists
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:02:22 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 Domain for Slave is created
+2016-07-24 17:59:40 MasterService.RegisterObserver called
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:40 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:41 The count of masters can not be more than 1 and less 1
+2016-07-24 17:59:41 The count of masters can not be more than 1 and less 1
+2016-07-24 18:00:01 Domain for Slave is created
+2016-07-24 18:00:01 MasterService.RegisterObserver called
+2016-07-24 18:00:01 UserRepository.Clear called
+2016-07-24 18:00:01 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-24 18:00:01 MasterService.NotifyObservers called
+2016-07-24 18:00:01 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-24 18:00:01 MasterService.NotifyObservers called
+2016-07-24 18:00:53 Domain for Slave is created
+2016-07-24 18:00:53 MasterService.RegisterObserver called
+2016-07-24 18:00:53 The count of masters can not be more than 1 and less 1
+2016-07-24 18:01:31 Domain for Slave is created
+2016-07-24 18:01:31 MasterService.RegisterObserver called
+2016-07-24 18:01:31 The count of masters can not be more than 1 and less 1
+2016-07-24 18:02:10 Domain for Slave is created
+2016-07-24 18:02:10 MasterService.RegisterObserver called
+2016-07-24 18:02:26 Domain for Slave is created
+2016-07-24 18:02:26 MasterService.RegisterObserver called
+2016-07-24 18:02:26 The count of masters can not be more than 1 and less 1
+2016-07-24 18:02:34 Domain for Slave is created
+2016-07-24 18:02:34 MasterService.RegisterObserver called
+2016-07-24 18:03:15 Domain for Slave is created
+2016-07-24 18:03:15 MasterService.RegisterObserver called
+2016-07-24 18:11:56 Domain for Slave is created
+2016-07-24 18:11:56 MasterService.RegisterObserver called
+2016-07-24 18:11:56 The count of masters can not be more than 1 and less 1
+2016-07-24 18:11:58 Domain for Slave is created
+2016-07-24 18:11:58 MasterService.RegisterObserver called
+2016-07-24 18:11:58 The count of masters can not be more than 1 and less 1
+2016-07-24 18:14:29 Domain for Slave is created
+2016-07-24 18:14:29 MasterService.RegisterObserver called
+2016-07-24 18:14:29 The count of masters can not be more than 1 and less 1
+2016-07-24 18:14:30 Domain for Slave is created
+2016-07-24 18:14:30 MasterService.RegisterObserver called
+2016-07-24 18:14:30 The count of masters can not be more than 1 and less 1
+2016-07-24 18:52:22 Domain for Slave is created
+2016-07-24 18:52:22 MasterService.RegisterObserver called
+2016-07-24 18:52:22 The count of masters can not be more than 1 and less 1
+2016-07-24 19:38:22 Domain for Slave is created
+2016-07-24 19:38:22 MasterService.RegisterObserver called
+2016-07-24 19:38:23 The count of masters can not be more than 1 and less 1
+2016-07-24 20:29:21 Domain for Slave is created
+2016-07-24 20:29:21 MasterService.RegisterObserver called
+2016-07-24 20:29:22 The count of masters can not be more than 1 and less 1
+2016-07-24 20:51:57 Domain for Slave is created
+2016-07-24 20:51:57 MasterService.RegisterObserver called
+2016-07-24 20:51:58 The count of masters can not be more than 1 and less 1

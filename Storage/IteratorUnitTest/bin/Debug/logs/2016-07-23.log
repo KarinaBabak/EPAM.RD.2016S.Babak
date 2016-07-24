@@ -1,0 +1,362 @@
+2016-07-22 21:11:34 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:11:34 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:11:34 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:11:34 The user already exists
+2016-07-22 21:11:34 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:11:34 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:11:34 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-22 21:11:34 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-22 21:11:34 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:11:35 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:11:35 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:11:35 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:11:35 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:11:35 The count of masters can not be more than 0 and less 1
+2016-07-22 21:11:35 The count of masters can not be more than 0 and less 1
+2016-07-22 21:11:35 The count of masters can not be more than 0 and less 1
+2016-07-22 21:11:35 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:11:35 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:11:35 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:17:35 The count of masters can not be more than 0 and less 1
+2016-07-22 21:17:35 The count of masters can not be more than 0 and less 1
+2016-07-22 21:17:35 The count of masters can not be more than 0 and less 1
+2016-07-22 21:17:35 The count of masters can not be more than 0 and less 1
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:35 The user already exists
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:17:35 UserRepository.GetAll called
+2016-07-22 21:17:35 UserRepository.WriteToXML called
+2016-07-22 21:17:35 UserRepository.ReadFromXML called
+2016-07-22 21:17:35 UserRepository.GetAll called
+2016-07-22 21:17:36 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:17:36 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:17:36 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-22 21:17:36 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-22 21:17:36 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:17:37 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:37 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:17:37 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:37 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:17:37 The count of masters can not be more than 0 and less 1
+2016-07-22 21:17:37 The count of masters can not be more than 0 and less 1
+2016-07-22 21:17:37 The count of masters can not be more than 0 and less 1
+2016-07-22 21:17:37 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:17:37 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:17:37 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:20 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:20 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:20 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:20 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:20 The user already exists
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:20 UserRepository.GetAll called
+2016-07-22 21:18:20 UserRepository.WriteToXML called
+2016-07-22 21:18:20 UserRepository.ReadFromXML called
+2016-07-22 21:18:20 UserRepository.GetAll called
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:21 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:21 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:21 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:21 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:28 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:28 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:28 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:28 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:28 The user already exists
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:18:28 UserRepository.GetAll called
+2016-07-22 21:18:28 UserRepository.WriteToXML called
+2016-07-22 21:18:28 UserRepository.ReadFromXML called
+2016-07-22 21:18:28 UserRepository.GetAll called
+2016-07-22 21:18:47 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:47 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:47 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:47 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:47 The count of masters can not be more than 0 and less 1
+2016-07-22 21:18:47 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:47 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:47 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:18:47 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:47 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:18:47 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:18:47 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:20:23 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:20:46 The count of masters can not be more than 0 and less 1
+2016-07-22 21:20:46 The count of masters can not be more than 0 and less 1
+2016-07-22 21:20:46 The count of masters can not be more than 0 and less 1
+2016-07-22 21:20:46 The count of masters can not be more than 0 and less 1
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:20:46 The user already exists
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:20:46 UserRepository.GetAll called
+2016-07-22 21:20:46 UserRepository.WriteToXML called
+2016-07-22 21:20:46 UserRepository.ReadFromXML called
+2016-07-22 21:20:46 UserRepository.GetAll called
+2016-07-22 21:25:05 The count of masters can not be more than 0 and less 1
+2016-07-22 21:25:05 The count of masters can not be more than 0 and less 1
+2016-07-22 21:25:05 The count of masters can not be more than 0 and less 1
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:27:53 The count of masters can not be more than 0 and less 1
+2016-07-22 21:27:53 The count of masters can not be more than 0 and less 1
+2016-07-22 21:27:53 The count of masters can not be more than 0 and less 1
+2016-07-22 21:27:53 The count of masters can not be more than 0 and less 1
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:27:53 The user already exists
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:27:53 UserRepository.GetAll called
+2016-07-22 21:27:53 UserRepository.WriteToXML called
+2016-07-22 21:27:53 UserRepository.ReadFromXML called
+2016-07-22 21:27:53 UserRepository.GetAll called
+2016-07-22 21:52:26 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:52:26 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:52:26 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:26 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:31 The count of masters can not be more than 1 and less 1
+2016-07-22 21:52:31 The count of masters can not be more than 1 and less 1
+2016-07-22 21:53:18 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:53:31 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:57:40 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-22 21:57:42 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-22 21:57:42 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-22 21:57:42 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 07:34:10 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 07:34:10 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 07:34:10 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 14:23:30 MasterService.NotifyObservers called
+2016-07-23 14:23:30 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 14:23:30 MasterService.NotifyObservers called
+2016-07-23 14:23:30 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-23 14:23:30 MasterService.NotifyObservers called
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:23:30 The count of masters can not be more than 1 and less 1
+2016-07-23 14:31:24 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 14:31:24 MasterService.NotifyObservers called
+2016-07-23 14:31:24 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 14:31:24 MasterService.NotifyObservers called
+2016-07-23 14:31:24 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 14:31:24 The user already exists
+2016-07-23 14:31:25 The count of masters can not be more than 1 and less 1
+2016-07-23 14:31:25 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:27 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 14:45:28 MasterService.NotifyObservers called
+2016-07-23 14:45:28 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 14:45:28 MasterService.NotifyObservers called
+2016-07-23 14:45:28 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 14:45:28 The user already exists
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 14:45:28 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:53 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 15:18:53 MasterService.NotifyObservers called
+2016-07-23 15:18:53 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 15:18:53 MasterService.NotifyObservers called
+2016-07-23 15:18:53 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 15:18:53 The user already exists
+2016-07-23 15:18:53 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:53 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:54 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:54 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:54 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:54 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:54 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:54 The count of masters can not be more than 1 and less 1
+2016-07-23 15:18:54 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:55 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 16:39:56 MasterService.NotifyObservers called
+2016-07-23 16:39:56 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 16:39:56 MasterService.NotifyObservers called
+2016-07-23 16:39:56 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 16:39:56 The user already exists
+2016-07-23 16:39:56 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:56 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:56 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:56 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:56 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:56 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:56 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:56 The count of masters can not be more than 1 and less 1
+2016-07-23 16:39:57 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:17 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 17:09:17 MasterService.NotifyObservers called
+2016-07-23 17:09:17 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 17:09:17 MasterService.NotifyObservers called
+2016-07-23 17:09:17 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 17:09:17 The user already exists
+2016-07-23 17:09:17 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:17 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:17 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:18 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:18 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:18 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:18 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:18 The count of masters can not be more than 1 and less 1
+2016-07-23 17:09:18 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:36 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 17:52:36 MasterService.NotifyObservers called
+2016-07-23 17:52:36 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 17:52:36 MasterService.NotifyObservers called
+2016-07-23 17:52:36 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 17:52:36 The user already exists
+2016-07-23 17:52:36 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:36 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:36 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:36 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:36 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:36 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:37 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:37 The count of masters can not be more than 1 and less 1
+2016-07-23 17:52:37 The count of masters can not be more than 1 and less 1
+2016-07-23 18:35:42 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-23 18:35:42 MasterService.NotifyObservers called
+2016-07-23 18:35:42 The count of masters can not be more than 1 and less 1
+2016-07-23 18:35:42 The count of masters can not be more than 1 and less 1
+2016-07-23 18:35:42 The count of masters can not be more than 1 and less 1
+2016-07-23 18:35:42 The count of masters can not be more than 1 and less 1
+2016-07-23 18:35:42 The count of masters can not be more than 1 and less 1
+2016-07-23 18:35:42 The count of masters can not be more than 1 and less 1
+2016-07-23 18:35:42 The count of masters can not be more than 1 and less 1
+2016-07-23 18:35:42 The count of masters can not be more than 1 and less 1
+2016-07-23 20:25:02 UserRepository.Add called. Create the user: 0 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 20:25:02 MasterService.NotifyObservers called
+2016-07-23 20:25:02 UserRepository.Add called. Create the user: 0 Mirnyi Max 20.07.1970 18:30:25 Male
+2016-07-23 20:25:02 MasterService.NotifyObservers called
+2016-07-23 20:25:02 UserRepository.Add called. Create the user: 2 Bogdanovich Max 20.07.1960 18:30:25 Male
+2016-07-23 20:25:02 The user already exists
+2016-07-23 20:25:03 The count of masters can not be more than 1 and less 1

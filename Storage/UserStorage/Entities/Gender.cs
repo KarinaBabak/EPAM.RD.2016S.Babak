@@ -8,8 +8,7 @@ namespace UserStorage
 {
     [Serializable]
     public enum Gender
-    {
-        None,
+    {       
         Female,
         Male
     }

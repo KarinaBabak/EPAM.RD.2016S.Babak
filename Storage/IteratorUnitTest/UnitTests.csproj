@@ -61,10 +61,6 @@
       <Project>{02e8a2ef-7836-4b82-8665-6e48ccbb9f8a}</Project>
       <Name>Iterator</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UserService\UserService.csproj">
-      <Project>{af1b3b94-ddef-4b83-aca3-c493010a59d8}</Project>
-      <Name>UserService</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UserStorage\UserStorage.csproj">
       <Project>{947bad73-c839-4ca2-94c0-b9f4b77fec0d}</Project>
       <Name>UserStorage</Name>

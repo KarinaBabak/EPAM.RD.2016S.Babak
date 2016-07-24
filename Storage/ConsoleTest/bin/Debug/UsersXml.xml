@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <Id>2</Id>
+    <FirstName>Bogdanovich</FirstName>
+    <LastName>Max</LastName>
+    <DateOfBirth>1960-07-20T18:30:25</DateOfBirth>
+    <UserGender>Male</UserGender>
+  </User>
+</ArrayOfUser>

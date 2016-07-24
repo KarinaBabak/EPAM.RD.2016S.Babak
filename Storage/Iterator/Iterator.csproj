@@ -40,8 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomIterator.cs" />
-    <Compile Include="ICustomerIterator.cs" />
-    <Compile Include="PrimesWorker.cs" />
+    <Compile Include="ICustomIterator.cs" />
+    <Compile Include="PrimesWorkerExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

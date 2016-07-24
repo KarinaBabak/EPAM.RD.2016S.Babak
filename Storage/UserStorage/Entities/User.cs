@@ -10,7 +10,6 @@ namespace UserStorage
     [Serializable]
     public class User
     {
-        private ICustomerIterator iterator;  
         #region Properties
 
         public int Id { get; set; }

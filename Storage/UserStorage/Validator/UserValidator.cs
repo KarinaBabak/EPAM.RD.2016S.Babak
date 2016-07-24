@@ -11,7 +11,7 @@ namespace UserStorage.Validator
         public bool Validate(User newUser)
         {
             if (newUser == null)
-                throw new ArgumentNullException("Information about new user is not exist");           
+                throw new ArgumentNullException("New user is not exist");           
 
             if (newUser.DateOfBirth.Year < 1900 && newUser.DateOfBirth.Year != 1)
             {

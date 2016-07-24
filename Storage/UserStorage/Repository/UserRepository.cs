@@ -11,7 +11,8 @@ using UserStorage.Validator;
 using NLog;
 using System.Diagnostics;
 
-
+using UserService.Interfaces;
+using UserService;
 
 namespace UserStorage.Repository
 {
@@ -21,15 +22,27 @@ namespace UserStorage.Repository
         private static readonly BooleanSwitch boolSwitch = new BooleanSwitch("Switch", string.Empty);
         
         private List<User> Users { get; set; }
-        private ICustomerIterator iterator;        
-        private UserValidator validator;        
+        public IService Service{get; private set;}
+        private ICustomIterator iterator;        
+        private UserValidator validator;
+        
+
+        public UserRepository(ICustomIterator generator = null, UserValidator validator = null)
+        {
+            Service = new MasterService(this);
+            Users = new List<User>();
+            this.iterator =  generator ?? new CustomIterator();
+            this.validator = validator ?? new UserValidator();            
+        }
 
         public UserRepository()
         {
             Users = new List<User>();
             iterator = new CustomIterator();
-            validator = new UserValidator();            
+            validator = new UserValidator();
+            Service = new MasterService(this);
         }
+
 
         /// <summary>
         /// Removing user
@@ -42,7 +55,10 @@ namespace UserStorage.Repository
 
             User userForRemoving = Users.FirstOrDefault(u => u.Id == user.Id);
             if (userForRemoving != null)
+            {                
                 Users.Remove(userForRemoving);
+                Service.Delete(user);
+            }
             else
                 throw new ArgumentException("The user is not exist");
         }
@@ -68,8 +84,9 @@ namespace UserStorage.Repository
                 throw new InvalidOperationException("User already exists");
             }
 
-            user.Id = iterator.GetNext();
+            user.Id = iterator.GetNext();            
             Users.Add(user);
+            Service.Add(user);
             return user.Id;
         }
 
@@ -119,12 +136,9 @@ namespace UserStorage.Repository
             logger.Trace("UserRepository.WriteToXML called");
             try
             {
-                XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
+                XMLWorker xmlWorker = new XMLWorker();
                 string path = ConfigurationManager.AppSettings["xmlPath"];
-                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
-                {
-                    formatter.Serialize(fs, Users);
-                }
+                xmlWorker.WriteToXML(Users, path);
             }
             catch(InvalidOperationException ex)
             {
@@ -146,15 +160,10 @@ namespace UserStorage.Repository
         {
             logger.Trace("UserRepository.ReadFromXML called");
             try
-            {
-                XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
+            {                
                 string path = ConfigurationManager.AppSettings["xmlPath"];
-
-                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
-                {
-                    List<User> newUsers = (List<User>)formatter.Deserialize(fs);
-                    Users = newUsers;
-                }
+                XMLWorker xmlWorker = new XMLWorker();
+                Users = xmlWorker.ReadFromXML(path);                               
             }
             catch (InvalidOperationException ex)
             {
