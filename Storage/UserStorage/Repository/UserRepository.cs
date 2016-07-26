@@ -15,7 +15,7 @@ using UserStorage.Interfaces;
 
 namespace UserStorage.Interfaces
 {
-    
+    [Serializable]
     public class UserRepository : IUserRepository
     {
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();

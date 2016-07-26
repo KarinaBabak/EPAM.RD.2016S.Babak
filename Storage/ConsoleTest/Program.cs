@@ -20,14 +20,14 @@ namespace ConsoleTest
             ServiceInitializer.InitializeServices(rep);
             var user = new User("Bogdanovich", "Maxim", new DateTime(1960, 7, 20, 18, 30, 25),
                 Gender.Male);
-            var list = ServiceInitializer.SlavesList;
+            //var list = ServiceInitializer.SlavesList;
             MasterService master = (MasterService)ServiceInitializer.Master;
-            var list2 = ServiceInitializer.SlavesList;
+            //var list2 = ServiceInitializer.SlavesList;
             //List<SlaveService> slaves = (List<SlaveService>)
             
             master.Add(user);
             //ServiceInitializer.Master.Add(user);
-            //ServiceInitializer.Master.Repository.WriteToXML();
+            master.Repository.WriteToXML();
 
            
             

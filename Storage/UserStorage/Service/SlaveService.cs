@@ -17,7 +17,8 @@ namespace UserStorage.Interfaces
     public class SlaveService : UserService, IObserver
     {        
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
-                            
+        //private ReaderWriterLockSlim slimLock = new ReaderWriterLockSlim();    
+                
         public SlaveService()
         {                
         }

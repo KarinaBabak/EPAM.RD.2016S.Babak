@@ -11,7 +11,7 @@ using System.IO;
 namespace UserStorage
 {
     [Serializable]
-    public class XMLWorker : ISerializable
+    public class XMLWorker : MarshalByRefObject, ISerializable
     {
         private readonly XmlSerializer _serializer;
 
@@ -30,6 +30,7 @@ namespace UserStorage
         {
             if (users == null) throw new ArgumentException("There are no users for writing in xml file");
             if(String.IsNullOrEmpty(path)) throw new ArgumentException("The path of file is not created");
+
             SerializableList list = new SerializableList(users);
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
             {

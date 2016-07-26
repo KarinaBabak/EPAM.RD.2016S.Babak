@@ -15,10 +15,12 @@ using UserStorage.Interfaces.Observer;
 namespace UserStorage.Interfaces
 {
     public class MasterService : UserService, IObservable
-    {
-        private static int CountMaster { get; set; }
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();      
-        
+    {        
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+
+        public event EventHandler<DataUpdatedEventArgs> OnDeleted;
+        public event EventHandler<DataUpdatedEventArgs> OnAdded;
+
         private List<IObserver> observers;
 
         public MasterService()
