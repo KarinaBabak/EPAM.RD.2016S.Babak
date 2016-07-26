@@ -11,25 +11,25 @@ using UserStorage.Validator;
 using NLog;
 using System.Diagnostics;
 
-using UserService.Interfaces;
-using UserService;
+using UserStorage.Interfaces;
 
-namespace UserStorage.Repository
+namespace UserStorage.Interfaces
 {
+    
     public class UserRepository : IUserRepository
     {
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         private static readonly BooleanSwitch boolSwitch = new BooleanSwitch("Switch", string.Empty);
         
         private List<User> Users { get; set; }
-        public IService Service{get; private set;}
+        //public IService Service{get; private set;}
         private ICustomIterator iterator;        
         private UserValidator validator;
         
 
         public UserRepository(ICustomIterator generator = null, UserValidator validator = null)
         {
-            Service = new MasterService(this);
+            //Service = new MasterService(this);
             Users = new List<User>();
             this.iterator =  generator ?? new CustomIterator();
             this.validator = validator ?? new UserValidator();            
@@ -40,7 +40,7 @@ namespace UserStorage.Repository
             Users = new List<User>();
             iterator = new CustomIterator();
             validator = new UserValidator();
-            Service = new MasterService(this);
+            //Service = new MasterService(this);
         }
 
 
@@ -57,7 +57,7 @@ namespace UserStorage.Repository
             if (userForRemoving != null)
             {                
                 Users.Remove(userForRemoving);
-                Service.Delete(user);
+                //Service.Delete(user);
             }
             else
                 throw new ArgumentException("The user is not exist");
@@ -86,7 +86,7 @@ namespace UserStorage.Repository
 
             user.Id = iterator.GetNext();            
             Users.Add(user);
-            Service.Add(user);
+            //Service.Add(user);
             return user.Id;
         }
 

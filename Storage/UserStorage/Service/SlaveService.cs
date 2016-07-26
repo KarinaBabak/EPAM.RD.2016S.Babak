@@ -7,44 +7,36 @@ using NLog;
 using System.Configuration;
 
 using UserStorage;
-using UserStorage.Repository;
-using UserService.Interfaces;
-using UserService.Observer;
+using UserStorage.Interfaces;
+using UserStorage.Interfaces.Observer;
 using ConfigurationService;
-using UserStorage.Service;
 
-namespace UserService
+
+namespace UserStorage.Interfaces
 {
-    public class SlaveService : IService, IObserver
+    public class SlaveService : UserService, IObserver
     {        
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
-        private IUserRepository repository;        
-        
-        public SlaveService(IUserRepository rep)
-        {            
-            repository = rep;
+                            
+        public SlaveService()
+        {                
         }
 
-        public void Add(User user)
+        public new void Add(User user)
         {
             logger.Error("Slaves can not add new user");
             throw new InvalidOperationException();
         }
 
-        public void Delete(User user)
+        public new void Delete(User user)
         {
             logger.Error("Slaves can not delete user");
             throw new InvalidOperationException();
-        }
+        }        
 
-        public IEnumerable<int> SearchForUser(Predicate<User> criteria)
+        public void Update(MessageService message)
         {
-            return repository.SearchForUser(criteria);
-        }
-
-        public void Update(IUserRepository repository, MessageService message)
-        {
-            this.repository = repository;
+            Repository.Add(message.UserData);
         }        
     }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UserStorage.Service;
+using UserStorage.Interfaces;
 
-namespace UserService.Observer
+namespace UserStorage.Interfaces.Observer
 {
     public interface IObservable
     {

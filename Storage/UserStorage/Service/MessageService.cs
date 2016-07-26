@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UserStorage.Service
+namespace UserStorage.Interfaces
 {
     [Serializable]
     public class MessageService
     {
         public User UserData { get; set; }
-        public Operation Operation { get; set; }
+        public MethodType Operation { get; set; }
     }
 
     [Serializable]
-    public enum Operation
+    public enum MethodType
     {
         Add,
         Delete

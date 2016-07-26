@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Iterator;
 using UserStorage;
-using UserStorage.Repository;
+using UserStorage.Interfaces;
 
 namespace IteratorUnitTest
 {

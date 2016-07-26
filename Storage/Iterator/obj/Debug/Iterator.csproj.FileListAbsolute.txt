@@ -23,4 +23,3 @@ D:\Epam\!Lab\Project\Storage\Iterator\bin\Debug\Iterator.dll
 D:\Epam\!Lab\Project\Storage\Iterator\bin\Debug\Iterator.pdb
 D:\Epam\!Lab\Project\Storage\Iterator\obj\Debug\Iterator.dll
 D:\Epam\!Lab\Project\Storage\Iterator\obj\Debug\Iterator.pdb
-D:\Epam\!Lab\Project\Storage\Iterator\obj\Debug\Iterator.csprojResolveAssemblyReference.cache

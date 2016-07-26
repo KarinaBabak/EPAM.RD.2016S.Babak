@@ -1,0 +1,64 @@
+2016-07-26 09:39:01 Domain for Master is created
+2016-07-26 09:39:13 Domain for Slave1 is created
+2016-07-26 09:39:28 Domain for Slave2 is created
+2016-07-26 09:43:20 Domain for Master is created
+2016-07-26 09:43:21 Domain for Slave1 is created
+2016-07-26 09:43:22 Domain for Slave2 is created
+2016-07-26 09:48:08 Domain for Master is created
+2016-07-26 09:48:10 Domain for Slave1 is created
+2016-07-26 09:48:10 Domain for Slave2 is created
+2016-07-26 10:14:49 Domain for Master is created
+2016-07-26 10:15:22 Domain for Master is created
+2016-07-26 10:18:08 Domain for Master is created
+2016-07-26 10:18:32 Domain for Master is created
+2016-07-26 10:19:49 Domain for Master is created
+2016-07-26 10:20:43 Domain for Master is created
+2016-07-26 10:20:46 Domain for Slave1 is created
+2016-07-26 10:20:50 Domain for Slave2 is created
+2016-07-26 10:22:14 Domain for Master is created
+2016-07-26 10:22:15 Domain for Slave1 is created
+2016-07-26 10:22:16 Domain for Slave2 is created
+2016-07-26 10:22:36 Domain for Master is created
+2016-07-26 10:22:43 Domain for Slave1 is created
+2016-07-26 10:22:44 Domain for Slave2 is created
+2016-07-26 10:23:55 Domain for Master is created
+2016-07-26 10:23:59 Domain for Slave1 is created
+2016-07-26 10:24:00 Domain for Slave2 is created
+2016-07-26 10:30:24 Domain for Master is created
+2016-07-26 10:30:32 Domain for Slave1 is created
+2016-07-26 10:30:34 Domain for Slave2 is created
+2016-07-26 10:32:45 Domain for Master is created
+2016-07-26 10:32:46 Domain for Slave1 is created
+2016-07-26 10:32:47 Domain for Slave2 is created
+2016-07-26 10:32:58 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-26 10:33:02 MasterService.NotifyObservers called
+2016-07-26 10:33:57 Domain for Master is created
+2016-07-26 10:33:59 Domain for Slave1 is created
+2016-07-26 10:34:00 Domain for Slave2 is created
+2016-07-26 10:34:12 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-26 10:34:45 MasterService.NotifyObservers called
+2016-07-26 10:35:20 Domain for Master is created
+2016-07-26 10:35:21 Domain for Slave1 is created
+2016-07-26 10:35:22 Domain for Slave2 is created
+2016-07-26 10:35:28 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-26 10:35:40 MasterService.NotifyObservers called
+2016-07-26 10:40:41 Domain for Master is created
+2016-07-26 10:40:51 Domain for Slave1 is created
+2016-07-26 10:40:56 Domain for Slave2 is created
+2016-07-26 10:41:36 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-26 10:41:39 MasterService.NotifyObservers called
+2016-07-26 10:50:58 Domain for Master is created
+2016-07-26 10:50:59 Domain for Slave1 is created
+2016-07-26 10:51:00 Domain for Slave2 is created
+2016-07-26 10:51:40 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-26 10:51:44 MasterService.NotifyObservers called
+2016-07-26 11:11:58 Domain for Master is created
+2016-07-26 11:11:59 Domain for Slave1 is created
+2016-07-26 11:12:00 Domain for Slave2 is created
+2016-07-26 11:12:05 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-26 11:12:10 MasterService.NotifyObservers called
+2016-07-26 11:14:58 Domain for Master is created
+2016-07-26 11:14:59 Domain for Slave1 is created
+2016-07-26 11:15:00 Domain for Slave2 is created
+2016-07-26 11:15:05 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-26 11:15:08 MasterService.NotifyObservers called

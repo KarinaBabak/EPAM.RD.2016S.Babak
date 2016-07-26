@@ -15,7 +15,7 @@ namespace ConfigurationService
         /// <summary>
         /// Get/Set type of service
         /// </summary>
-        [ConfigurationProperty("serviceType", DefaultValue = "", IsKey = true, IsRequired = true)]
+        [ConfigurationProperty("serviceType", DefaultValue = "", IsKey = false, IsRequired = true)]
         public string ServiceType
         {
             get { return ((string)(base["serviceType"])); }
@@ -25,7 +25,7 @@ namespace ConfigurationService
         /// <summary>
         /// Count of services
         /// </summary>
-        [ConfigurationProperty("login", DefaultValue = "", IsKey = false, IsRequired = false)]
+        [ConfigurationProperty("login", DefaultValue = "", IsKey = true, IsRequired = false)]
         public string Login
         {
             get { return ((string)(base["login"])); }

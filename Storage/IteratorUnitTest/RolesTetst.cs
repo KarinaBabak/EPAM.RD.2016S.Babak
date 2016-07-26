@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 
 using UserStorage;
-using UserStorage.Repository;
-using UserService;
+using UserStorage.Interfaces;
+
 
 namespace IteratorUnitTest
 {

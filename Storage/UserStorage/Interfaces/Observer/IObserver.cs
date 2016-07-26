@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UserStorage.Repository;
-using UserStorage.Service;
+using UserStorage.Interfaces;
 
-namespace UserService.Observer
+namespace UserStorage.Interfaces.Observer
 {
     public interface IObserver
     {
-        void Update(IUserRepository repository, MessageService massage);
+        void Update(MessageService massage);
     }
 }

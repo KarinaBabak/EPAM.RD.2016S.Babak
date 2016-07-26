@@ -40,14 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NetworkConfig\NetworkCollection.cs" />
+    <Compile Include="NetworkConfig\NetworkConfigSection.cs" />
+    <Compile Include="NetworkConfig\NetworkElement.cs" />
     <Compile Include="ServiceConfig\ServiceConfigSection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceConfig\ServiceElement.cs" />
     <Compile Include="ServiceConfig\ServicesCollection.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NetworkConfig\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

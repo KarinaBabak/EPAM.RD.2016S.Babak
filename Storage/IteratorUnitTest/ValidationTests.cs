@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using UserStorage;
-using UserStorage.Repository;
+using UserStorage.Interfaces;
 using UserStorage.Validator;
 
 namespace IteratorUnitTest

@@ -7,58 +7,38 @@ using NLog;
 using System.Configuration;
 
 using UserStorage;
-using UserStorage.Repository;
-using UserService.Interfaces;
-using UserService.Observer;
+using UserStorage.Interfaces;
 using System.Diagnostics;
 using ConfigurationService;
-using UserStorage.Service;
+using UserStorage.Interfaces.Observer;
 
-namespace UserService
+namespace UserStorage.Interfaces
 {
-    public class MasterService : IService, IObservable
+    public class MasterService : UserService, IObservable
     {
         private static int CountMaster { get; set; }
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();        
-        private IUserRepository repository;
+        private static readonly Logger logger = LogManager.GetCurrentClassLogger();      
+        
         private List<IObserver> observers;
 
-        public MasterService(UserRepository rep)
+        public MasterService()
         {
-            CheckAmountOfMasters();
-            AppDomain newAppDomain = AppDomain.CreateDomain("Master");
-            repository = rep;
+            //CheckAmountOfMasters();                   
             observers = new List<IObserver>();
-            InitializeSlaves();
+            
         }
-        public void Add(User user)
+        public new void Add(User user)
         {
-            NotifyObservers(new MessageService() { UserData = user, Operation = Operation.Add });            
+            Repository.Add(user);
+            NotifyObservers(new MessageService() { UserData = user, Operation = MethodType.Add });            
         }
 
-        public void Delete(User user)
+        public new void Delete(User user)
         {
-            NotifyObservers(new MessageService() { UserData = user, Operation = Operation.Delete});
+            Repository.Delete(user);
+            NotifyObservers(new MessageService() { UserData = user, Operation = MethodType.Delete});
         }
-
-        #region
-        //public int Add(User user)
-        //{
-        //    int userId = repository.Add(user);
-        //    NotifyObservers();
-        //    return userId;
-        //}
-
-        //public void Delete(User user)
-        //{
-        //    repository.Delete(user);
-        //    NotifyObservers();
-        //}
-        #endregion
-        public IEnumerable<int> SearchForUser(Predicate<User> criteria)
-        {
-            return repository.SearchForUser(criteria);
-        }
+              
 
         #region Observer pattern
         public void RegisterObserver(IObserver o)
@@ -76,9 +56,14 @@ namespace UserService
         public void NotifyObservers(MessageService message)
         {
             logger.Trace("MasterService.NotifyObservers called");
+            var l = ServiceInitializer.SlavesList;
+            //foreach (var obs in ServiceInitializer.SlavesList)
+            //{
+            //    observers.Add((IObserver)obs);
+            //}
             foreach (IObserver o in observers)
             {
-                o.Update(repository, message);
+                o.Update(message);
             }
         }
         #endregion
@@ -93,7 +78,7 @@ namespace UserService
                 if (section.ServiceItems[i].ServiceType.Contains("Master"))
                     value++;
             }
-            //AppDomain domain = AppDomain.CreateDomain(section.ServiceItems[0].Login.ToString());
+           
             if (CountMaster >= value || CountMaster < 0)
             {
                 logger.Error("The count of masters can not be more than {0} and less 1", value.ToString());
@@ -114,7 +99,7 @@ namespace UserService
                 {
                     AppDomain newAppDomain = AppDomain.CreateDomain(section.ServiceItems[i].Login);
                     logger.Info("Domain for {0} is created", section.ServiceItems[i].ServiceType);
-                    SlaveService slave = new SlaveService(repository);
+                    SlaveService slave = new SlaveService();
                     observers.Add(slave);
                     this.RegisterObserver((IObserver)slave);
                 }

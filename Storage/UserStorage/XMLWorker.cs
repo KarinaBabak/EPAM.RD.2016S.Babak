@@ -30,9 +30,10 @@ namespace UserStorage
         {
             if (users == null) throw new ArgumentException("There are no users for writing in xml file");
             if(String.IsNullOrEmpty(path)) throw new ArgumentException("The path of file is not created");
+            SerializableList list = new SerializableList(users);
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
             {
-                _serializer.Serialize(fs, users);
+                _serializer.Serialize(fs, list);
             }
         }
 
@@ -58,6 +59,17 @@ namespace UserStorage
         {
             if (info == null)
                 throw new ArgumentNullException("info");
+        }
+    }
+
+
+    [Serializable]
+    public class SerializableList
+    {
+        public List<User> Users { get; set; }
+        public SerializableList(List<User> list)
+        {
+            Users = list;
         }
     }
 }
