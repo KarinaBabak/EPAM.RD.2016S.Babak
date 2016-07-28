@@ -1,0 +1,131 @@
+body {
+	font-family: "Myriad Pro", Myriad, Tahoma, sans-serif;
+}
+
+.main{
+	width: 900px;
+	margin:62px auto;	
+}
+
+.left_panel{
+	width: 400px;
+	float: left;
+}
+
+.photo_box{
+	float:left;
+	text-align:center;
+	width:100%;
+	line-height: 5px;
+	margin-bottom:17px;
+}
+
+.name
+{		
+	margin-bottom: 5px;
+}
+
+.photo_box h1{ 
+	padding: 14px 0 1px 0;
+	font-size: 42px;	
+	font-weight: normal;
+	font-variant:small-caps;
+}
+
+.photo_box h2{     
+	font-size: 44px;	
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+
+.photo_box h3{
+	font-size: 18px;	
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+
+.photo_box img{    
+    margin:9px 0 0 0;	
+}
+
+.section{
+	margin: 28px 0 0 0;
+    padding: 0 25px;
+    float: left;
+	font-size: 12px;	
+	width: 100%;
+}
+.section .section-header{
+	white-space:nowrap;
+	overflow:hidden;
+	margin:3px 0;
+}
+
+.section .section-header .name-section h2{
+	display: inline-block;
+	font-size: 30px;
+	color: #0270ba;
+	text-transform: uppercase;	
+	margin: 0 0 0 11px;
+	
+}
+
+.section .icon-of-section, .section .name-section, .section .line{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.section .line{
+	background-color: #0270ba;
+	height: 4px;
+	width: 100%;
+	margin: 2px 0 0 6px;
+}
+
+.icon-of-section{	
+	margin:0;	
+}
+
+.section .section-header .contant-row{
+	margin-top:	22px;
+	font-size:15px;
+}
+
+.section .section-header b{
+	color: #0270ba;
+	text-transform: uppercase;	
+}
+.section .section-header .contact-information{
+	float:right;
+	width:73%;	
+}
+.skill{
+	width:264px;
+	margin:10px auto;
+	text-align:center;
+	font-size:18px;
+	text-transform:uppercase;	
+	clear: both;
+}
+.skill .skill-progress .circle, .skill .skill-progress .circle-color{
+	width:14px;
+	height:14px;
+	border-radius:14px;
+	float:left;	
+	margin:7px 4px 16px 4px;	
+}
+
+.skill .circle-color{
+	background-color:#0270ba;	
+}
+
+.skill .circle{
+	background-color:#e6e6e6;	
+}
+
+#boldText{
+	font-weight: bold;
+}
+
+
+

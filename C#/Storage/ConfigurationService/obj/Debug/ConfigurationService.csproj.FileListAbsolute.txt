@@ -1,5 +1,0 @@
-D:\Epam\!Lab\Project\Storage\ConfigurationService\bin\Debug\ConfigurationService.dll
-D:\Epam\!Lab\Project\Storage\ConfigurationService\bin\Debug\ConfigurationService.pdb
-D:\Epam\!Lab\Project\Storage\ConfigurationService\obj\Debug\ConfigurationService.dll
-D:\Epam\!Lab\Project\Storage\ConfigurationService\obj\Debug\ConfigurationService.pdb
-D:\Epam\!Lab\Project\Storage\ConfigurationService\obj\Debug\ConfigurationService.csprojResolveAssemblyReference.cache
