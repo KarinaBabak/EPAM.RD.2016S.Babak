@@ -14,7 +14,7 @@ namespace UserStorage.NetworkWorker
     [Serializable]
     public class Receiver : IDisposable
     {
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private Socket listener;
         private Socket reciever;
         public IPEndPoint IpPoint { get; private set; }
@@ -31,9 +31,9 @@ namespace UserStorage.NetworkWorker
         {
             return Task.Run(() =>
             {
-                logger.Info("Wait Connection");                
+                Logger.Info("Wait Connection");                
                 reciever = listener.Accept();
-                logger.Info("Connection accepted");
+                Logger.Info("Connection accepted");
             });
         }
 
@@ -41,16 +41,12 @@ namespace UserStorage.NetworkWorker
         {
             BinaryFormatter formatter = new BinaryFormatter();
             Message message;
-
-            //if(reciever == null)
-            //{
-            //    return null;
-            //}
-
+           
             using (var networkStream = new NetworkStream(reciever, false))
             {
                 message = (Message)formatter.Deserialize(networkStream);
             }
+
             Console.WriteLine("Message received!");
             return message;
         }

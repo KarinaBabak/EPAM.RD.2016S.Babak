@@ -4,12 +4,14 @@ using System.Configuration;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
-using UserStorage;
-using UserStorage.Interfaces;
+
 using ConfigurationService;
 using DomainWorker;
-using System.Threading;
+using Iterator;
+using UserStorage;
+using UserStorage.Interfaces;
 
 namespace ConsoleTest
 {
@@ -19,28 +21,35 @@ namespace ConsoleTest
         {
             UserStorage.Interfaces.UserRepository rep = new UserStorage.Interfaces.UserRepository();
             ServiceInitializer.InitializeServices(rep);
-           
-            //for (int i = 0; i < 100; i++)
-            //{
-            //    var user = new User("Bogdanovich" + i, "Maxim" + i, new DateTime(1960, 7, 20, 18, 30, 25),
-            //    Gender.Male);
-            //    MasterService master = (MasterService)ServiceInitializer.Master;
-            //    master.Communicator = ServiceInitializer.MasterCommunicator;
-            //    master.Add(user);
+            var slaves = ServiceInitializer.SlavesList.Where(s => s is SlaveService).Select(s => (SlaveService)s);
+            var master = (MasterService)ServiceInitializer.Master;
+            for (int i = 0; i < 13; i++)
+            {
+                var user = new User("Bogdanovich" + i.ToString(), "Maxim" + i.ToString(), new DateTime(1960, 7, 20, 18, 30, 25), Gender.Male);
+                master.Communicator = ServiceInitializer.MasterCommunicator;
+                master.Add(user);
 
-            //    Console.WriteLine(master.Repository.Users.Count);
-            //    foreach (var item in ServiceInitializer.SlavesList)
-            //    {
-            //        Console.WriteLine(item.Repository.Users.Count);
-            //    }
-            //    Thread.Sleep(300);               
-            //}
-            //RunSlaves((IEnumerable<SlaveService>)ServiceInitializer.SlavesList);
-            RunMaster((MasterService)ServiceInitializer.Master);
-             Console.ReadKey();
+                Console.WriteLine(master.Repository.Users.Count);                
+                foreach (var item in ServiceInitializer.SlavesList)
+                {
+                    Console.WriteLine(item.Repository.Users.Count);
+                }
+                Thread.Sleep(300);
+            }
 
-
+            RunSlaves(slaves);
+            RunMaster(master);
+            Console.ReadKey();
+            while (true)
+            {
+                var quit = Console.ReadKey();
+                if (quit.Key == ConsoleKey.Escape)
+                {
+                    break;
+                }
+            }
         }
+
         private static void RunMaster(MasterService master)
         {
             Random rand = new Random();
@@ -52,7 +61,9 @@ namespace ConsoleTest
                     var serachresult = master.Repository.SearchForUser(u => u.FirstName != null);
                     Console.Write("Master search results: ");
                     foreach (var result in serachresult)
+                    {
                         Console.Write(result + " ");
+                    }
                     Console.WriteLine();
                     Thread.Sleep(rand.Next(1000, 5000));
                 }
@@ -61,9 +72,9 @@ namespace ConsoleTest
             ThreadStart masterAddDelete = () =>
             {
                 var users = new List<User>();
-                users.Add(new User { FirstName = "Kate", LastName = "Kotova"});
-                users.Add(new User { FirstName = "Oxana", LastName = "Sweet"});
-                
+                users.Add(new User { FirstName = "Kate", LastName = "Kotova" });
+                users.Add(new User { FirstName = "Oxana", LastName = "Sweet" });
+
                 User userToDelete = null;
 
                 while (true)
@@ -72,17 +83,22 @@ namespace ConsoleTest
                     {
                         int addChance = rand.Next(0, 3);
                         if (addChance == 0)
+                        {
                             master.Add(user);
+                        }
 
                         Thread.Sleep(rand.Next(1000, 4000));
                         if (userToDelete != null)
                         {
                             int deleteChance = rand.Next(0, 3);
                             if (deleteChance == 0)
+                            {
                                 userToDelete = user;
+                            }
+
                             master.Delete(user);
                         }
-                       
+
                         Thread.Sleep(rand.Next(1000, 5000));
                         Console.WriteLine();
                     }
@@ -108,18 +124,18 @@ namespace ConsoleTest
                         var userIds = slave.SearchForUser(u => !string.IsNullOrEmpty(u.FirstName));
                         Console.WriteLine("Slave search results: ");
                         foreach (var user in userIds)
+                        {
                             Console.Write(user + " ");
+                        }
+
                         Console.WriteLine();
                         Thread.Sleep((int)(rand.NextDouble() * 3000));
                     }
-
                 });
+
                 slaveThread.IsBackground = true;
                 slaveThread.Start();
             }
         }
-            
-
-        }
-    
+    }
 }

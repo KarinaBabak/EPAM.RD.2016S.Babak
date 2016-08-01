@@ -23,7 +23,9 @@ namespace Iterator
         public int GetNext()
         {
             if (this.MoveNext())
+            {
                 return this.Current;
+            }
             return -2;
         }
 
@@ -34,14 +36,15 @@ namespace Iterator
 
         public bool MoveNext()
         {
-            for (int number = this.Current; number <= int.MaxValue; number++)
+            for (int number = this.Current + 1; number <= int.MaxValue; number++)
             {
                 if (number.IsPrime())
                 {
-                    this.Current++;
+                    this.Current = number;
                     return true;
                 }
             }
+
             return false;
         }
 
@@ -54,8 +57,6 @@ namespace Iterator
                     yield return i;
                 }
             }
-        }
-
-        
+        }        
     }
 }

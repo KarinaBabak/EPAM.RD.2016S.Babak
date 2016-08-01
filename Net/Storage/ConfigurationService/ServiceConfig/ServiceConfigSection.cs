@@ -18,7 +18,7 @@ namespace ConfigurationService
         [ConfigurationProperty("Services")]
         public ServicesCollection ServiceItems
         {
-            get { return ((ServicesCollection)(base["Services"])); }
+            get { return (ServicesCollection)base["Services"]; }
         }
     }
 }

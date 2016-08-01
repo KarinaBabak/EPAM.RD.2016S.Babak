@@ -15,14 +15,13 @@ namespace UserStorage.Interfaces
 {
     public class MasterService : UserService
     {
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
-        private static readonly BooleanSwitch boolSwitch = new BooleanSwitch("Switch", string.Empty);
+        private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);
               
         
         public MasterService() 
-        {  
-          
+        {           
         }
 
         public new void Add(User user)
@@ -30,9 +29,9 @@ namespace UserStorage.Interfaces
             ServiceLock.EnterWriteLock();
             try
             {
-                if (boolSwitch.Enabled)
+                if (BoolSwitch.Enabled)
                 {
-                    logger.Trace("Master is adding a new user");
+                    Logger.Trace("Master is adding a new user");
                 }
 
                 Repository.Add(user);             
@@ -50,9 +49,9 @@ namespace UserStorage.Interfaces
             ServiceLock.EnterWriteLock();
             try
             {
-                if (boolSwitch.Enabled)
+                if (BoolSwitch.Enabled)
                 {
-                    logger.Trace("Master is trying to remove the user");
+                    Logger.Trace("Master is trying to remove the user");
                 }
 
                 Repository.Delete(user);
@@ -62,12 +61,15 @@ namespace UserStorage.Interfaces
                 ServiceLock.ExitWriteLock();
             }
 
-            OnUserDeleted(this, new DataUpdatedEventArgs() {  User = user });           
+            OnUserDeleted(this, new DataUpdatedEventArgs() 
+            {  
+                User = user 
+            });           
         }
 
         protected virtual void OnUserAdded(object sender, DataUpdatedEventArgs arg)
         {
-            if(this.Communicator != null)
+            if (this.Communicator != null)
             {
                 Communicator.SendAdd(arg);                 
             }            
@@ -79,7 +81,6 @@ namespace UserStorage.Interfaces
             {
                 Communicator.SendDelete(arg);
             }
-        }
-             
+        }             
     }
 }

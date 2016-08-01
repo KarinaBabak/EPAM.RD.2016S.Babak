@@ -62,10 +62,11 @@ namespace UserStorage
 
         public bool Equals(User user)
         {
-            if (ReferenceEquals(user, null)) return false;
-            return (this.FirstName == user.FirstName && 
-                this.LastName == user.LastName && 
-                this.DateOfBirth == user.DateOfBirth);
+            if (ReferenceEquals(user, null))
+            {
+                return false;
+            }
+            return this.FirstName == user.FirstName && this.LastName == user.LastName && this.DateOfBirth == user.DateOfBirth;
         }
 
         public override int GetHashCode()
@@ -79,9 +80,11 @@ namespace UserStorage
                     {
                         hashCode /= VisaRecords.Count();
                     }
+
                     return hashCode;
                 }                
             }
+
             return base.GetHashCode();
         }
         

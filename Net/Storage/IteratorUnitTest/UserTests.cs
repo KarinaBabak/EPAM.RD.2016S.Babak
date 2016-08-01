@@ -16,7 +16,6 @@ namespace IteratorUnitTest
         private User user2 = new User("Max", "Mirnyi", new DateTime(1970, 7, 20, 18, 30, 25), Gender.Male);
 
         private UserRepository repository = new UserRepository();
-
         
         #region override Methods
         [TestMethod]
@@ -38,8 +37,7 @@ namespace IteratorUnitTest
         [TestMethod]
         public void GetHashCode_ReturnTrue()
         {
-            User user = new User("Max", "Bogdanovich", new DateTime(1960, 7, 20, 18, 30, 25),
-                Gender.Male);
+            User user = new User("Max", "Bogdanovich", new DateTime(1960, 7, 20, 18, 30, 25), Gender.Male);
             var user1 = user;
             Assert.AreEqual(user.GetHashCode(), user1.GetHashCode());
         }
@@ -75,7 +73,9 @@ namespace IteratorUnitTest
             repository.Delete(user);
             bool resultIsUserExist = true;
             if (repository.SearchForUser(u => u.Id == user.Id).FirstOrDefault().ToString() == id.ToString())
+            {
                 resultIsUserExist = false;
+            }
             Assert.AreEqual(true, resultIsUserExist);
         }
 
@@ -130,7 +130,11 @@ namespace IteratorUnitTest
             repository.Add(user3);
             var res = repository.SearchForUser(u => u.FirstName == "Max");
             bool result = false;
-            if (res.Count() == 2) result = true;
+            if (res.Count() == 2)
+            {
+                result = true;
+            }
+
             Assert.AreEqual(true, result);
         }
         #endregion

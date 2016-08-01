@@ -18,7 +18,7 @@ namespace ConfigurationService
         [ConfigurationProperty("serviceType", DefaultValue = "", IsKey = false, IsRequired = true)]
         public string ServiceType
         {
-            get { return ((string)(base["serviceType"])); }
+            get { return (string)base["serviceType"]; }
             set { base["serviceType"] = value; }
         }
 
@@ -28,7 +28,7 @@ namespace ConfigurationService
         [ConfigurationProperty("login", DefaultValue = "", IsKey = true, IsRequired = false)]
         public string Login
         {
-            get { return (string)(base["login"]); }
+            get { return (string)base["login"]; }
             set { base["login"] = value; }
         }
 
@@ -38,7 +38,7 @@ namespace ConfigurationService
         [ConfigurationProperty("address", DefaultValue = "127.0.0.1", IsKey = true, IsRequired = false)]
         public string Address
         {
-            get { return (string)(base["address"]); }
+            get { return (string)base["address"]; }
             set { base["address"] = value; }
         }
 
@@ -48,7 +48,7 @@ namespace ConfigurationService
         [ConfigurationProperty("port", DefaultValue = "", IsKey = true, IsRequired = true)]
         public string Port
         {
-            get { return (string)(base["port"]); }
+            get { return (string)base["port"]; }
             set { base["port"] = value; }
         }
     }

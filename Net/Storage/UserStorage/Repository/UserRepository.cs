@@ -18,14 +18,15 @@ namespace UserStorage.Interfaces
     [Serializable]
     public class UserRepository : IUserRepository
     {
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
-        private static readonly BooleanSwitch boolSwitch = new BooleanSwitch("Switch", string.Empty);
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+
+        private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);
                       
-        private ICustomIterator iterator;        
+        private ICustomIterator iterator;
+        
         private UserValidator validator;
 
-        public List<User> Users { get; private set; }
-        
+        public List<User> Users { get; private set; }        
 
         public UserRepository(ICustomIterator generator = null, UserValidator validator = null)
         {            
@@ -41,21 +42,18 @@ namespace UserStorage.Interfaces
             validator = new UserValidator();            
         }
 
-
-        /// <summary>
-        /// Removing user
-        /// </summary>
-        /// <param name="user"></param>
+                
         public void Delete(User user)
-        {            
+        {
             if (user == null)
+            {
                 throw new ArgumentNullException();
+            }
 
             User userForRemoving = Users.FirstOrDefault(u => u.Id == user.Id);
             if (userForRemoving != null)
             {                
-                Users.Remove(userForRemoving);
-                //Service.Delete(user);
+                Users.Remove(userForRemoving);                
             }
             else
                 throw new ArgumentException("The user is not exist");
@@ -63,21 +61,21 @@ namespace UserStorage.Interfaces
 
         public int Add(User user)
         {
-            logger.Trace("UserRepository.Add called. Create the user: " + user.ToString());            
+            Logger.Trace("UserRepository.Add called. Create the user: " + user.ToString());            
            
             if (!validator.Validate(user))
             {
-                if (boolSwitch.Enabled)
+                if (BoolSwitch.Enabled)
                 {
-                    logger.Error("The validation of new user is failed");
+                    Logger.Error("The validation of new user is failed");
                 }
                 throw new ArgumentException("The validation is failed");
             }
             if (Users.Contains(user))
             {
-                if (boolSwitch.Enabled)
+                if (BoolSwitch.Enabled)
                 {
-                    logger.Error("The user already exists");
+                    Logger.Error("The user already exists");
                 }
                 throw new InvalidOperationException("User already exists");
             }
@@ -89,13 +87,13 @@ namespace UserStorage.Interfaces
 
         public IEnumerable<User> GetAll()
         {
-            logger.Trace("UserRepository.GetAll called");           
+            Logger.Trace("UserRepository.GetAll called");           
             return Users;
         }
 
         public void Clear()
         {
-            logger.Trace("UserRepository.Clear called");
+            Logger.Trace("UserRepository.Clear called");
             Users.Clear();
         }
 
@@ -109,7 +107,9 @@ namespace UserStorage.Interfaces
         {
             var newUser = Users.Find(predicate);
             if (ReferenceEquals(newUser, null))
+            {
                 return null;
+            }
             return newUser;
         }
 
@@ -123,51 +123,57 @@ namespace UserStorage.Interfaces
                 usersID[i] = usersFromSearch[i].Id;
             }
             return usersID;
-
         }
         #endregion
 
         #region Work with XML
         public void WriteToXML()
         {
-            logger.Trace("UserRepository.WriteToXML called");
+            Logger.Trace("UserRepository.WriteToXML called");
             try
-            {
-                XMLWorker xmlWorker = new XMLWorker();
+            {                
+                XmlSerializer formatter = new XmlSerializer(typeof(List<User>));
                 string path = ConfigurationManager.AppSettings["xmlPath"];
-                xmlWorker.WriteToXML(Users, path);
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                {
+                    formatter.Serialize(fs, Users);
+                }
             }
             catch (InvalidOperationException ex)
             {
-                if (boolSwitch.Enabled)
+                if (BoolSwitch.Enabled)
                 {
-                    logger.Error("Write to Xml " + ex.Message);
+                    Logger.Error("Write to Xml " + ex.Message);
                 }
             }
             catch (ConfigurationErrorsException exception)
             {
-                if (boolSwitch.Enabled)
+                if (BoolSwitch.Enabled)
                 {
-                    logger.Error("Write to Xml " + exception.Message);
+                    Logger.Error("Write to Xml " + exception.Message);
                 }
             }
         }
 
         public void ReadFromXML()
         {
-            logger.Trace("UserRepository.ReadFromXML called");
+            Logger.Trace("UserRepository.ReadFromXML called");
             try
             {                
                 string path = ConfigurationManager.AppSettings["xmlPath"];
-                XMLWorker xmlWorker = new XMLWorker();
-                Users = xmlWorker.ReadFromXML(path);                               
+                XmlSerializer formatter = new XmlSerializer(typeof(List<User>));                
+                List<User> newUsers = new List<User>();
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+                {
+                    newUsers = (List<User>)formatter.Deserialize(fs);
+                    Users = newUsers;
+                }                               
             }
             catch (InvalidOperationException ex)
             {
-                logger.Error("Read to Xml " + ex.Message);
+                Logger.Error("Read to Xml " + ex.Message);
             }
         }
         #endregion
-
     }
 }

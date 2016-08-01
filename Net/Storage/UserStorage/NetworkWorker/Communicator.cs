@@ -9,11 +9,7 @@ using System.Threading;
 namespace UserStorage.NetworkWorker
 {
     public class Communicator : MarshalByRefObject
-    {
-        public event EventHandler<DataUpdatedEventArgs> UserAdded;
-
-        public event EventHandler<DataUpdatedEventArgs> UserDeleted;
-
+    {     
         private Sender sender;
 
         private Receiver receiver;
@@ -28,16 +24,20 @@ namespace UserStorage.NetworkWorker
             this.receiver = receiver;
         }
 
-        public Communicator(Sender sender)
-            : this(sender, null)
+        public Communicator(Sender sender) : this(sender, null)
         {
         }
 
         public Communicator(Receiver receiver)
             : this(null, receiver)
         {
-
         }
+
+        #region Events
+        public event EventHandler<DataUpdatedEventArgs> UserAdded;
+
+        public event EventHandler<DataUpdatedEventArgs> UserDeleted;
+        #endregion
 
         public void Connect(IEnumerable<IPEndPoint> endPoints)
         {
@@ -95,16 +95,35 @@ namespace UserStorage.NetworkWorker
             });
         }
 
+        public void Dispose()
+        {
+            if (receiver != null)
+            {
+                receiver.Dispose();
+            }
+
+            if (sender != null)
+            {
+                sender.Dispose();
+            }
+        }
+
+        #region Private Methods
         private void Receive()
         {
             while (true)
             {
-                if (token.IsCancellationRequested) return;
-                var message = receiver.ReceiveMessage();
-                if(message == null)
+                if (token.IsCancellationRequested)
                 {
                     return;
                 }
+
+                var message = receiver.ReceiveMessage();
+                if (message == null)
+                {
+                    return;
+                }
+
                 var args = new DataUpdatedEventArgs
                 {
                     User = message.UserData
@@ -126,7 +145,7 @@ namespace UserStorage.NetworkWorker
             sender.Send(message);
         }
 
-        protected virtual void OnUserDeleted(object sender, DataUpdatedEventArgs args)
+        private void OnUserDeleted(object sender, DataUpdatedEventArgs args)
         {
             if (UserDeleted != null)
             {
@@ -134,25 +153,14 @@ namespace UserStorage.NetworkWorker
             }
         }
 
-        protected virtual void OnUserAdded(object sender, DataUpdatedEventArgs args)
+        private void OnUserAdded(object sender, DataUpdatedEventArgs args)
         {
             if (UserAdded != null)
             {
                 UserAdded.Invoke(sender, args);
             }
         }
+        #endregion
 
-        public void Dispose()
-        {
-            if (receiver != null)
-            {
-                receiver.Dispose();
-            }
-
-            if (sender != null)
-            {
-                sender.Dispose();
-            }
-        }
     }
 }

@@ -23,7 +23,7 @@ namespace IteratorUnitTest
         [TestMethod]
         public void IsPrime_NumberLessTwo_ReturnFalse()
         {
-            bool result = (1).IsPrime();
+            bool result = 1.IsPrime();
 
             Assert.IsNotNull(result);
             Assert.AreEqual(false, result);
@@ -63,5 +63,7 @@ namespace IteratorUnitTest
             int result = iterator.Current;
             Assert.AreEqual(1, result);
         }
+
+        
     }
 }

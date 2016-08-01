@@ -16,32 +16,40 @@ namespace UserStorage.Interfaces
 {
     public class SlaveService : UserService
     {
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
-        private static readonly BooleanSwitch boolSwitch = new BooleanSwitch("Switch", string.Empty);
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+        private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);
 
         public SlaveService()
-        {            
+        {
         }
 
-        public new void Add (User user)
+        public new void Add(User user)
         {
-            logger.Error("Slaves can not add new user");
+            Logger.Error("Slaves can not add new user");
             throw new InvalidOperationException();
         }
 
-        public new void Delete (User user)
+        public new void Delete(User user)
         {
-            logger.Error("Slaves can not delete user");
+            Logger.Error("Slaves can not delete user");
             throw new InvalidOperationException();
         }
-       
-        protected void OnUserAdded (object sender, DataUpdatedEventArgs args)
+
+        public override void AddCommunicator(Communicator communicator)
+        {
+            base.AddCommunicator(communicator);
+            Communicator.UserAdded += OnUserAdded;
+            Communicator.UserDeleted += OnUserDeleted;
+        }
+
+        #region Private Methods
+        private void OnUserAdded(object sender, DataUpdatedEventArgs args)
         {
             try
             {
-                if (boolSwitch.Enabled)
+                if (BoolSwitch.Enabled)
                 {
-                    logger.Info("message");
+                    Logger.Info("message");
                 }
                 ServiceLock.EnterWriteLock();
                 Repository.Add(args.User);
@@ -51,13 +59,13 @@ namespace UserStorage.Interfaces
                 ServiceLock.ExitWriteLock();
             }
         }
-        protected void OnUserDeleted (object sender, DataUpdatedEventArgs args)
+        private void OnUserDeleted(object sender, DataUpdatedEventArgs args)
         {
             try
             {
-                if (boolSwitch.Enabled)
+                if (BoolSwitch.Enabled)
                 {
-                    logger.Trace("Slave: OnDeleted is called");
+                    Logger.Trace("Slave: OnDeleted is called");
                 }
                 ServiceLock.EnterWriteLock();
                 Repository.Delete(args.User);
@@ -67,12 +75,6 @@ namespace UserStorage.Interfaces
                 ServiceLock.ExitWriteLock();
             }
         }
-
-        public override void AddCommunicator(Communicator communicator)
-        {
-            base.AddCommunicator(communicator);
-            Communicator.UserAdded += OnUserAdded;
-            Communicator.UserDeleted += OnUserDeleted;
-        }
+        #endregion
     }
 }
