@@ -1,0 +1,125 @@
+2016-07-31 21:06:48 Domain for Slave is created
+2016-07-31 21:06:52 Wait Connection
+2016-07-31 21:06:56 Domain for Slave is created
+2016-07-31 21:06:59 Wait Connection
+2016-07-31 21:07:08 Domain for Master is created
+2016-07-31 21:07:24 Connection accepted
+2016-07-31 21:07:24 Connection accepted
+2016-07-31 21:08:45 Domain for Slave is created
+2016-07-31 21:08:59 Wait Connection
+2016-07-31 21:09:02 Domain for Slave is created
+2016-07-31 21:09:04 Wait Connection
+2016-07-31 21:09:17 Domain for Master is created
+2016-07-31 21:09:21 Connection accepted
+2016-07-31 21:09:21 Connection accepted
+2016-07-31 21:09:27 Master is adding a new user
+2016-07-31 21:09:27 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 21:09:36 Message send!
+2016-07-31 21:10:04 Domain for Slave is created
+2016-07-31 21:10:21 Wait Connection
+2016-07-31 21:10:30 Domain for Slave is created
+2016-07-31 21:10:35 Wait Connection
+2016-07-31 21:10:54 Domain for Master is created
+2016-07-31 21:10:57 Connection accepted
+2016-07-31 21:10:57 Connection accepted
+2016-07-31 21:11:03 Master is adding a new user
+2016-07-31 21:11:03 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 21:11:11 Message send!
+2016-07-31 21:23:09 Domain for Slave is created
+2016-07-31 21:23:48 Domain for Slave is created
+2016-07-31 21:36:38 Domain for Slave is created
+2016-07-31 21:36:39 Ссылка на объект не указывает на экземпляр объекта.
+2016-07-31 21:36:39 Domain for Slave is created
+2016-07-31 21:36:40 Ссылка на объект не указывает на экземпляр объекта.
+2016-07-31 21:36:40 Domain for Master is created
+2016-07-31 21:37:06 Domain for Slave is created
+2016-07-31 21:37:08 Ссылка на объект не указывает на экземпляр объекта.
+2016-07-31 21:37:08 Domain for Slave is created
+2016-07-31 21:37:09 Ссылка на объект не указывает на экземпляр объекта.
+2016-07-31 21:37:09 Domain for Master is created
+2016-07-31 21:37:17 Master is adding a new user
+2016-07-31 21:37:18 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 21:37:32 Message send!
+2016-07-31 21:40:45 Domain for Slave is created
+2016-07-31 21:40:56 Wait Connection
+2016-07-31 21:41:16 Domain for Slave is created
+2016-07-31 21:41:19 Wait Connection
+2016-07-31 21:41:27 Domain for Master is created
+2016-07-31 21:41:30 Connection accepted
+2016-07-31 21:41:30 Connection accepted
+2016-07-31 21:41:33 Master is adding a new user
+2016-07-31 21:41:33 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 21:41:42 Message send!
+2016-07-31 21:44:47 Domain for Slave is created
+2016-07-31 21:46:40 Wait Connection
+2016-07-31 21:49:52 Domain for Slave is created
+2016-07-31 21:51:54 Wait Connection
+2016-07-31 23:06:32 Domain for Slave is created
+2016-07-31 23:06:38 Wait Connection
+2016-07-31 23:06:43 Domain for Slave is created
+2016-07-31 23:06:46 Wait Connection
+2016-07-31 23:06:53 Domain for Master is created
+2016-07-31 23:06:59 Connection accepted
+2016-07-31 23:06:59 Connection accepted
+2016-07-31 23:07:05 Master is adding a new user
+2016-07-31 23:07:05 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 23:08:06 Message send!
+2016-07-31 23:15:39 Domain for Slave is created
+2016-07-31 23:15:45 Wait Connection
+2016-07-31 23:15:48 Domain for Slave is created
+2016-07-31 23:15:58 Wait Connection
+2016-07-31 23:17:50 Domain for Master is created
+2016-07-31 23:18:00 Connection accepted
+2016-07-31 23:18:00 Connection accepted
+2016-07-31 23:18:04 Master is adding a new user
+2016-07-31 23:18:04 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 23:18:37 Message send!
+2016-07-31 23:25:25 Domain for Slave is created
+2016-07-31 23:25:41 Wait Connection
+2016-07-31 23:26:56 Domain for Slave is created
+2016-07-31 23:27:05 Wait Connection
+2016-07-31 23:27:11 Domain for Master is created
+2016-07-31 23:27:16 Connection accepted
+2016-07-31 23:27:16 Connection accepted
+2016-07-31 23:27:20 Master is adding a new user
+2016-07-31 23:27:20 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 23:27:36 Message send!
+2016-07-31 23:42:27 Domain for Slave is created
+2016-07-31 23:42:31 Wait Connection
+2016-07-31 23:42:31 Ссылка на объект не указывает на экземпляр объекта.
+2016-07-31 23:42:31 Domain for Slave is created
+2016-07-31 23:42:38 Wait Connection
+2016-07-31 23:42:38 Ссылка на объект не указывает на экземпляр объекта.
+2016-07-31 23:42:38 Domain for Master is created
+2016-07-31 23:42:53 Master is adding a new user
+2016-07-31 23:42:54 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 23:43:23 Message send!
+2016-07-31 23:46:40 Domain for Slave is created
+2016-07-31 23:55:16 Domain for Slave is created
+2016-07-31 23:55:43 Wait Connection
+2016-07-31 23:58:55 Domain for Slave is created
+2016-07-31 23:59:39 Wait Connection
+2016-08-01 00:00:18 Domain for Slave is created
+2016-08-01 00:00:51 Wait Connection
+2016-08-01 00:06:52 Domain for Slave is created
+2016-08-01 00:07:14 Wait Connection
+2016-08-01 00:08:42 Domain for Slave is created
+2016-08-01 00:09:08 Wait Connection
+2016-08-01 00:32:49 Domain for Slave is created
+2016-08-01 00:33:38 Wait Connection
+2016-08-01 00:33:48 Domain for Slave is created
+2016-08-01 00:33:58 Wait Connection
+2016-08-01 00:34:01 Domain for Master is created
+2016-08-01 00:34:07 Connection accepted
+2016-08-01 00:34:55 Domain for Master is created
+2016-08-01 00:35:11 Domain for Slave is created
+2016-08-01 00:35:53 Wait Connection
+2016-08-01 00:36:05 Domain for Slave is created
+2016-08-01 00:36:21 Wait Connection
+2016-08-01 00:37:02 Connection accepted
+2016-08-01 00:37:02 Connection accepted
+2016-08-01 00:37:06 Master is adding a new user
+2016-08-01 00:37:06 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-08-01 00:37:13 Message send!
+2016-08-01 00:37:35 Domain for Master is created
+2016-08-01 00:37:38 Domain for Slave is created

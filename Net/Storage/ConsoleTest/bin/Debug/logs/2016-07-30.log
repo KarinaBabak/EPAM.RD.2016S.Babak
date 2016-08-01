@@ -1,0 +1,29 @@
+2016-07-30 14:39:26 Domain for Master is created
+2016-07-30 14:39:27 Domain for Slave is created
+2016-07-30 14:39:28 Domain for Slave is created
+2016-07-30 14:39:34 Master is adding a new user
+2016-07-30 14:39:34 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-30 14:40:53 Domain for Master is created
+2016-07-30 14:40:54 Domain for Slave is created
+2016-07-30 14:40:54 Domain for Slave is created
+2016-07-30 14:40:55 Master is adding a new user
+2016-07-30 14:40:55 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-30 14:41:27 Domain for Master is created
+2016-07-30 14:41:27 Domain for Slave is created
+2016-07-30 14:41:28 Domain for Slave is created
+2016-07-30 14:41:29 Master is adding a new user
+2016-07-30 14:41:29 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-30 14:41:36 UserRepository.WriteToXML called
+2016-07-30 14:42:34 Write to Xml Ошибка при создании документа XML.
+2016-07-30 14:44:42 Domain for Master is created
+2016-07-30 14:44:43 Domain for Slave is created
+2016-07-30 14:44:44 Domain for Slave is created
+2016-07-30 14:44:45 Master is adding a new user
+2016-07-30 14:44:45 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-30 14:44:46 UserRepository.ReadFromXML called
+2016-07-30 14:47:08 Domain for Master is created
+2016-07-30 14:47:09 Domain for Slave is created
+2016-07-30 14:47:10 Domain for Slave is created
+2016-07-30 14:47:11 Master is adding a new user
+2016-07-30 14:47:12 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-30 14:47:13 UserRepository.ReadFromXML called

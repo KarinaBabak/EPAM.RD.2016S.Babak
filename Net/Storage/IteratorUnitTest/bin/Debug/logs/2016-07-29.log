@@ -1,0 +1,81 @@
+2016-07-29 17:29:51 UserRepository.Clear called
+2016-07-29 17:29:52 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-29 17:29:52 UserRepository.Clear called
+2016-07-29 17:29:52 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 17:29:52 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 17:29:52 UserRepository.GetAll called
+2016-07-29 17:29:52 UserRepository.WriteToXML called
+2016-07-29 17:29:57 Write to Xml Ошибка при создании документа XML.
+2016-07-29 17:29:57 UserRepository.ReadFromXML called
+2016-07-29 17:29:57 UserRepository.GetAll called
+2016-07-29 17:29:57 UserRepository.Clear called
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 17:29:57 UserRepository.Clear called
+2016-07-29 17:29:57 UserRepository.Clear called
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 17:29:57 UserRepository.Clear called
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 2 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 17:29:57 The user already exists
+2016-07-29 17:29:57 UserRepository.Clear called
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-29 17:29:57 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-29 19:17:17 UserRepository.Clear called
+2016-07-29 19:17:17 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-29 19:17:17 UserRepository.Clear called
+2016-07-29 19:17:17 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:17:17 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:17:17 UserRepository.GetAll called
+2016-07-29 19:17:17 UserRepository.WriteToXML called
+2016-07-29 19:17:20 Write to Xml Ошибка при создании документа XML.
+2016-07-29 19:17:20 UserRepository.ReadFromXML called
+2016-07-29 19:17:20 UserRepository.GetAll called
+2016-07-29 19:17:20 UserRepository.Clear called
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:17:20 UserRepository.Clear called
+2016-07-29 19:17:20 UserRepository.Clear called
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:17:20 UserRepository.Clear called
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 2 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:17:20 The user already exists
+2016-07-29 19:17:20 UserRepository.Clear called
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-29 19:17:20 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-29 19:37:00 UserRepository.Clear called
+2016-07-29 19:37:00 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female
+2016-07-29 19:37:01 UserRepository.Clear called
+2016-07-29 19:37:01 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:37:01 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:37:01 UserRepository.GetAll called
+2016-07-29 19:37:01 UserRepository.WriteToXML called
+2016-07-29 19:37:04 Write to Xml Ошибка при создании документа XML.
+2016-07-29 19:37:04 UserRepository.ReadFromXML called
+2016-07-29 19:37:04 UserRepository.GetAll called
+2016-07-29 19:37:04 UserRepository.Clear called
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:37:04 UserRepository.Clear called
+2016-07-29 19:37:04 UserRepository.Clear called
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:37:04 UserRepository.Clear called
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 2 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:37:04 The user already exists
+2016-07-29 19:37:04 UserRepository.Clear called
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0 Vika Azarenko 20.07.1980 18:30:25 Female
+2016-07-29 19:37:04 UserRepository.Add called. Create the user: 0   01.01.0001 0:00:00 Female

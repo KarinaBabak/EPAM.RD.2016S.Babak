@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UserStorage;
 using UserStorage.Interfaces;
 using UserStorage.Validator;
@@ -11,10 +11,10 @@ namespace IteratorUnitTest
     [TestClass]
     public class UserTests
     {
-        private User user1 = new User("Max", "Bogdanovich", new DateTime(1960, 7, 20, 18, 30, 25),
-                Gender.Male);
-        private User user2 = new User("Max", "Mirnyi", new DateTime(1970, 7, 20, 18, 30, 25),
-                Gender.Male);
+        private User user1 = new User("Max", "Bogdanovich", new DateTime(1960, 7, 20, 18, 30, 25), Gender.Male);
+
+        private User user2 = new User("Max", "Mirnyi", new DateTime(1970, 7, 20, 18, 30, 25), Gender.Male);
+
         private UserRepository repository = new UserRepository();
 
         
@@ -124,8 +124,7 @@ namespace IteratorUnitTest
         public void SearchForUser_SearchByFirstName_ReturnTrue()
         {
             repository.Clear();
-            User user3 = new User("Vika", "Azarenko", new DateTime(1980, 7, 20, 18, 30, 25),
-                Gender.Female);
+            User user3 = new User("Vika", "Azarenko", new DateTime(1980, 7, 20, 18, 30, 25), Gender.Female);
             repository.Add(user1);
             repository.Add(user2);
             repository.Add(user3);

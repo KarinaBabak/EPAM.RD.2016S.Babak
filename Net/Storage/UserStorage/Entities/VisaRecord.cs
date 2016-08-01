@@ -10,7 +10,9 @@ namespace UserStorage
     public struct VisaRecord
     {
         public string Country { get; set; }
+
         public DateTime StartDate { get; set; }
+
         public DateTime EndDate { get; set; }
     }
 }

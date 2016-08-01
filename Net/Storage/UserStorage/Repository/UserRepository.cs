@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Xml.Serialization;
 using System.Configuration;
+using NLog;
 using Iterator;
 using UserStorage.Validator;
-using NLog;
-using System.Diagnostics;
 
 using UserStorage.Interfaces;
 
@@ -20,16 +20,15 @@ namespace UserStorage.Interfaces
     {
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
         private static readonly BooleanSwitch boolSwitch = new BooleanSwitch("Switch", string.Empty);
-        
-        private List<User> Users { get; set; }
-        //public IService Service{get; private set;}
+                      
         private ICustomIterator iterator;        
         private UserValidator validator;
+
+        public List<User> Users { get; private set; }
         
 
         public UserRepository(ICustomIterator generator = null, UserValidator validator = null)
-        {
-            //Service = new MasterService(this);
+        {            
             Users = new List<User>();
             this.iterator =  generator ?? new CustomIterator();
             this.validator = validator ?? new UserValidator();            
@@ -39,8 +38,7 @@ namespace UserStorage.Interfaces
         {
             Users = new List<User>();
             iterator = new CustomIterator();
-            validator = new UserValidator();
-            //Service = new MasterService(this);
+            validator = new UserValidator();            
         }
 
 
@@ -65,7 +63,7 @@ namespace UserStorage.Interfaces
 
         public int Add(User user)
         {
-            logger.Trace("UserRepository.Add called. Create the user: "+ user.ToString());            
+            logger.Trace("UserRepository.Add called. Create the user: " + user.ToString());            
            
             if (!validator.Validate(user))
             {
@@ -86,7 +84,6 @@ namespace UserStorage.Interfaces
 
             user.Id = iterator.GetNext();            
             Users.Add(user);
-            //Service.Add(user);
             return user.Id;
         }
 
@@ -140,14 +137,14 @@ namespace UserStorage.Interfaces
                 string path = ConfigurationManager.AppSettings["xmlPath"];
                 xmlWorker.WriteToXML(Users, path);
             }
-            catch(InvalidOperationException ex)
+            catch (InvalidOperationException ex)
             {
                 if (boolSwitch.Enabled)
                 {
                     logger.Error("Write to Xml " + ex.Message);
                 }
             }
-            catch(ConfigurationErrorsException exception)
+            catch (ConfigurationErrorsException exception)
             {
                 if (boolSwitch.Enabled)
                 {

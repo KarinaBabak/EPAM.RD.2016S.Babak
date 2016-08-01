@@ -8,9 +8,9 @@ namespace Iterator
 {
     public static class PrimesWorkerExtension
     {
-        public static bool IsPrime(this Int32 number)
+        public static bool IsPrime(this int number)
         {
-            if(number < 2)
+            if (number < 2)
             {
                 return false;
             }
@@ -20,7 +20,9 @@ namespace Iterator
             for (int i = 2; i <= sqrt; i++)
             {
                 if (number % i == 0)
+                {
                     return false;
+                }                  
             }
 
             return true;            

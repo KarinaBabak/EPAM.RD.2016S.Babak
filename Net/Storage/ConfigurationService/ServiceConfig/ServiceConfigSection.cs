@@ -11,8 +11,10 @@ namespace ConfigurationService
     /// Describe a section in the configuration file
     /// </summary>
     public class ServiceConfigSection : ConfigurationSection
-    {
-       
+    {       
+        /// <summary>
+        /// Getting collection of service items
+        /// </summary>
         [ConfigurationProperty("Services")]
         public ServicesCollection ServiceItems
         {

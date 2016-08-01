@@ -46,14 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainWorker\DomainAssemblyLoader.cs" />
     <Compile Include="Entities\Gender.cs" />
-    <Compile Include="Service\DataUpdatedEventArgs.cs" />
-    <Compile Include="Interfaces\Observer\IObservable.cs" />
-    <Compile Include="Interfaces\Observer\IObserver.cs" />
-    <Compile Include="DomainWorker\ServiceInitializer.cs" />
+    <Compile Include="NetworkWorker\Communicator.cs" />
+    <Compile Include="NetworkWorker\DataUpdatedEventArgs.cs" />
+    <Compile Include="NetworkWorker\Message.cs" />
+    <Compile Include="NetworkWorker\Receiver.cs" />
+    <Compile Include="NetworkWorker\Sender.cs" />
     <Compile Include="Service\MasterService.cs" />
-    <Compile Include="Service\MessageService.cs" />
     <Compile Include="Service\SlaveService.cs" />
     <Compile Include="Service\UserService.cs" />
     <Compile Include="Validator\IValidator.cs" />
@@ -86,6 +85,7 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

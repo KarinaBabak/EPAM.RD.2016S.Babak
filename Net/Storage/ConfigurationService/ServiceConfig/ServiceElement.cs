@@ -10,7 +10,7 @@ namespace ConfigurationService
     /// <summary>
     /// Describe the element of service
     /// </summary>
-    public class ServiceElement: ConfigurationElement
+    public class ServiceElement : ConfigurationElement
     {
         /// <summary>
         /// Get/Set type of service
@@ -28,22 +28,27 @@ namespace ConfigurationService
         [ConfigurationProperty("login", DefaultValue = "", IsKey = true, IsRequired = false)]
         public string Login
         {
-            get { return ((string)(base["login"])); }
+            get { return (string)(base["login"]); }
             set { base["login"] = value; }
         }
 
+        /// <summary>
+        /// IP address of service
+        /// </summary>
         [ConfigurationProperty("address", DefaultValue = "127.0.0.1", IsKey = true, IsRequired = false)]
         public string Address
         {
-            get { return ((string)(base["address"])); }
+            get { return (string)(base["address"]); }
             set { base["address"] = value; }
         }
 
-
+        /// <summary>
+        /// Port of service
+        /// </summary>
         [ConfigurationProperty("port", DefaultValue = "", IsKey = true, IsRequired = true)]
         public string Port
         {
-            get { return ((string)(base["port"])); }
+            get { return (string)(base["port"]); }
             set { base["port"] = value; }
         }
     }

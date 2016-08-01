@@ -1,0 +1,275 @@
+2016-07-31 10:08:39 Domain for Slave is created
+2016-07-31 10:08:40 Wait Connection
+2016-07-31 10:08:40 Domain for Slave is created
+2016-07-31 10:08:41 Wait Connection
+2016-07-31 10:08:42 Domain for Master is created
+2016-07-31 10:08:42 Connection accepted
+2016-07-31 10:08:42 Connection accepted
+2016-07-31 10:08:48 Master is adding a new user
+2016-07-31 10:08:48 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 10:08:50 UserRepository.ReadFromXML called
+2016-07-31 11:54:16 Domain for Slave is created
+2016-07-31 11:54:30 Wait Connection
+2016-07-31 11:54:34 Domain for Slave is created
+2016-07-31 11:54:44 Wait Connection
+2016-07-31 11:54:49 Domain for Master is created
+2016-07-31 11:54:56 Connection accepted
+2016-07-31 11:54:56 Connection accepted
+2016-07-31 11:55:29 Master is adding a new user
+2016-07-31 11:55:30 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 11:57:20 Domain for Slave is created
+2016-07-31 11:57:25 Wait Connection
+2016-07-31 11:57:25 Domain for Slave is created
+2016-07-31 11:57:29 Wait Connection
+2016-07-31 11:57:29 Domain for Master is created
+2016-07-31 11:57:30 Connection accepted
+2016-07-31 11:57:30 Connection accepted
+2016-07-31 11:58:34 Master is adding a new user
+2016-07-31 11:58:37 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 12:06:17 Domain for Slave is created
+2016-07-31 12:06:21 Wait Connection
+2016-07-31 12:06:21 Domain for Slave is created
+2016-07-31 12:06:26 Wait Connection
+2016-07-31 12:06:26 Domain for Master is created
+2016-07-31 12:06:27 Connection accepted
+2016-07-31 12:06:27 Connection accepted
+2016-07-31 12:06:55 Master is adding a new user
+2016-07-31 12:06:55 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 12:07:46 Domain for Slave is created
+2016-07-31 12:07:49 Wait Connection
+2016-07-31 12:07:49 Domain for Slave is created
+2016-07-31 12:07:51 Wait Connection
+2016-07-31 12:07:51 Domain for Master is created
+2016-07-31 12:07:52 Connection accepted
+2016-07-31 12:07:52 Connection accepted
+2016-07-31 12:08:34 Master is adding a new user
+2016-07-31 12:08:56 Domain for Slave is created
+2016-07-31 12:08:59 Wait Connection
+2016-07-31 12:08:59 Domain for Slave is created
+2016-07-31 12:09:01 Wait Connection
+2016-07-31 12:09:01 Domain for Master is created
+2016-07-31 12:09:02 Connection accepted
+2016-07-31 12:09:02 Connection accepted
+2016-07-31 12:09:16 Master is adding a new user
+2016-07-31 12:09:16 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 12:24:10 Domain for Slave is created
+2016-07-31 12:24:12 Wait Connection
+2016-07-31 12:24:12 Domain for Slave is created
+2016-07-31 12:24:14 Wait Connection
+2016-07-31 12:24:14 Domain for Master is created
+2016-07-31 12:24:15 Connection accepted
+2016-07-31 12:24:15 Connection accepted
+2016-07-31 12:24:23 Master is adding a new user
+2016-07-31 12:24:24 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 12:25:16 Domain for Slave is created
+2016-07-31 12:25:18 Wait Connection
+2016-07-31 12:25:18 Domain for Slave is created
+2016-07-31 12:25:22 Wait Connection
+2016-07-31 12:25:22 Domain for Master is created
+2016-07-31 12:25:23 Connection accepted
+2016-07-31 12:25:23 Connection accepted
+2016-07-31 17:24:21 Domain for Slave is created
+2016-07-31 17:24:24 Wait Connection
+2016-07-31 17:26:22 Domain for Slave is created
+2016-07-31 17:26:25 Wait Connection
+2016-07-31 17:26:26 Domain for Slave is created
+2016-07-31 17:26:28 Wait Connection
+2016-07-31 17:26:29 Domain for Master is created
+2016-07-31 17:26:31 Connection accepted
+2016-07-31 17:26:31 Connection accepted
+2016-07-31 17:27:07 Domain for Slave is created
+2016-07-31 17:27:10 Wait Connection
+2016-07-31 17:27:11 Domain for Slave is created
+2016-07-31 17:27:13 Wait Connection
+2016-07-31 17:27:14 Domain for Master is created
+2016-07-31 17:27:15 Connection accepted
+2016-07-31 17:27:15 Connection accepted
+2016-07-31 17:27:17 Master is adding a new user
+2016-07-31 17:27:17 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:28:01 Domain for Slave is created
+2016-07-31 17:28:04 Wait Connection
+2016-07-31 17:28:05 Domain for Slave is created
+2016-07-31 17:28:08 Wait Connection
+2016-07-31 17:28:10 Domain for Master is created
+2016-07-31 17:28:12 Connection accepted
+2016-07-31 17:28:12 Connection accepted
+2016-07-31 17:28:24 Master is adding a new user
+2016-07-31 17:28:25 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:29:06 Domain for Slave is created
+2016-07-31 17:29:09 Wait Connection
+2016-07-31 17:29:11 Domain for Slave is created
+2016-07-31 17:29:13 Wait Connection
+2016-07-31 17:29:14 Domain for Master is created
+2016-07-31 17:29:15 Connection accepted
+2016-07-31 17:29:15 Connection accepted
+2016-07-31 17:29:31 Master is adding a new user
+2016-07-31 17:29:33 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:30:31 Domain for Slave is created
+2016-07-31 17:30:34 Wait Connection
+2016-07-31 17:30:35 Domain for Slave is created
+2016-07-31 17:30:37 Wait Connection
+2016-07-31 17:30:40 Domain for Master is created
+2016-07-31 17:30:40 Connection accepted
+2016-07-31 17:30:40 Connection accepted
+2016-07-31 17:30:49 Master is adding a new user
+2016-07-31 17:30:50 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:31:13 Domain for Slave is created
+2016-07-31 17:31:15 Wait Connection
+2016-07-31 17:31:16 Domain for Slave is created
+2016-07-31 17:31:18 Wait Connection
+2016-07-31 17:31:20 Domain for Master is created
+2016-07-31 17:31:21 Connection accepted
+2016-07-31 17:31:21 Connection accepted
+2016-07-31 17:31:29 Master is adding a new user
+2016-07-31 17:31:30 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:34:44 Domain for Slave is created
+2016-07-31 17:34:49 Wait Connection
+2016-07-31 17:34:58 Domain for Slave is created
+2016-07-31 17:35:05 Wait Connection
+2016-07-31 17:35:06 Domain for Master is created
+2016-07-31 17:35:30 Connection accepted
+2016-07-31 17:35:30 Connection accepted
+2016-07-31 17:35:52 Master is adding a new user
+2016-07-31 17:35:53 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:48:30 Domain for Slave is created
+2016-07-31 17:48:31 Wait Connection
+2016-07-31 17:48:31 Domain for Slave is created
+2016-07-31 17:48:32 Wait Connection
+2016-07-31 17:48:32 Domain for Master is created
+2016-07-31 17:48:33 Connection accepted
+2016-07-31 17:48:33 Connection accepted
+2016-07-31 17:48:33 Master is adding a new user
+2016-07-31 17:48:33 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:48:49 Domain for Slave is created
+2016-07-31 17:49:05 Wait Connection
+2016-07-31 17:49:33 Domain for Slave is created
+2016-07-31 17:51:19 Domain for Slave is created
+2016-07-31 17:51:20 Wait Connection
+2016-07-31 17:51:20 Domain for Slave is created
+2016-07-31 17:51:21 Wait Connection
+2016-07-31 17:51:21 Domain for Master is created
+2016-07-31 17:51:21 Connection accepted
+2016-07-31 17:51:21 Connection accepted
+2016-07-31 17:51:21 Master is adding a new user
+2016-07-31 17:51:22 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:54:00 Domain for Slave is created
+2016-07-31 17:54:06 Wait Connection
+2016-07-31 17:54:16 Domain for Slave is created
+2016-07-31 17:54:17 Wait Connection
+2016-07-31 17:54:17 Domain for Slave is created
+2016-07-31 17:54:18 Wait Connection
+2016-07-31 17:54:18 Domain for Master is created
+2016-07-31 17:54:19 Connection accepted
+2016-07-31 17:54:19 Connection accepted
+2016-07-31 17:54:19 Master is adding a new user
+2016-07-31 17:54:19 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 17:54:42 Domain for Slave is created
+2016-07-31 17:54:53 Wait Connection
+2016-07-31 17:54:54 Domain for Slave is created
+2016-07-31 17:54:59 Wait Connection
+2016-07-31 17:55:01 Domain for Master is created
+2016-07-31 17:55:02 Connection accepted
+2016-07-31 17:55:02 Connection accepted
+2016-07-31 17:55:12 Master is adding a new user
+2016-07-31 17:55:13 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 18:54:37 Domain for Slave is created
+2016-07-31 18:54:37 Domain for Slave is created
+2016-07-31 18:54:37 Wait Connection
+2016-07-31 18:54:37 Wait Connection
+2016-07-31 18:54:37 Domain for Master is created
+2016-07-31 18:54:37 Connection accepted
+2016-07-31 18:54:37 Connection accepted
+2016-07-31 18:54:38 Master is adding a new user
+2016-07-31 18:54:38 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 18:54:38 Message send!
+2016-07-31 18:54:51 Domain for Slave is created
+2016-07-31 18:54:55 Wait Connection
+2016-07-31 18:54:56 Domain for Slave is created
+2016-07-31 18:55:02 Wait Connection
+2016-07-31 18:55:04 Domain for Master is created
+2016-07-31 18:55:05 Connection accepted
+2016-07-31 18:55:05 Connection accepted
+2016-07-31 18:55:11 Master is adding a new user
+2016-07-31 18:55:12 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 18:56:13 Message send!
+2016-07-31 19:09:54 Domain for Slave is created
+2016-07-31 19:09:59 Wait Connection
+2016-07-31 19:10:02 Domain for Slave is created
+2016-07-31 19:10:04 Wait Connection
+2016-07-31 19:10:05 Domain for Master is created
+2016-07-31 19:10:06 Connection accepted
+2016-07-31 19:10:06 Connection accepted
+2016-07-31 19:10:15 Master is adding a new user
+2016-07-31 19:10:17 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 19:13:01 Message send!
+2016-07-31 19:47:29 Domain for Slave is created
+2016-07-31 19:53:04 Domain for Slave is created
+2016-07-31 19:53:22 Wait Connection
+2016-07-31 19:53:25 Domain for Slave is created
+2016-07-31 19:53:31 Wait Connection
+2016-07-31 19:53:32 Domain for Master is created
+2016-07-31 19:53:35 Connection accepted
+2016-07-31 19:53:35 Connection accepted
+2016-07-31 19:53:40 Master is adding a new user
+2016-07-31 19:53:40 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 19:54:05 Message send!
+2016-07-31 19:55:11 Domain for Slave is created
+2016-07-31 19:55:18 Wait Connection
+2016-07-31 19:55:19 Domain for Slave is created
+2016-07-31 19:55:31 Wait Connection
+2016-07-31 19:55:32 Domain for Master is created
+2016-07-31 19:55:39 Connection accepted
+2016-07-31 19:55:39 Connection accepted
+2016-07-31 19:55:44 Master is adding a new user
+2016-07-31 19:55:45 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 19:57:03 Message send!
+2016-07-31 20:05:14 Domain for Slave is created
+2016-07-31 20:05:18 Wait Connection
+2016-07-31 20:05:23 Domain for Slave is created
+2016-07-31 20:05:25 Wait Connection
+2016-07-31 20:05:33 Domain for Master is created
+2016-07-31 20:05:38 Connection accepted
+2016-07-31 20:05:38 Connection accepted
+2016-07-31 20:05:43 Master is adding a new user
+2016-07-31 20:05:44 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 20:06:19 Message send!
+2016-07-31 20:08:41 Domain for Slave is created
+2016-07-31 20:08:50 Wait Connection
+2016-07-31 20:08:56 Domain for Slave is created
+2016-07-31 20:08:59 Wait Connection
+2016-07-31 20:09:10 Domain for Master is created
+2016-07-31 20:09:13 Connection accepted
+2016-07-31 20:09:13 Connection accepted
+2016-07-31 20:09:18 Master is adding a new user
+2016-07-31 20:09:19 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 20:09:37 Message send!
+2016-07-31 20:11:01 Domain for Slave is created
+2016-07-31 20:11:04 Wait Connection
+2016-07-31 20:11:08 Domain for Slave is created
+2016-07-31 20:11:11 Wait Connection
+2016-07-31 20:11:17 Domain for Master is created
+2016-07-31 20:11:20 Connection accepted
+2016-07-31 20:11:20 Connection accepted
+2016-07-31 20:11:25 Master is adding a new user
+2016-07-31 20:11:26 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 20:11:46 Message send!
+2016-07-31 20:12:53 Domain for Slave is created
+2016-07-31 20:13:08 Wait Connection
+2016-07-31 20:13:13 Domain for Slave is created
+2016-07-31 20:13:15 Wait Connection
+2016-07-31 20:13:24 Domain for Master is created
+2016-07-31 20:13:27 Connection accepted
+2016-07-31 20:13:27 Connection accepted
+2016-07-31 20:13:38 Master is adding a new user
+2016-07-31 20:13:40 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 20:14:12 Message send!
+2016-07-31 20:55:54 Domain for Slave is created
+2016-07-31 20:56:04 Wait Connection
+2016-07-31 20:57:46 Domain for Slave is created
+2016-07-31 20:57:49 Wait Connection
+2016-07-31 20:57:59 Domain for Master is created
+2016-07-31 20:58:01 Connection accepted
+2016-07-31 20:58:01 Connection accepted
+2016-07-31 20:58:09 Master is adding a new user
+2016-07-31 20:58:10 UserRepository.Add called. Create the user: 0 Bogdanovich Maxim 20.07.1960 18:30:25 Male
+2016-07-31 20:58:40 Message send!

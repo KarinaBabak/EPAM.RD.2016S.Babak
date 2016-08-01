@@ -9,6 +9,6 @@ C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Storage\Configura
 C:\Users\Karyna_Babak\Downloads\Lab\EPAM.RD.2016S.Babak-master\Storage\ConfigurationService\obj\Debug\ConfigurationService.pdb
 D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\bin\Debug\ConfigurationService.dll
 D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\bin\Debug\ConfigurationService.pdb
-D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\obj\Debug\ConfigurationService.csprojResolveAssemblyReference.cache
 D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\obj\Debug\ConfigurationService.dll
 D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\obj\Debug\ConfigurationService.pdb
+D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\bin\Debug\ConfigurationService.XML

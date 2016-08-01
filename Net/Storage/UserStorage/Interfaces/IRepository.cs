@@ -9,6 +9,7 @@ namespace UserStorage.Interfaces
     public interface IRepository<T> where T : class
     {
         int Add(T entity);
+
         void Delete(T entity);        
     }
 }

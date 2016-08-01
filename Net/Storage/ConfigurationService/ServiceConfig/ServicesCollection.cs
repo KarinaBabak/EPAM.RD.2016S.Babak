@@ -38,9 +38,7 @@ namespace ConfigurationService
         /// <returns></returns>
         protected override object GetElementKey(ConfigurationElement element)
         {
-            return ((ServiceElement)(element)).Login;
-        }
-
-        
+            return ((ServiceElement)element).Login;
+        }        
     }
 }

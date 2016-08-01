@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace UserStorage.Validator
 {
-    public class UserValidator: IValidator<User>
+    [Serializable]
+    public class UserValidator : IValidator<User>
     {
         public bool Validate(User newUser)
         {

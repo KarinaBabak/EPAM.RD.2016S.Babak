@@ -20,7 +20,7 @@ namespace UserStorage
         {
             _serializer = new XmlSerializer(typeof(List<User>));
         }
-        protected XMLWorker(SerializationInfo info, StreamingContext context):this()
+        protected XMLWorker(SerializationInfo info, StreamingContext context) : this()
         {
             CheckSerializationInfo(info);
             var type = Type.GetType((string)info.GetValue("type", typeof(string)));
@@ -28,9 +28,16 @@ namespace UserStorage
         #endregion
         public void WriteToXML(List<User> users, string path)
         {
-            if (users == null) throw new ArgumentException("There are no users for writing in xml file");
-            if(String.IsNullOrEmpty(path)) throw new ArgumentException("The path of file is not created");
+            if (users == null)
+            {
+                throw new ArgumentException ("There are no users for writing in xml file");
+            }
 
+            if (String.IsNullOrEmpty(path))
+            {
+                throw new ArgumentException("The path of file is not created");
+            }
+                
             SerializableList list = new SerializableList(users);
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
             {
@@ -40,7 +47,10 @@ namespace UserStorage
 
         public List<User> ReadFromXML(string path)
         {
-            if (!File.Exists(path)) return null;
+            if (!File.Exists(path))
+            {
+                return null;
+            }                
 
             using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
             {
@@ -59,7 +69,9 @@ namespace UserStorage
         private void CheckSerializationInfo(SerializationInfo info)
         {
             if (info == null)
+            {
                 throw new ArgumentNullException("info");
+            }              
         }
     }
 
@@ -68,6 +80,7 @@ namespace UserStorage
     public class SerializableList
     {
         public List<User> Users { get; set; }
+
         public SerializableList(List<User> list)
         {
             Users = list;

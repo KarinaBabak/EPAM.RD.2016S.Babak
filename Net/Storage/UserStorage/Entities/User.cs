@@ -15,7 +15,8 @@ namespace UserStorage
         public int Id { get; set; }
         public string FirstName
         {
-            get; set;
+            get; 
+            set;
         }
 
         public string LastName

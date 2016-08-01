@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Iterator
 {
-    public class CustomIterator: ICustomIterator
+    [Serializable]
+    public class CustomIterator : ICustomIterator
     {
         public int Current
         {
@@ -21,23 +22,23 @@ namespace Iterator
 
         public int GetNext()
         {
-            if (MoveNext())
-                return Current;
+            if (this.MoveNext())
+                return this.Current;
             return -2;
         }
 
         public void Reset()
         {
-            Current = 1;
+            this.Current = 1;
         }
 
         public bool MoveNext()
         {
-            for (int number = Current; number <= Int32.MaxValue; number++)
+            for (int number = this.Current; number <= int.MaxValue; number++)
             {
                 if (number.IsPrime())
                 {
-                    Current++;
+                    this.Current++;
                     return true;
                 }
             }
@@ -46,7 +47,7 @@ namespace Iterator
 
         public IEnumerable<int> GetPrimes()
         {
-            for (int i = 2; i <= Int32.MaxValue; i++)
+            for (int i = 2; i <= int.MaxValue; i++)
             {
                 if (i.IsPrime())
                 {

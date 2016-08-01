@@ -1,0 +1,15 @@
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\NLog.config
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\DomainWorker.dll
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\DomainWorker.pdb
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\ConfigurationService.dll
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\NLog.dll
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\UserStorage.dll
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\Iterator.dll
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\ConfigurationService.pdb
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\UserStorage.pdb
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\NLog.xml
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\obj\Debug\DomainWorker.csprojResolveAssemblyReference.cache
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\obj\Debug\DomainWorker.dll
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\obj\Debug\DomainWorker.pdb
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\ConfigurationService.xml

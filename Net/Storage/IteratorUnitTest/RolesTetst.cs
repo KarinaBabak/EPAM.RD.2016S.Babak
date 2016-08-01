@@ -7,19 +7,18 @@ using System.Text;
 using UserStorage;
 using UserStorage.Interfaces;
 
-
 namespace IteratorUnitTest
 {
     [TestClass]
     public class RolesTetst
-    {        
+    {
         //[TestMethod]
         //public void NotifyObservers_ReturnTrue()
         //{
         //    UserRepository rep = new UserRepository();
-        //    MasterService master = new MasterService(rep);            
+        //    MasterService master = new MasterService(rep);
         //    SlaveService slave1 = new SlaveService(rep);
-        //    master.RegisterObserver(slave1);   
+        //    master.RegisterObserver(slave1);
         //    User user = new User();
         //    master.Add(user);
         //    var result = slave1.SearchForUser(u => u.LastName == user.LastName);
