@@ -29,14 +29,11 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="1419825683">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
   <sourcecode name="Program.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016.05.12 20:26:32.000</styleCop>
       <settingsFile>2016.07.31 00:09:45.500</settingsFile>
-      <sourceFile>2016.08.02 02:07:25.422</sourceFile>
+      <sourceFile>2016.08.02 02:07:40.212</sourceFile>
       <parser>2016.05.12 20:26:32.000</parser>
       <StyleCop.CSharp.DocumentationRules>2016.05.12 20:26:32.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-221033329</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -79,16 +76,9 @@
         <line>66</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketMustBeFollowedByBlankLine" ruleCheckId="SA1513">
-        <context>Statements or elements wrapped in curly brackets must be followed by a blank line.</context>
-        <line>97</line>
-        <warning>False</warning>
-      </violation>
-      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketMustBeFollowedByBlankLine" ruleCheckId="SA1513">
-        <context>Statements or elements wrapped in curly brackets must be followed by a blank line.</context>
-        <line>128</line>
-        <warning>False</warning>
-      </violation>
     </violations>
   </sourcecode>
+  <project key="1419825683">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>

@@ -17,6 +17,7 @@ namespace UserStorage.NetworkWorker
     public class Message
     {
         public User UserData { get; set; }
+
         public MethodType Operation { get; set; }
     }    
 }
