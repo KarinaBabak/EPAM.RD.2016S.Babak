@@ -12,3 +12,4 @@ D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\bin\Debug\ConfigurationSer
 D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\obj\Debug\ConfigurationService.dll
 D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\obj\Debug\ConfigurationService.pdb
 D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\bin\Debug\ConfigurationService.XML
+D:\Epam\!Lab\Project\Net\Storage\ConfigurationService\obj\Debug\ConfigurationService.csprojResolveAssemblyReference.cache

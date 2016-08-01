@@ -42,17 +42,17 @@ namespace UserStorage.NetworkWorker
             BinaryFormatter formatter = new BinaryFormatter();
             Message message;
 
-            if(reciever == null)
-            {
-                return null;
-            }
+            //if(reciever == null)
+            //{
+            //    return null;
+            //}
 
             using (var networkStream = new NetworkStream(reciever, false))
             {
                 message = (Message)formatter.Deserialize(networkStream);
             }
             Console.WriteLine("Message received!");
-            return null;
+            return message;
         }
 
         public void Dispose()
