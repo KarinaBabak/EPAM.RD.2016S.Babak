@@ -8,7 +8,7 @@ namespace Iterator
 {
     public interface ICustomIterator
     {
-        int Current { get; }
+        int Current { get; set; }
         bool MoveNext();
         int GetNext();
         void Reset();

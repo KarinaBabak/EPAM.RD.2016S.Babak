@@ -12,6 +12,9 @@ using DomainWorker;
 using Iterator;
 using UserStorage;
 using UserStorage.Interfaces;
+using System.ServiceModel;
+using System.Net;
+using System.Net.Sockets;
 
 namespace ConsoleTest
 {
@@ -19,17 +22,18 @@ namespace ConsoleTest
     {
         static void Main(string[] args)
         {
-            UserStorage.Interfaces.UserRepository rep = new UserStorage.Interfaces.UserRepository();
+            UserRepository rep = new UserRepository();
             ServiceInitializer.InitializeServices(rep);
             var slaves = ServiceInitializer.SlavesList.Where(s => s is SlaveService).Select(s => (SlaveService)s);
             var master = (MasterService)ServiceInitializer.Master;
-            for (int i = 0; i < 13; i++)
+
+            for (int i = 0; i < 3; i++)
             {
-                var user = new User("Bogdanovich" + i.ToString(), "Maxim" + i.ToString(), new DateTime(1960, 7, 20, 18, 30, 25), Gender.Male);
+                var user = new User("Bogdanovich" + i.ToString(), "Maxim" + i.ToString(), new DateTime(1891, 12, 9, 18, 30, 25), Gender.Male);
                 master.Communicator = ServiceInitializer.MasterCommunicator;
                 master.Add(user);
 
-                Console.WriteLine(master.Repository.Users.Count);                
+                Console.WriteLine(master.Repository.Users.Count);
                 foreach (var item in ServiceInitializer.SlavesList)
                 {
                     Console.WriteLine(item.Repository.Users.Count);
@@ -37,19 +41,48 @@ namespace ConsoleTest
                 Thread.Sleep(300);
             }
 
-            RunSlaves(slaves);
-            RunMaster(master);
+            List<UserService> services = new List<UserService>();
+            services.Add(ServiceInitializer.Master);
+            services.AddRange(ServiceInitializer.SlavesList);
+
+            CreateServiceHosts(services);
+            //RunSlaves(slaves);
+            //RunMaster(master);
+            //Console.ReadKey();
+            //while (true)
+            //{
+            //    var quit = Console.ReadKey();
+            //    if (quit.Key == ConsoleKey.Escape)
+            //    {
+            //        break;
+            //    }
+            //}
             Console.ReadKey();
-            while (true)
-            {
-                var quit = Console.ReadKey();
-                if (quit.Key == ConsoleKey.Escape)
-                {
-                    break;
-                }
-            }
         }
 
+        private static void CreateServiceHosts(List<UserService> services)
+        {
+            
+
+            foreach (var service in services)
+            {
+                Uri serviceUri = new Uri("http://127.0.0.1:8080/Service/" + service.Name);
+                ServiceHost host = new ServiceHost(service, serviceUri);
+                host.Open();
+
+                foreach (Uri uri in host.BaseAddresses)
+                {
+                    Console.WriteLine("\t{0}", uri.ToString());
+                }
+                Console.WriteLine();
+                Console.WriteLine("Number of dispatchers listening : {0}", host.ChannelDispatchers.Count);
+                foreach (System.ServiceModel.Dispatcher.ChannelDispatcher dispatcher in host.ChannelDispatchers)
+                {
+                    Console.WriteLine("\t{0}, {1}", dispatcher.Listener.Uri.ToString(), dispatcher.BindingName);
+                }
+                Console.WriteLine();
+            }
+        }
         private static void RunMaster(MasterService master)
         {
             Random rand = new Random();

@@ -167,6 +167,7 @@ namespace UserStorage.Interfaces
                 {
                     newUsers = (List<User>)formatter.Deserialize(fs);
                     Users = newUsers;
+                    iterator.Current = Users.LastOrDefault().Id;
                 }                               
             }
             catch (InvalidOperationException ex)

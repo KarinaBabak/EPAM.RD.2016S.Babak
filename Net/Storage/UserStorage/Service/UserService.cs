@@ -5,18 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.ServiceModel;
+using System.ServiceModel.Description;
 using NLog;
 using UserStorage;
 using UserStorage.Interfaces;
 using UserStorage.NetworkWorker;
+using UserStorage.Service.WCFService;
+
 
 namespace UserStorage.Interfaces
 {
-    public abstract class UserService : MarshalByRefObject
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, AddressFilterMode = AddressFilterMode.Any)]
+    public abstract class UserService : MarshalByRefObject, IUserServiceContract
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);
-         
+        
         public UserService(UserRepository rep)
         {
             Repository = rep;
@@ -32,6 +37,8 @@ namespace UserStorage.Interfaces
         #region Properties
         public Communicator Communicator { get; set; }
         public UserRepository Repository { get; set; }
+        
+        public string Name { get; set; } 
         protected ReaderWriterLockSlim ServiceLock
         {
             get;
@@ -39,10 +46,10 @@ namespace UserStorage.Interfaces
         }
         #endregion
 
-        public void Add(User user) 
+        public virtual void Add(User user) 
         { 
         }
-        public void Delete(User user) 
+        public virtual void Delete(User user) 
         { 
         }
 

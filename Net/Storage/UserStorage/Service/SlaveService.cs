@@ -18,18 +18,18 @@ namespace UserStorage.Interfaces
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);
-
+       
         public SlaveService()
-        {
+        {            
         }
 
-        public new void Add(User user)
+        public override void Add(User user)
         {
             Logger.Error("Slaves can not add new user");
             throw new InvalidOperationException();
         }
 
-        public new void Delete(User user)
+        public override void Delete(User user)
         {
             Logger.Error("Slaves can not delete user");
             throw new InvalidOperationException();

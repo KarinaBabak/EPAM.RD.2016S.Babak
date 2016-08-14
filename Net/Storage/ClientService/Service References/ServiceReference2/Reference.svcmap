@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ccbf7db3-81ca-4212-ba44-7e459d0265c2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://127.0.0.1:8080/Service/Slave_1" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Slave_1.disco" MetadataType="Disco" ID="000e7537-0dde-458c-b1c7-0a49643fca94" SourceId="1" SourceUrl="http://127.0.0.1:8080/Service/Slave_1?disco" />
+    <MetadataFile FileName="Slave_1.xsd" MetadataType="Schema" ID="5561ed3c-829c-4072-8da7-9f1dc9946a56" SourceId="1" SourceUrl="http://127.0.0.1:8080/Service/Slave_1?xsd=xsd3" />
+    <MetadataFile FileName="Slave_11.xsd" MetadataType="Schema" ID="f12d87e2-e83f-4dd3-b05d-4e852ee9f18b" SourceId="1" SourceUrl="http://127.0.0.1:8080/Service/Slave_1?xsd=xsd2" />
+    <MetadataFile FileName="Slave_12.xsd" MetadataType="Schema" ID="8e27416a-deca-42de-8c53-359cacd856e9" SourceId="1" SourceUrl="http://127.0.0.1:8080/Service/Slave_1?xsd=xsd1" />
+    <MetadataFile FileName="Slave_13.xsd" MetadataType="Schema" ID="5c8766e3-03e1-406a-b1fd-125cd193ce33" SourceId="1" SourceUrl="http://127.0.0.1:8080/Service/Slave_1?xsd=xsd0" />
+    <MetadataFile FileName="SlaveService.wsdl" MetadataType="Wsdl" ID="ffef1b5f-8830-4226-aa8e-2908a5dd0883" SourceId="1" SourceUrl="http://127.0.0.1:8080/Service/Slave_1?wsdl" />
+    <MetadataFile FileName="Slave_14.xsd" MetadataType="Schema" ID="810a2da0-38b6-47c8-84e2-65472b0a7e6c" SourceId="1" SourceUrl="http://127.0.0.1:8080/Service/Slave_1?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

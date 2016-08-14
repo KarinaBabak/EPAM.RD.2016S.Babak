@@ -17,14 +17,15 @@ namespace UserStorage.Interfaces
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
-        private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);
-              
-        
-        public MasterService() 
-        {           
-        }
+        private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);       
+                
 
-        public new void Add(User user)
+        public MasterService() 
+        {            
+        }
+              
+
+        public override void Add(User user)
         {
             ServiceLock.EnterWriteLock();
             try
@@ -36,6 +37,10 @@ namespace UserStorage.Interfaces
 
                 Repository.Add(user);             
             }
+            catch(InvalidOperationException ex)
+            {
+                Logger.Error("Master adds a new user: " + ex.Message);
+            }
             finally
             {
                 ServiceLock.ExitWriteLock();
@@ -44,7 +49,7 @@ namespace UserStorage.Interfaces
             OnUserAdded(this, new DataUpdatedEventArgs() { User = user });        
         }
 
-        public new void Delete(User user)
+        public override void Delete(User user)
         {
             ServiceLock.EnterWriteLock();
             try

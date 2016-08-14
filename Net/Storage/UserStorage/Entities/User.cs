@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 using Iterator;
+
 
 namespace UserStorage
 {
@@ -13,6 +15,7 @@ namespace UserStorage
         #region Properties
 
         public int Id { get; set; }
+
         public string FirstName
         {
             get; 
@@ -22,7 +25,7 @@ namespace UserStorage
         public string LastName
         {
             get; set;
-        }             
+        }
 
         public DateTime DateOfBirth
         {
@@ -33,7 +36,7 @@ namespace UserStorage
         {
             get; set;
         }
-
+        
         public List<VisaRecord> VisaRecords { get; set; }
         #endregion
 

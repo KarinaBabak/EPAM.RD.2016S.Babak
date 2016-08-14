@@ -12,7 +12,7 @@ namespace Iterator
     {
         public int Current
         {
-            get; private set;
+            get; set;
         }
 
         public CustomIterator()

@@ -38,12 +38,13 @@ namespace DomainWorker
                 var type = typeof(DomainAssemblyLoader);
                 var loader = (DomainAssemblyLoader)newAppDomain.CreateInstanceAndUnwrap(Assembly.GetExecutingAssembly().FullName, typeof(DomainAssemblyLoader).FullName);
                 var service = loader.CreateService(section.ServiceItems[i].ServiceType);
+                service.Name = section.ServiceItems[i].Login;
 
                 if (section.ServiceItems[i].ServiceType.Contains("Slave"))
                 {                    
                     try
                     {
-                        SlavesList.Add(service);
+                        SlavesList.Add(service);                        
                         receiver = new Receiver(IPAddress.Parse(section.ServiceItems[i].Address), int.Parse(section.ServiceItems[i].Port));
                         var communicator = new Communicator(receiver);                                                
                         service.AddCommunicator(communicator);
@@ -69,7 +70,7 @@ namespace DomainWorker
             foreach (UserService service in SlavesList)
             {
                 service.Communicator.RunReceiver();
-            }
+            }            
         }        
     }
 }
