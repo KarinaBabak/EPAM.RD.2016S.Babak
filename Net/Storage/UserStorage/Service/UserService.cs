@@ -16,7 +16,8 @@ using UserStorage.Service.WCFService;
 
 namespace UserStorage.Interfaces
 {
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, AddressFilterMode = AddressFilterMode.Any)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Reentrant, IncludeExceptionDetailInFaults = true)]
+
     public abstract class UserService : MarshalByRefObject, IUserServiceContract
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
@@ -46,8 +47,9 @@ namespace UserStorage.Interfaces
         }
         #endregion
 
-        public virtual void Add(User user) 
-        { 
+        public virtual int Add(User user) 
+        {
+            return 1;
         }
         public virtual void Delete(User user) 
         { 
@@ -66,6 +68,11 @@ namespace UserStorage.Interfaces
             {
                 ServiceLock.ExitReadLock();
             }
+        }
+
+        public IEnumerable<int> SearchForUser(ISearchСriterion<User>[] criteria)
+        {
+            return Repository.SearchForUsers(criteria);
         }
 
         public virtual void AddCommunicator(Communicator communicator)

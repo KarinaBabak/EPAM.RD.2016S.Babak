@@ -49,11 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Gender.cs" />
+    <Compile Include="Interfaces\ISearchСriterion.cs" />
     <Compile Include="NetworkWorker\Communicator.cs" />
     <Compile Include="NetworkWorker\DataUpdatedEventArgs.cs" />
     <Compile Include="NetworkWorker\Message.cs" />
     <Compile Include="NetworkWorker\Receiver.cs" />
     <Compile Include="NetworkWorker\Sender.cs" />
+    <Compile Include="SearchCriteria\FemaleCriterion.cs" />
+    <Compile Include="SearchCriteria\MaleCriterion.cs" />
     <Compile Include="Service\MasterService.cs" />
     <Compile Include="Service\SlaveService.cs" />
     <Compile Include="Service\UserService.cs" />

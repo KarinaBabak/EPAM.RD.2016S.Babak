@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UserStorage" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UserStorage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://127.0.0.1:8080/Service/Master?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-  <xs:complexType name="User">
-    <xs:sequence>
-      <xs:element name="_x003C_DateOfBirth_x003E_k__BackingField" type="xs:dateTime" />
-      <xs:element name="_x003C_FirstName_x003E_k__BackingField" nillable="true" type="xs:string" />
-      <xs:element name="_x003C_Id_x003E_k__BackingField" type="xs:int" />
-      <xs:element name="_x003C_LastName_x003E_k__BackingField" nillable="true" type="xs:string" />
-      <xs:element name="_x003C_UserGender_x003E_k__BackingField" type="tns:Gender" />
-      <xs:element name="_x003C_VisaRecords_x003E_k__BackingField" nillable="true" type="tns:ArrayOfVisaRecord" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="User" nillable="true" type="tns:User" />
-  <xs:simpleType name="Gender">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Female" />
-      <xs:enumeration value="Male" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:element name="Gender" nillable="true" type="tns:Gender" />
-  <xs:complexType name="ArrayOfVisaRecord">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="VisaRecord" type="tns:VisaRecord" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfVisaRecord" nillable="true" type="tns:ArrayOfVisaRecord" />
-  <xs:complexType name="VisaRecord">
-    <xs:annotation>
-      <xs:appinfo>
-        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
-      </xs:appinfo>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="_x003C_Country_x003E_k__BackingField" nillable="true" type="xs:string" />
-      <xs:element name="_x003C_EndDate_x003E_k__BackingField" type="xs:dateTime" />
-      <xs:element name="_x003C_StartDate_x003E_k__BackingField" type="xs:dateTime" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="VisaRecord" nillable="true" type="tns:VisaRecord" />
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://127.0.0.1:8080/Service/Master?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UserStorage" />
+  <xs:import schemaLocation="http://127.0.0.1:8080/Service/Master?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="Add">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UserStorage" minOccurs="0" name="user" nillable="true" type="q1:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AddResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Delete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UserStorage" minOccurs="0" name="user" nillable="true" type="q2:User" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchForUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="criteria" nillable="true" type="q3:ArrayOfanyType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SearchForUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SearchForUserResult" nillable="true" type="q4:ArrayOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

@@ -216,15 +216,73 @@ namespace ClientService.ServiceReference2 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="FemaleCriterion", Namespace="http://schemas.datacontract.org/2004/07/UserStorage.SearchCriteria")]
+    [System.SerializableAttribute()]
+    public partial class FemaleCriterion : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="MaleCriterion", Namespace="http://schemas.datacontract.org/2004/07/UserStorage.SearchCriteria")]
+    [System.SerializableAttribute()]
+    public partial class MaleCriterion : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference2.IUserServiceContract")]
     public interface IUserServiceContract {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/Add", ReplyAction="http://tempuri.org/IUserServiceContract/AddResponse")]
-        void Add(ClientService.ServiceReference2.User user);
+        int Add(ClientService.ServiceReference2.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/Add", ReplyAction="http://tempuri.org/IUserServiceContract/AddResponse")]
-        System.Threading.Tasks.Task AddAsync(ClientService.ServiceReference2.User user);
+        System.Threading.Tasks.Task<int> AddAsync(ClientService.ServiceReference2.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/Delete", ReplyAction="http://tempuri.org/IUserServiceContract/DeleteResponse")]
         void Delete(ClientService.ServiceReference2.User user);
@@ -233,10 +291,18 @@ namespace ClientService.ServiceReference2 {
         System.Threading.Tasks.Task DeleteAsync(ClientService.ServiceReference2.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/SearchForUser", ReplyAction="http://tempuri.org/IUserServiceContract/SearchForUserResponse")]
-        int[] SearchForUser(System.Predicate<ClientService.ServiceReference2.User> criteria);
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientService.ServiceReference2.User))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientService.ServiceReference2.Gender))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientService.ServiceReference2.VisaRecord[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientService.ServiceReference2.VisaRecord))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientService.ServiceReference2.FemaleCriterion))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ClientService.ServiceReference2.MaleCriterion))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(object[]))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(int[]))]
+        int[] SearchForUser(object[] criteria);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/SearchForUser", ReplyAction="http://tempuri.org/IUserServiceContract/SearchForUserResponse")]
-        System.Threading.Tasks.Task<int[]> SearchForUserAsync(System.Predicate<ClientService.ServiceReference2.User> criteria);
+        System.Threading.Tasks.Task<int[]> SearchForUserAsync(object[] criteria);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -266,11 +332,11 @@ namespace ClientService.ServiceReference2 {
                 base(binding, remoteAddress) {
         }
         
-        public void Add(ClientService.ServiceReference2.User user) {
-            base.Channel.Add(user);
+        public int Add(ClientService.ServiceReference2.User user) {
+            return base.Channel.Add(user);
         }
         
-        public System.Threading.Tasks.Task AddAsync(ClientService.ServiceReference2.User user) {
+        public System.Threading.Tasks.Task<int> AddAsync(ClientService.ServiceReference2.User user) {
             return base.Channel.AddAsync(user);
         }
         
@@ -282,11 +348,11 @@ namespace ClientService.ServiceReference2 {
             return base.Channel.DeleteAsync(user);
         }
         
-        public int[] SearchForUser(System.Predicate<ClientService.ServiceReference2.User> criteria) {
+        public int[] SearchForUser(object[] criteria) {
             return base.Channel.SearchForUser(criteria);
         }
         
-        public System.Threading.Tasks.Task<int[]> SearchForUserAsync(System.Predicate<ClientService.ServiceReference2.User> criteria) {
+        public System.Threading.Tasks.Task<int[]> SearchForUserAsync(object[] criteria) {
             return base.Channel.SearchForUserAsync(criteria);
         }
     }

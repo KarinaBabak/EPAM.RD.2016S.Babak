@@ -23,10 +23,11 @@ namespace UserStorage.Interfaces
         {            
         }
 
-        public override void Add(User user)
+        public override int Add(User user)
         {
             Logger.Error("Slaves can not add new user");
             throw new InvalidOperationException();
+            return -1;
         }
 
         public override void Delete(User user)

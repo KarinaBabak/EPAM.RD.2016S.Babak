@@ -27,7 +27,7 @@ namespace IteratorUnitTest
         public void Validate_AgeIsNotValid_ReturnFalse()
         {
             UserValidator validator = new UserValidator();
-            User user = new User("Bogdanovich", "Max", new DateTime(1800, 7, 20, 18, 30, 25), Gender.Male);
+            User user = new User("Bogdanovich", "Max", new DateTime(1600, 7, 20, 18, 30, 25), Gender.Male);
 
             var result = validator.Validate(user);
             Assert.AreEqual(false, result);

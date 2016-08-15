@@ -10,13 +10,12 @@ using System.Configuration;
 using NLog;
 using Iterator;
 using UserStorage.Validator;
-
 using UserStorage.Interfaces;
 
 namespace UserStorage.Interfaces
 {
     [Serializable]
-    public class UserRepository : IUserRepository
+    public class UserRepository : MarshalByRefObject, IUserRepository
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
@@ -123,6 +122,13 @@ namespace UserStorage.Interfaces
                 usersID[i] = usersFromSearch[i].Id;
             }
             return usersID;
+        }
+
+        public IEnumerable<int> SearchForUsers(ISearchСriterion<User>[] criteria)
+        {
+            List<int> idUsersFromSearch = Users.Where(u=>criteria.All(c=>c.MatchByCriterion(u))).Select(i=>i.Id).ToList();
+
+            return idUsersFromSearch;
         }
         #endregion
 

@@ -14,6 +14,6 @@ namespace UserStorage.Interfaces
 
         IEnumerable<User> GetAll();
 
-        IEnumerable<int> SearchForUser(Predicate<User> criteria);
+        IEnumerable<int> SearchForUsers(ISearchСriterion<User>[] criteria);
     }
 }

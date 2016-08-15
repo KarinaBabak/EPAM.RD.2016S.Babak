@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -98,9 +99,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReference3\SlaveService.wsdl" />
-    <None Include="Service References\ServiceReference3\Slave_2.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\ServiceReference3\Slave_21.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -111,6 +109,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReference3\Slave_24.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference3\Slave_25.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

@@ -25,9 +25,10 @@ namespace UserStorage.Interfaces
         }
               
 
-        public override void Add(User user)
+        public override int Add(User user)
         {
             ServiceLock.EnterWriteLock();
+            int id = 0;
             try
             {
                 if (BoolSwitch.Enabled)
@@ -35,7 +36,7 @@ namespace UserStorage.Interfaces
                     Logger.Trace("Master is adding a new user");
                 }
 
-                Repository.Add(user);             
+                id = Repository.Add(user);             
             }
             catch(InvalidOperationException ex)
             {
@@ -45,8 +46,9 @@ namespace UserStorage.Interfaces
             {
                 ServiceLock.ExitWriteLock();
             }
-
-            OnUserAdded(this, new DataUpdatedEventArgs() { User = user });        
+            
+            OnUserAdded(this, new DataUpdatedEventArgs() { User = user });
+            return id;
         }
 
         public override void Delete(User user)

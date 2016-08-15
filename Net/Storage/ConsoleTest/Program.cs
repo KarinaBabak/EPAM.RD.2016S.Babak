@@ -61,8 +61,7 @@ namespace ConsoleTest
         }
 
         private static void CreateServiceHosts(List<UserService> services)
-        {
-            
+        {           
 
             foreach (var service in services)
             {
