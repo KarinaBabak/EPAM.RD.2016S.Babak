@@ -9,29 +9,234 @@
 //------------------------------------------------------------------------------
 
 namespace ClientService.ServiceReference1 {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="User", Namespace="http://schemas.datacontract.org/2004/07/UserStorage")]
+    [System.SerializableAttribute()]
+    public partial class User : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private System.DateTime DateOfBirthk__BackingFieldField;
+        
+        private string FirstNamek__BackingFieldField;
+        
+        private int Idk__BackingFieldField;
+        
+        private string LastNamek__BackingFieldField;
+        
+        private ClientService.ServiceReference1.Gender UserGenderk__BackingFieldField;
+        
+        private ClientService.ServiceReference1.VisaRecord[] VisaRecordsk__BackingFieldField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<DateOfBirth>k__BackingField", IsRequired=true)]
+        public System.DateTime DateOfBirthk__BackingField {
+            get {
+                return this.DateOfBirthk__BackingFieldField;
+            }
+            set {
+                if ((this.DateOfBirthk__BackingFieldField.Equals(value) != true)) {
+                    this.DateOfBirthk__BackingFieldField = value;
+                    this.RaisePropertyChanged("DateOfBirthk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<FirstName>k__BackingField", IsRequired=true)]
+        public string FirstNamek__BackingField {
+            get {
+                return this.FirstNamek__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNamek__BackingFieldField, value) != true)) {
+                    this.FirstNamek__BackingFieldField = value;
+                    this.RaisePropertyChanged("FirstNamek__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Id>k__BackingField", IsRequired=true)]
+        public int Idk__BackingField {
+            get {
+                return this.Idk__BackingFieldField;
+            }
+            set {
+                if ((this.Idk__BackingFieldField.Equals(value) != true)) {
+                    this.Idk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Idk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<LastName>k__BackingField", IsRequired=true)]
+        public string LastNamek__BackingField {
+            get {
+                return this.LastNamek__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNamek__BackingFieldField, value) != true)) {
+                    this.LastNamek__BackingFieldField = value;
+                    this.RaisePropertyChanged("LastNamek__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<UserGender>k__BackingField", IsRequired=true)]
+        public ClientService.ServiceReference1.Gender UserGenderk__BackingField {
+            get {
+                return this.UserGenderk__BackingFieldField;
+            }
+            set {
+                if ((this.UserGenderk__BackingFieldField.Equals(value) != true)) {
+                    this.UserGenderk__BackingFieldField = value;
+                    this.RaisePropertyChanged("UserGenderk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<VisaRecords>k__BackingField", IsRequired=true)]
+        public ClientService.ServiceReference1.VisaRecord[] VisaRecordsk__BackingField {
+            get {
+                return this.VisaRecordsk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.VisaRecordsk__BackingFieldField, value) != true)) {
+                    this.VisaRecordsk__BackingFieldField = value;
+                    this.RaisePropertyChanged("VisaRecordsk__BackingField");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Gender", Namespace="http://schemas.datacontract.org/2004/07/UserStorage")]
+    public enum Gender : int {
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Female = 0,
+        
+        [System.Runtime.Serialization.EnumMemberAttribute()]
+        Male = 1,
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="VisaRecord", Namespace="http://schemas.datacontract.org/2004/07/UserStorage")]
+    [System.SerializableAttribute()]
+    public partial struct VisaRecord : System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private string Countryk__BackingFieldField;
+        
+        private System.DateTime EndDatek__BackingFieldField;
+        
+        private System.DateTime StartDatek__BackingFieldField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Country>k__BackingField", IsRequired=true)]
+        public string Countryk__BackingField {
+            get {
+                return this.Countryk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Countryk__BackingFieldField, value) != true)) {
+                    this.Countryk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Countryk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<EndDate>k__BackingField", IsRequired=true)]
+        public System.DateTime EndDatek__BackingField {
+            get {
+                return this.EndDatek__BackingFieldField;
+            }
+            set {
+                if ((this.EndDatek__BackingFieldField.Equals(value) != true)) {
+                    this.EndDatek__BackingFieldField = value;
+                    this.RaisePropertyChanged("EndDatek__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<StartDate>k__BackingField", IsRequired=true)]
+        public System.DateTime StartDatek__BackingField {
+            get {
+                return this.StartDatek__BackingFieldField;
+            }
+            set {
+                if ((this.StartDatek__BackingFieldField.Equals(value) != true)) {
+                    this.StartDatek__BackingFieldField = value;
+                    this.RaisePropertyChanged("StartDatek__BackingField");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IUserServiceContract")]
     public interface IUserServiceContract {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/Add", ReplyAction="http://tempuri.org/IUserServiceContract/AddResponse")]
-        void Add(UserStorage.User user);
+        void Add(ClientService.ServiceReference1.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/Add", ReplyAction="http://tempuri.org/IUserServiceContract/AddResponse")]
-        System.Threading.Tasks.Task AddAsync(UserStorage.User user);
+        System.Threading.Tasks.Task AddAsync(ClientService.ServiceReference1.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/Delete", ReplyAction="http://tempuri.org/IUserServiceContract/DeleteResponse")]
-        void Delete(UserStorage.User user);
+        void Delete(ClientService.ServiceReference1.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/Delete", ReplyAction="http://tempuri.org/IUserServiceContract/DeleteResponse")]
-        System.Threading.Tasks.Task DeleteAsync(UserStorage.User user);
+        System.Threading.Tasks.Task DeleteAsync(ClientService.ServiceReference1.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/SearchForUser", ReplyAction="http://tempuri.org/IUserServiceContract/SearchForUserResponse")]
-        int[] SearchForUser(System.Predicate<UserStorage.User> criteria);
+        int[] SearchForUser(System.Predicate<ClientService.ServiceReference1.User> criteria);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserServiceContract/SearchForUser", ReplyAction="http://tempuri.org/IUserServiceContract/SearchForUserResponse")]
-        System.Threading.Tasks.Task<int[]> SearchForUserAsync(System.Predicate<UserStorage.User> criteria);
+        System.Threading.Tasks.Task<int[]> SearchForUserAsync(System.Predicate<ClientService.ServiceReference1.User> criteria);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -61,27 +266,27 @@ namespace ClientService.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public void Add(UserStorage.User user) {
+        public void Add(ClientService.ServiceReference1.User user) {
             base.Channel.Add(user);
         }
         
-        public System.Threading.Tasks.Task AddAsync(UserStorage.User user) {
+        public System.Threading.Tasks.Task AddAsync(ClientService.ServiceReference1.User user) {
             return base.Channel.AddAsync(user);
         }
         
-        public void Delete(UserStorage.User user) {
+        public void Delete(ClientService.ServiceReference1.User user) {
             base.Channel.Delete(user);
         }
         
-        public System.Threading.Tasks.Task DeleteAsync(UserStorage.User user) {
+        public System.Threading.Tasks.Task DeleteAsync(ClientService.ServiceReference1.User user) {
             return base.Channel.DeleteAsync(user);
         }
         
-        public int[] SearchForUser(System.Predicate<UserStorage.User> criteria) {
+        public int[] SearchForUser(System.Predicate<ClientService.ServiceReference1.User> criteria) {
             return base.Channel.SearchForUser(criteria);
         }
         
-        public System.Threading.Tasks.Task<int[]> SearchForUserAsync(System.Predicate<UserStorage.User> criteria) {
+        public System.Threading.Tasks.Task<int[]> SearchForUserAsync(System.Predicate<ClientService.ServiceReference1.User> criteria) {
             return base.Channel.SearchForUserAsync(criteria);
         }
     }

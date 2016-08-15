@@ -115,24 +115,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConfigurationService\ConfigurationService.csproj">
-      <Project>{b85c6d51-834c-4328-b9c5-81e252f93649}</Project>
-      <Name>ConfigurationService</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DomainWorker\DomainWorker.csproj">
-      <Project>{1089a831-deac-4eb9-89ef-25973e3c7f38}</Project>
-      <Name>DomainWorker</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Iterator\Iterator.csproj">
-      <Project>{02e8a2ef-7836-4b82-8665-6e48ccbb9f8a}</Project>
-      <Name>Iterator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\UserStorage\UserStorage.csproj">
-      <Project>{947bad73-c839-4ca2-94c0-b9f4b77fec0d}</Project>
-      <Name>UserStorage</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
