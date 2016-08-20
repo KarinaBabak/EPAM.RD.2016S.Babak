@@ -8,17 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using NLog;
 
-
 namespace UserStorage.NetworkWorker
 {
+    /// <summary>
+    /// Receiver class
+    /// </summary>
     [Serializable]
     public class Receiver : IDisposable
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private Socket listener;
-        private Socket reciever;
-        public IPEndPoint IpPoint { get; private set; }
+        private Socket reciever;        
 
+        /// <summary>
+        /// Parameterized constructor
+        /// </summary>
+        /// <param name="address">IP address</param>
+        /// <param name="port">value of port</param>
         public Receiver(IPAddress address, int port)
         {
             this.IpPoint = new IPEndPoint(address, port);
@@ -27,6 +33,15 @@ namespace UserStorage.NetworkWorker
             this.listener.Listen(1);
         }
 
+        /// <summary>
+        /// Gets IP address
+        /// </summary>
+        public IPEndPoint IpPoint { get; private set; }
+
+        /// <summary>
+        /// Determination to accept connection
+        /// </summary>
+        /// <returns>Task for receiver</returns>
         public Task AcceptConnection()
         {
             return Task.Run(() =>
@@ -37,6 +52,10 @@ namespace UserStorage.NetworkWorker
             });
         }
 
+        /// <summary>
+        /// Receive message
+        /// </summary>
+        /// <returns>object of message</returns>
         public Message ReceiveMessage()
         {
             BinaryFormatter formatter = new BinaryFormatter();
@@ -51,6 +70,9 @@ namespace UserStorage.NetworkWorker
             return message;
         }
 
+        /// <summary>
+        /// IDisposable realization
+        /// </summary>
         public void Dispose()
         {
             this.reciever.Close();

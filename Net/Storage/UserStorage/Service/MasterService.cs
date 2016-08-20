@@ -13,18 +13,33 @@ using ConfigurationService;
 
 namespace UserStorage.Interfaces
 {
+    /// <summary>
+    /// Determination of master service
+    /// </summary>
     public class MasterService : UserService
     {
+        /// <summary>
+        /// NLog field
+        /// </summary>
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
-        private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);       
-                
+        /// <summary>
+        /// BooleanSwitch field for activating logging
+        /// </summary>
+        private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);
 
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public MasterService() 
         {            
-        }
-              
+        }              
 
+        /// <summary>
+        /// Master can add user to repository
+        /// </summary>
+        /// <param name="user">new user</param>
+        /// <returns>id of new user</returns>
         public override int Add(User user)
         {
             ServiceLock.EnterWriteLock();
@@ -38,7 +53,7 @@ namespace UserStorage.Interfaces
 
                 id = Repository.Add(user);             
             }
-            catch(InvalidOperationException ex)
+            catch (InvalidOperationException ex)
             {
                 Logger.Error("Master adds a new user: " + ex.Message);
             }
@@ -51,6 +66,10 @@ namespace UserStorage.Interfaces
             return id;
         }
 
+        /// <summary>
+        /// Override removing user
+        /// </summary>
+        /// <param name="user">user to remove</param>
         public override void Delete(User user)
         {
             ServiceLock.EnterWriteLock();
@@ -68,12 +87,19 @@ namespace UserStorage.Interfaces
                 ServiceLock.ExitWriteLock();
             }
 
-            OnUserDeleted(this, new DataUpdatedEventArgs() 
-            {  
-                User = user 
-            });           
+            OnUserDeleted(
+                this, 
+                new DataUpdatedEventArgs() 
+                {  
+                    User = user 
+                });           
         }
 
+        /// <summary>
+        /// Send message that user is added
+        /// </summary>
+        /// <param name="sender">sender of message</param>
+        /// <param name="arg">user updated event arguments</param>
         protected virtual void OnUserAdded(object sender, DataUpdatedEventArgs arg)
         {
             if (this.Communicator != null)
@@ -82,6 +108,11 @@ namespace UserStorage.Interfaces
             }            
         }
 
+        /// <summary>
+        /// Send message that user is removed
+        /// </summary>
+        /// <param name="sender">sender of message</param>
+        /// <param name="arg">user updated event arguments</param>
         protected virtual void OnUserDeleted(object sender, DataUpdatedEventArgs arg)
         {
             if (Communicator != null)

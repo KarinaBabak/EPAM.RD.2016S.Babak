@@ -5,6 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using UserStorage;
 using UserStorage.Interfaces;
 using UserStorage.Validator;
+using UserStorage.SearchCriteria;
 
 namespace IteratorUnitTest
 {
@@ -95,18 +96,7 @@ namespace IteratorUnitTest
         }
         #endregion
 
-        #region Search
-        [TestMethod]
-        public void GetUserByPredicate_ReturnTrue()
-        {
-            repository.Clear();
-            repository.Add(user1);
-            repository.Add(user2);
-            User userBySearch = repository.GetUserByPredicate(u => u.LastName == user1.LastName);
-            bool result = false;
-            if (userBySearch.Equals(user1)) result = true;
-            Assert.AreEqual(true, result);
-        }
+        #region Search        
 
         [TestMethod]
         public void GetById_ReturnTrue()
@@ -116,8 +106,29 @@ namespace IteratorUnitTest
             int id = repository.Add(user2);
             User userBySearch = repository.GetById(id);
             bool result = false;
-            if (userBySearch.Equals(user2)) result = true;
+
+            if (userBySearch.Equals(user2))
+            {
+                result = true;
+            }
+
             Assert.AreEqual(true, result);
+        }
+
+        [TestMethod]
+        public void GetById_NotExistId_ReturnFalse()
+        {
+            repository.Clear();
+            repository.Add(user1);            
+            User userBySearch = repository.GetById(11);
+            bool result = false;
+
+            if (userBySearch != null)
+            {
+                result = true;
+            }
+
+            Assert.AreEqual(false, result);
         }
 
         [TestMethod]
@@ -137,6 +148,7 @@ namespace IteratorUnitTest
 
             Assert.AreEqual(true, result);
         }
+       
         #endregion
 
         #region XML

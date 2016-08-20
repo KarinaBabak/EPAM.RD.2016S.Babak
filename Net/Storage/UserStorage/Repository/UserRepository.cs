@@ -17,31 +17,57 @@ namespace UserStorage.Interfaces
     [Serializable]
     public class UserRepository : MarshalByRefObject, IUserRepository
     {
+        /// <summary>
+        /// NLog field
+        /// </summary>
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
+        /// <summary>
+        /// BooleanSwitch field for activating logging
+        /// </summary>
         private static readonly BooleanSwitch BoolSwitch = new BooleanSwitch("Switch", string.Empty);
-                      
+                    
+        /// <summary>
+        /// Generator id
+        /// </summary>
         private ICustomIterator iterator;
         
-        private UserValidator validator;
+        /// <summary>
+        /// User validation
+        /// </summary>
+        private UserValidator validator;        
 
-        public List<User> Users { get; private set; }        
+        #region ctor
 
+        /// <summary>
+        /// Constructor with parameters
+        /// </summary>
+        /// <param name="generator">Generator id</param>
+        /// <param name="validator">Validator for user</param>
         public UserRepository(ICustomIterator generator = null, UserValidator validator = null)
         {            
             Users = new List<User>();
-            this.iterator =  generator ?? new CustomIterator();
+            this.iterator = generator ?? new CustomIterator();
             this.validator = validator ?? new UserValidator();            
         }
 
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public UserRepository()
         {
             Users = new List<User>();
             iterator = new CustomIterator();
             validator = new UserValidator();            
         }
+        #endregion
 
-                
+        public List<User> Users { get; private set; }
+
+        /// <summary>
+        /// Delete user from repository
+        /// </summary>
+        /// <param name="user">user for removing</param>
         public void Delete(User user)
         {
             if (user == null)
@@ -51,13 +77,20 @@ namespace UserStorage.Interfaces
 
             User userForRemoving = Users.FirstOrDefault(u => u.Id == user.Id);
             if (userForRemoving != null)
-            {                
-                Users.Remove(userForRemoving);                
+            {
+                Users.Remove(userForRemoving);
             }
             else
+            {
                 throw new ArgumentException("The user is not exist");
+            }
         }
 
+        /// <summary>
+        /// Determination of adding a new user in list with all users
+        /// </summary>
+        /// <param name="user">the new user</param>
+        /// <returns>id of the new user</returns>
         public int Add(User user)
         {
             Logger.Trace("UserRepository.Add called. Create the user: " + user.ToString());            
@@ -68,14 +101,17 @@ namespace UserStorage.Interfaces
                 {
                     Logger.Error("The validation of new user is failed");
                 }
+
                 throw new ArgumentException("The validation is failed");
             }
+
             if (Users.Contains(user))
             {
                 if (BoolSwitch.Enabled)
                 {
                     Logger.Error("The user already exists");
                 }
+
                 throw new InvalidOperationException("User already exists");
             }
 
@@ -84,12 +120,19 @@ namespace UserStorage.Interfaces
             return user.Id;
         }
 
+        /// <summary>
+        /// Determination of getting all users from repository
+        /// </summary>
+        /// <returns>collection with all users</returns>
         public IEnumerable<User> GetAll()
         {
             Logger.Trace("UserRepository.GetAll called");           
             return Users;
         }
 
+        /// <summary>
+        /// Determination of removing all users from collection
+        /// </summary>
         public void Clear()
         {
             Logger.Trace("UserRepository.Clear called");
@@ -97,42 +140,50 @@ namespace UserStorage.Interfaces
         }
 
         #region Search User
+
+        /// <summary>
+        /// Getting user by id
+        /// </summary>
+        /// <param name="id">id of user for search</param>
+        /// <returns>the user with searched id</returns>
         public User GetById(int id)
         {
             return Users.Where(u => u.Id == id).FirstOrDefault();
-        }
+        }             
 
-        public User GetUserByPredicate(Predicate<User> predicate)
+        /// <summary>
+        ///  Search users by criteria
+        /// </summary>
+        /// <param name="criteria">criteria for searching</param>
+        /// <returns>users id</returns>
+        public List<int> SearchForUser(Func<User, bool> criteria)
         {
-            var newUser = Users.Find(predicate);
-            if (ReferenceEquals(newUser, null))
+            var usersId = Users.Where(criteria).Select(u => u.Id).ToList();
+            if (ReferenceEquals(usersId, null))
             {
                 return null;
             }
-            return newUser;
+
+            return usersId;
         }
 
-        public IEnumerable<int> SearchForUser(Predicate<User> criteria)
-        {
-            List<User> usersFromSearch = Users.FindAll(criteria);
-            if (usersFromSearch == null) return null;
-            int[] usersID = new int[usersFromSearch.Count];
-            for (int i = 0; i < usersID.Length; i++)
-            {
-                usersID[i] = usersFromSearch[i].Id;
-            }
-            return usersID;
-        }
-
+        /// <summary>
+        /// Search user by criteria
+        /// </summary>
+        /// <param name="criteria">criteria for search</param>
+        /// <returns>collection of users id</returns>
         public IEnumerable<int> SearchForUsers(ISearchСriterion<User>[] criteria)
         {
-            List<int> idUsersFromSearch = Users.Where(u=>criteria.All(c=>c.MatchByCriterion(u))).Select(i=>i.Id).ToList();
+            List<int> idUsersFromSearch = Users.Where(u => criteria.All(c => c.MatchByCriterion(u))).Select(i => i.Id).ToList();
 
             return idUsersFromSearch;
         }
         #endregion
 
         #region Work with XML
+        /// <summary>
+        /// Writing all users to xml file
+        /// </summary>
         public void WriteToXML()
         {
             Logger.Trace("UserRepository.WriteToXML called");
@@ -161,6 +212,9 @@ namespace UserStorage.Interfaces
             }
         }
 
+        /// <summary>
+        /// Reading users from xml file
+        /// </summary>
         public void ReadFromXML()
         {
             Logger.Trace("UserRepository.ReadFromXML called");

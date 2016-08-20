@@ -10,12 +10,19 @@ using NLog;
 
 namespace UserStorage.NetworkWorker
 {
+    /// <summary>
+    /// Determination of sender
+    /// </summary>
     [Serializable]
     public class Sender : IDisposable
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private List<Socket> sockets = new List<Socket>();
 
+        /// <summary>
+        /// Constructor with parameters
+        /// </summary>
+        /// <param name="ipEndPoints">IP address and port</param>
         public void Connect(IEnumerable<IPEndPoint> ipEndPoints)
         {
             foreach (var ipEndPoint in ipEndPoints)
@@ -26,6 +33,10 @@ namespace UserStorage.NetworkWorker
             }
         }       
 
+        /// <summary>
+        /// Sending a message
+        /// </summary>
+        /// <param name="message">message contains user information and method's type</param>
         public void Send(Message message)
         {
             BinaryFormatter formatter = new BinaryFormatter();
@@ -40,6 +51,9 @@ namespace UserStorage.NetworkWorker
             Logger.Info("Message send!");
         }
 
+        /// <summary>
+        /// IDisposable realization
+        /// </summary>
         public void Dispose()
         {
             foreach (var socket in this.sockets)

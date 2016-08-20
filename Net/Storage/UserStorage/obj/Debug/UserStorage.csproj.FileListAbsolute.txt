@@ -72,3 +72,4 @@ D:\Epam\!Lab\Project\Net\Storage\UserStorage\obj\Debug\UserStorage.csprojResolve
 D:\Epam\!Lab\Project\Net\Storage\UserStorage\obj\Debug\UserStorage.dll
 D:\Epam\!Lab\Project\Net\Storage\UserStorage\obj\Debug\UserStorage.pdb
 D:\Epam\!Lab\Project\Net\Storage\UserStorage\bin\Debug\ConfigurationService.xml
+D:\Epam\!Lab\Project\Net\Storage\UserStorage\bin\Debug\UserStorage.XML

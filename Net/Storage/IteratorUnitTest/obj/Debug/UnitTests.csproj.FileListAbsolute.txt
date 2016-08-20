@@ -87,3 +87,4 @@ D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\NLog.xml
 D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\obj\Debug\IteratorUnitTest.dll
 D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\obj\Debug\IteratorUnitTest.pdb
+D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\UserStorage.xml

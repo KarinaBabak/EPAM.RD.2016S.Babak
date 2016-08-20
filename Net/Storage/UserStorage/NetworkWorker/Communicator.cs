@@ -8,37 +8,79 @@ using System.Threading;
 
 namespace UserStorage.NetworkWorker
 {
-    public class Communicator : MarshalByRefObject
+    /// <summary>
+    /// Class for network communication between sockets
+    /// </summary>
+    [Serializable]
+    public class Communicator : MarshalByRefObject, IDisposable
     {     
+        /// <summary>
+        /// Sender of message
+        /// </summary>
         private Sender sender;
 
+        /// <summary>
+        /// Receiver of message
+        /// </summary>
         private Receiver receiver;
 
+        /// <summary>
+        /// Task for the receiver
+        /// </summary>
         private Task recieverTask;
 
+        /// <summary>
+        /// Cancellation Token Source
+        /// </summary>
         private CancellationTokenSource token;
 
+        #region ctors
+
+        /// <summary>
+        /// Constructor with arguments
+        /// </summary>
+        /// <param name="sender">sender of message</param>
+        /// <param name="receiver">receiver of message</param>
         public Communicator(Sender sender, Receiver receiver)
         {
             this.sender = sender;
             this.receiver = receiver;
         }
 
+        /// <summary>
+        /// Constructor with parameters
+        /// </summary>
+        /// <param name="sender">sender of message</param>
         public Communicator(Sender sender) : this(sender, null)
         {
         }
 
+        /// <summary>
+        /// Constructor with arguments
+        /// </summary>
+        /// <param name="receiver">receiver of message</param>
         public Communicator(Receiver receiver)
             : this(null, receiver)
         {
         }
+        #endregion
 
         #region Events
+        /// <summary>
+        /// event for adding new user
+        /// </summary>
         public event EventHandler<DataUpdatedEventArgs> UserAdded;
 
+        /// <summary>
+        /// event for removing user
+        /// </summary>
         public event EventHandler<DataUpdatedEventArgs> UserDeleted;
         #endregion
 
+        /// <summary>
+        /// Connection sender and receivers
+        /// </summary>
+        /// <param name="endPoints">IP address and port</param>
         public void Connect(IEnumerable<IPEndPoint> endPoints)
         {
             if (sender == null)
@@ -49,6 +91,9 @@ namespace UserStorage.NetworkWorker
             sender.Connect(endPoints);
         }
 
+        /// <summary>
+        /// Starting message receiving
+        /// </summary>
         public void RunReceiver()
         {
             if (receiver == null)
@@ -60,6 +105,9 @@ namespace UserStorage.NetworkWorker
             recieverTask = Task.Run((Action)Receive, token.Token);
         }
 
+        /// <summary>
+        /// Stop receiving
+        /// </summary>
         public void StopReceiver()
         {
             if (token.Token.CanBeCanceled)
@@ -68,6 +116,10 @@ namespace UserStorage.NetworkWorker
             }
         }
 
+        /// <summary>
+        /// Sending message, that method add is called
+        /// </summary>
+        /// <param name="args">user updated event arguments</param>
         public void SendAdd(DataUpdatedEventArgs args)
         {
             if (sender == null)
@@ -81,6 +133,11 @@ namespace UserStorage.NetworkWorker
                 Operation = MethodType.Add
             });
         }
+
+        /// <summary>
+        /// Send message that user is removed
+        /// </summary>
+        /// <param name="args">user updated event arguments</param>
         public void SendDelete(DataUpdatedEventArgs args)
         {
             if (sender == null)
@@ -95,6 +152,9 @@ namespace UserStorage.NetworkWorker
             });
         }
 
+        /// <summary>
+        /// IDisposable realization
+        /// </summary>
         public void Dispose()
         {
             if (receiver != null)
@@ -109,6 +169,9 @@ namespace UserStorage.NetworkWorker
         }
 
         #region Private Methods
+        /// <summary>
+        /// Receiving message
+        /// </summary>
         private void Receive()
         {
             while (true)
@@ -140,11 +203,20 @@ namespace UserStorage.NetworkWorker
             }
         }
 
+        /// <summary>
+        /// Sending message
+        /// </summary>
+        /// <param name="message">message contains user information and method's type</param>
         private void Send(Message message)
         {
             sender.Send(message);
         }
 
+        /// <summary>
+        /// Event for user removing
+        /// </summary>
+        /// <param name="sender">sender of message</param>
+        /// <param name="args">user updated event arguments</param>
         private void OnUserDeleted(object sender, DataUpdatedEventArgs args)
         {
             if (UserDeleted != null)
@@ -153,6 +225,11 @@ namespace UserStorage.NetworkWorker
             }
         }
 
+        /// <summary>
+        /// Event for user adding
+        /// </summary>
+        /// <param name="sender">sender of message</param>
+        /// <param name="args">user updated event arguments</param>
         private void OnUserAdded(object sender, DataUpdatedEventArgs args)
         {
             if (UserAdded != null)
@@ -161,6 +238,5 @@ namespace UserStorage.NetworkWorker
             }
         }
         #endregion
-
     }
 }

@@ -1,13 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UserStorage.Interfaces
 {
+    /// <summary>
+    /// Interface for search criterion
+    /// </summary>
+    /// <typeparam name="T">type of criterion</typeparam>
     public interface ISearchСriterion<T>
     {
-        bool MatchByCriterion(User user);
+        /// <summary>
+        /// Match criterion with entity property
+        /// </summary>
+        /// <param name="entity">entity for search</param>
+        /// <returns>true if match</returns>
+        bool MatchByCriterion(T entity);
     }
 }

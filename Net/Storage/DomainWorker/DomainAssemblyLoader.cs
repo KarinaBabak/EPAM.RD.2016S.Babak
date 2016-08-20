@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 using UserStorage.Interfaces;
 
 namespace DomainWorker
-{
+{    
     public class DomainAssemblyLoader : MarshalByRefObject
     {
+        /// <summary>
+        /// Creating a new service
+        /// </summary>
+        /// <param name="typeService">string contains the type if service for creating</param>
+        /// <returns>create service</returns>
         public UserService CreateService(string typeService)
         {
             if (typeService.Contains("Master"))

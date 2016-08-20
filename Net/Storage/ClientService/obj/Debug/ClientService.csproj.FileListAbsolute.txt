@@ -3,3 +3,4 @@ D:\Epam\!Lab\Project\Net\Storage\ClientService\bin\Debug\ClientService.exe
 D:\Epam\!Lab\Project\Net\Storage\ClientService\bin\Debug\ClientService.pdb
 D:\Epam\!Lab\Project\Net\Storage\ClientService\obj\Debug\ClientService.exe
 D:\Epam\!Lab\Project\Net\Storage\ClientService\obj\Debug\ClientService.pdb
+D:\Epam\!Lab\Project\Net\Storage\ClientService\obj\Debug\ClientService.csprojResolveAssemblyReference.cache

@@ -1,0 +1,741 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UserStorage</name>
+    </assembly>
+    <members>
+        <member name="T:UserStorage.Gender">
+            <summary>
+            The gender of user
+            </summary>
+        </member>
+        <member name="F:UserStorage.Gender.Female">
+            <summary>
+            Gender is female
+            </summary>
+        </member>
+        <member name="F:UserStorage.Gender.Male">
+            <summary>
+            Gender is male
+            </summary>
+        </member>
+        <member name="T:UserStorage.Interfaces.ISearchСriterion`1">
+            <summary>
+            Interface for search criterion
+            </summary>
+            <typeparam name="T">type of criterion</typeparam>
+        </member>
+        <member name="M:UserStorage.Interfaces.ISearchСriterion`1.MatchByCriterion(`0)">
+            <summary>
+            Match criterion with entity property
+            </summary>
+            <param name="entity">entity for search</param>
+            <returns>true if match</returns>
+        </member>
+        <member name="T:UserStorage.NetworkWorker.Communicator">
+            <summary>
+            Class for network communication between sockets
+            </summary>
+        </member>
+        <member name="F:UserStorage.NetworkWorker.Communicator.sender">
+            <summary>
+            Sender of message
+            </summary>
+        </member>
+        <member name="F:UserStorage.NetworkWorker.Communicator.receiver">
+            <summary>
+            Receiver of message
+            </summary>
+        </member>
+        <member name="F:UserStorage.NetworkWorker.Communicator.recieverTask">
+            <summary>
+            Task for the receiver
+            </summary>
+        </member>
+        <member name="F:UserStorage.NetworkWorker.Communicator.token">
+            <summary>
+            Cancellation Token Source
+            </summary>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.#ctor(UserStorage.NetworkWorker.Sender,UserStorage.NetworkWorker.Receiver)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="sender">sender of message</param>
+            <param name="receiver">receiver of message</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.#ctor(UserStorage.NetworkWorker.Sender)">
+            <summary>
+            Constructor with parameters
+            </summary>
+            <param name="sender">sender of message</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.#ctor(UserStorage.NetworkWorker.Receiver)">
+            <summary>
+            Constructor with arguments
+            </summary>
+            <param name="receiver">receiver of message</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.Connect(System.Collections.Generic.IEnumerable{System.Net.IPEndPoint})">
+            <summary>
+            Connection sender and receivers
+            </summary>
+            <param name="endPoints">IP address and port</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.RunReceiver">
+            <summary>
+            Starting message receiving
+            </summary>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.StopReceiver">
+            <summary>
+            Stop receiving
+            </summary>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.SendAdd(UserStorage.NetworkWorker.DataUpdatedEventArgs)">
+            <summary>
+            Sending message, that method add is called
+            </summary>
+            <param name="args">user updated event arguments</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.SendDelete(UserStorage.NetworkWorker.DataUpdatedEventArgs)">
+            <summary>
+            Send message that user is removed
+            </summary>
+            <param name="args">user updated event arguments</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.Dispose">
+            <summary>
+            IDisposable realization
+            </summary>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.Receive">
+            <summary>
+            Receiving message
+            </summary>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.Send(UserStorage.NetworkWorker.Message)">
+            <summary>
+            Sending message
+            </summary>
+            <param name="message">message contains user information and method's type</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.OnUserDeleted(System.Object,UserStorage.NetworkWorker.DataUpdatedEventArgs)">
+            <summary>
+            Event for user removing
+            </summary>
+            <param name="sender">sender of message</param>
+            <param name="args">user updated event arguments</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Communicator.OnUserAdded(System.Object,UserStorage.NetworkWorker.DataUpdatedEventArgs)">
+            <summary>
+            Event for user adding
+            </summary>
+            <param name="sender">sender of message</param>
+            <param name="args">user updated event arguments</param>
+        </member>
+        <member name="E:UserStorage.NetworkWorker.Communicator.UserAdded">
+            <summary>
+            event for adding new user
+            </summary>
+        </member>
+        <member name="E:UserStorage.NetworkWorker.Communicator.UserDeleted">
+            <summary>
+            event for removing user
+            </summary>
+        </member>
+        <member name="T:UserStorage.NetworkWorker.DataUpdatedEventArgs">
+            <summary>
+            Event for update user information
+            </summary>
+        </member>
+        <member name="P:UserStorage.NetworkWorker.DataUpdatedEventArgs.User">
+            <summary>
+            Gets or sets User 
+            </summary>
+        </member>
+        <member name="T:UserStorage.NetworkWorker.MethodType">
+            <summary>
+            Method's type
+            </summary>
+        </member>
+        <member name="F:UserStorage.NetworkWorker.MethodType.Add">
+            <summary>
+            Method Add
+            </summary>
+        </member>
+        <member name="F:UserStorage.NetworkWorker.MethodType.Delete">
+            <summary>
+            Method Delete
+            </summary>
+        </member>
+        <member name="T:UserStorage.NetworkWorker.Message">
+            <summary>
+            Description of message entity
+            </summary>
+        </member>
+        <member name="P:UserStorage.NetworkWorker.Message.UserData">
+            <summary>
+            Gets or sets user that add or delete
+            </summary>
+        </member>
+        <member name="P:UserStorage.NetworkWorker.Message.Operation">
+            <summary>
+            Gets or sets method's type
+            </summary>
+        </member>
+        <member name="T:UserStorage.NetworkWorker.Receiver">
+            <summary>
+            Receiver class
+            </summary>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Receiver.#ctor(System.Net.IPAddress,System.Int32)">
+            <summary>
+            Parameterized constructor
+            </summary>
+            <param name="address">IP address</param>
+            <param name="port">value of port</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Receiver.AcceptConnection">
+            <summary>
+            Determination to accept connection
+            </summary>
+            <returns>Task for receiver</returns>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Receiver.ReceiveMessage">
+            <summary>
+            Receive message
+            </summary>
+            <returns>object of message</returns>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Receiver.Dispose">
+            <summary>
+            IDisposable realization
+            </summary>
+        </member>
+        <member name="P:UserStorage.NetworkWorker.Receiver.IpPoint">
+            <summary>
+            Gets or sets IP address
+            </summary>
+        </member>
+        <member name="T:UserStorage.NetworkWorker.Sender">
+            <summary>
+            Determination of sender
+            </summary>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Sender.Connect(System.Collections.Generic.IEnumerable{System.Net.IPEndPoint})">
+            <summary>
+            Constructor with parameters
+            </summary>
+            <param name="ipEndPoints">IP address and port</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Sender.Send(UserStorage.NetworkWorker.Message)">
+            <summary>
+            Sending a message
+            </summary>
+            <param name="message">message contains user information and method's type</param>
+        </member>
+        <member name="M:UserStorage.NetworkWorker.Sender.Dispose">
+            <summary>
+            IDisposable realization
+            </summary>
+        </member>
+        <member name="T:UserStorage.SearchCriteria.FemaleCriterion">
+            <summary>
+            Search criterion is female 
+            </summary>
+        </member>
+        <member name="M:UserStorage.SearchCriteria.FemaleCriterion.MatchByCriterion(UserStorage.User)">
+            <summary>
+            Matching female criterion with user's gender
+            </summary>
+            <param name="user">user for searching</param>
+            <returns>true if the gender of user is female</returns>
+        </member>
+        <member name="T:UserStorage.SearchCriteria.MaleCriterion">
+            <summary>
+            Search criterion is male 
+            </summary>
+        </member>
+        <member name="M:UserStorage.SearchCriteria.MaleCriterion.MatchByCriterion(UserStorage.User)">
+            <summary>
+            Matching male criterion with user's gender
+            </summary>
+            <param name="user">user for searching</param>
+            <returns>true if the gender of user is male</returns>
+        </member>
+        <member name="T:UserStorage.Interfaces.MasterService">
+            <summary>
+            Determination of master service
+            </summary>
+        </member>
+        <member name="T:UserStorage.Interfaces.UserService">
+            <summary>
+            Abstract class for user service
+            </summary>
+        </member>
+        <member name="T:UserStorage.Service.WCFService.IUserServiceContract">
+            <summary>
+            Contract for WCF
+            </summary>
+        </member>
+        <member name="M:UserStorage.Service.WCFService.IUserServiceContract.Add(UserStorage.User)">
+            <summary>
+            Add user
+            </summary>
+            <param name="user">new user</param>
+            <returns>id of new user</returns>
+        </member>
+        <member name="M:UserStorage.Service.WCFService.IUserServiceContract.Delete(UserStorage.User)">
+            <summary>
+            Delete user
+            </summary>
+            <param name="user">user for removing</param>
+        </member>
+        <member name="M:UserStorage.Service.WCFService.IUserServiceContract.SearchForUser(UserStorage.Interfaces.ISearchСriterion{UserStorage.User}[])">
+            <summary>
+            Search users by criteria
+            </summary>
+            <param name="criteria">criteria for searching</param>
+            <returns>users id</returns>
+        </member>
+        <member name="F:UserStorage.Interfaces.UserService.Logger">
+            <summary>
+            NLog field
+            </summary>
+        </member>
+        <member name="F:UserStorage.Interfaces.UserService.BoolSwitch">
+            <summary>
+            BooleanSwitch field for activating logging
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserService.#ctor(UserStorage.Interfaces.UserRepository)">
+            <summary>
+            Parameterized constructor
+            </summary>
+            <param name="rep">repository for managing by services</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserService.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserService.Add(UserStorage.User)">
+            <summary>
+            Adding a new user
+            </summary>
+            <param name="user">new user</param>
+            <returns>id of new user</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserService.Delete(UserStorage.User)">
+            <summary>
+            Removing of user
+            </summary>
+            <param name="user">user for removing</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserService.SearchForUser(System.Func{UserStorage.User,System.Boolean})">
+            <summary>
+            Searching by criterion
+            </summary>
+            <param name="criterion">criterion for Searching</param>
+            <returns>list with users id</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserService.SearchForUser(UserStorage.Interfaces.ISearchСriterion{UserStorage.User}[])">
+            <summary>
+            Search user by criteria
+            </summary>
+            <param name="criteria">criteria for searching</param>
+            <returns>users id</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserService.AddCommunicator(UserStorage.NetworkWorker.Communicator)">
+            <summary>
+            Add communicator for communication between services
+            </summary>
+            <param name="communicator">communicator for setting</param>
+        </member>
+        <member name="P:UserStorage.Interfaces.UserService.Communicator">
+            <summary>
+            Gets or sets communication between services
+            </summary>
+        </member>
+        <member name="P:UserStorage.Interfaces.UserService.Repository">
+            <summary>
+            Gets or sets Repository for managing by services
+            </summary>
+        </member>
+        <member name="P:UserStorage.Interfaces.UserService.Name">
+            <summary>
+            Gets or setsLogin of service
+            </summary>
+        </member>
+        <member name="P:UserStorage.Interfaces.UserService.ServiceLock">
+            <summary>
+             Gets or sets sync
+            </summary>
+        </member>
+        <member name="F:UserStorage.Interfaces.MasterService.Logger">
+            <summary>
+            NLog field
+            </summary>
+        </member>
+        <member name="F:UserStorage.Interfaces.MasterService.BoolSwitch">
+            <summary>
+            BooleanSwitch field for activating logging
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.MasterService.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.MasterService.Add(UserStorage.User)">
+            <summary>
+            Master can add user to repository
+            </summary>
+            <param name="user">new user</param>
+            <returns>id of new user</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.MasterService.Delete(UserStorage.User)">
+            <summary>
+            Override removing user
+            </summary>
+            <param name="user">user to remove</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.MasterService.OnUserAdded(System.Object,UserStorage.NetworkWorker.DataUpdatedEventArgs)">
+            <summary>
+            Send message that user is added
+            </summary>
+            <param name="sender">sender of message</param>
+            <param name="arg">user updated event arguments</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.MasterService.OnUserDeleted(System.Object,UserStorage.NetworkWorker.DataUpdatedEventArgs)">
+            <summary>
+            Send message that user is removed
+            </summary>
+            <param name="sender">sender of message</param>
+            <param name="arg">user updated event arguments</param>
+        </member>
+        <member name="T:UserStorage.Interfaces.SlaveService">
+            <summary>
+            Determination of slave service. Service can not add and delete users
+            </summary>
+        </member>
+        <member name="F:UserStorage.Interfaces.SlaveService.Logger">
+            <summary>
+            NLog field
+            </summary>
+        </member>
+        <member name="F:UserStorage.Interfaces.SlaveService.BoolSwitch">
+            <summary>
+            BooleanSwitch field for activating logging
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.SlaveService.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.SlaveService.Add(UserStorage.User)">
+            <summary>
+            Adding new user is enable
+            </summary>
+            <param name="user">new user</param>
+            <returns>InvalidOperation exception</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.SlaveService.Delete(UserStorage.User)">
+            <summary>
+            Removing new user is enable
+            </summary>
+            <param name="user">user for removing</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.SlaveService.AddCommunicator(UserStorage.NetworkWorker.Communicator)">
+            <summary>
+            Override adding communicator
+            </summary>
+            <param name="communicator">set communicator</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.SlaveService.OnUserAdded(System.Object,UserStorage.NetworkWorker.DataUpdatedEventArgs)">
+            <summary>
+            Add user to repository, if message from communicator received
+            </summary>
+            <param name="sender">sender of message</param>
+            <param name="args">user updated event arguments</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.SlaveService.OnUserDeleted(System.Object,UserStorage.NetworkWorker.DataUpdatedEventArgs)">
+            <summary>
+            Delete user from repository, if message from communicator received
+            </summary>
+            <param name="sender">sender of message</param>
+            <param name="args">user updated event arguments</param>
+        </member>
+        <member name="T:UserStorage.IValidator`1">
+            <summary>
+            Base functionality for validation
+            </summary>
+            <typeparam name="T">object of validation</typeparam>
+        </member>
+        <member name="M:UserStorage.IValidator`1.Validate(`0)">
+            <summary>
+            Check whether entity is valid
+            </summary>
+            <param name="entity">entity for validation</param>
+            <returns>true if the entity is valid</returns>
+        </member>
+        <member name="T:UserStorage.Interfaces.IRepository`1">
+            <summary>
+            Base functionality for repository
+            </summary>
+            <typeparam name="T">class for working</typeparam>
+        </member>
+        <member name="M:UserStorage.Interfaces.IRepository`1.Add(`0)">
+            <summary>
+            Adding a new entity to repository
+            </summary>
+            <param name="entity">entity of class</param>
+            <returns>id of entity</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.IRepository`1.Delete(`0)">
+            <summary>
+            Removing entity
+            </summary>
+            <param name="entity">entity for removing</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.IRepository`1.ReadFromXML">
+            <summary>
+            Load entities from xml file
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.IRepository`1.WriteToXML">
+            <summary>
+            Saves entities to xml file
+            </summary>
+        </member>
+        <member name="T:UserStorage.Interfaces.IUserRepository">
+            <summary>
+            Base functionality for user repository
+            </summary>    
+        </member>
+        <member name="M:UserStorage.Interfaces.IUserRepository.GetById(System.Int32)">
+            <summary>
+            Getting user by id
+            </summary>
+            <param name="id">id of user</param>
+            <returns>object of User</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.IUserRepository.GetAll">
+            <summary>
+            Getting all users
+            </summary>
+            <returns>collection with all users</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.IUserRepository.SearchForUser(System.Func{UserStorage.User,System.Boolean})">
+            <summary>
+            Search entities by criterion
+            </summary>
+            <param name="criteria">criterion for search</param>
+            <returns>users id</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.IUserRepository.SearchForUsers(UserStorage.Interfaces.ISearchСriterion{UserStorage.User}[])">
+            <summary>
+            Search entities by criteria
+            </summary>
+            <param name="criteria">criteria for search</param>
+            <returns>users id</returns>
+        </member>
+        <member name="F:UserStorage.Interfaces.UserRepository.Logger">
+            <summary>
+            NLog field
+            </summary>
+        </member>
+        <member name="F:UserStorage.Interfaces.UserRepository.BoolSwitch">
+            <summary>
+            BooleanSwitch field for activating logging
+            </summary>
+        </member>
+        <member name="F:UserStorage.Interfaces.UserRepository.iterator">
+            <summary>
+            Generator id
+            </summary>
+        </member>
+        <member name="F:UserStorage.Interfaces.UserRepository.validator">
+            <summary>
+            User validation
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.#ctor(Iterator.ICustomIterator,UserStorage.Validator.UserValidator)">
+            <summary>
+            Constructor with parameters
+            </summary>
+            <param name="generator">Generator id</param>
+            <param name="validator">Validator for user</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.Delete(UserStorage.User)">
+            <summary>
+            Delete user from repository
+            </summary>
+            <param name="user">user for removing</param>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.Add(UserStorage.User)">
+            <summary>
+            Determination of adding a new user in list with all users
+            </summary>
+            <param name="user">the new user</param>
+            <returns>id of the new user</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.GetAll">
+            <summary>
+            Determination of getting all users from repository
+            </summary>
+            <returns>collection with all users</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.Clear">
+            <summary>
+            Determination of removing all users from collection
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.GetById(System.Int32)">
+            <summary>
+            Getting user by id
+            </summary>
+            <param name="id">id of user for search</param>
+            <returns>the user with searched id</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.SearchForUser(System.Func{UserStorage.User,System.Boolean})">
+            <summary>
+             Search users by criteria
+            </summary>
+            <param name="criteria">criteria for searching</param>
+            <returns>users id</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.SearchForUsers(UserStorage.Interfaces.ISearchСriterion{UserStorage.User}[])">
+            <summary>
+            Search user by criteria
+            </summary>
+            <param name="criteria">criteria for search</param>
+            <returns>collection of users id</returns>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.WriteToXML">
+            <summary>
+            Writing all users to xml file
+            </summary>
+        </member>
+        <member name="M:UserStorage.Interfaces.UserRepository.ReadFromXML">
+            <summary>
+            Reading users from xml file
+            </summary>
+        </member>
+        <member name="T:UserStorage.User">
+            <summary>
+            User class
+            </summary>
+        </member>
+        <member name="M:UserStorage.User.#ctor">
+            <summary>
+            Default constrictor
+            </summary>
+        </member>
+        <member name="M:UserStorage.User.#ctor(System.String,System.String,System.DateTime,UserStorage.Gender,System.Collections.Generic.List{UserStorage.VisaRecord})">
+            <summary>
+            Constructor with parameters
+            </summary>
+            <param name="firstName">first name of user</param>
+            <param name="lastName">last name of user</param>
+            <param name="dateOfBirth">birth of user</param>
+            <param name="gender">gender of user</param>
+            <param name="visaRecords">visa records of user</param>
+        </member>
+        <member name="M:UserStorage.User.Equals(System.Object)">
+            <summary>
+            Override Equals
+            </summary>
+            <param name="obj">another user</param>
+            <returns>true if the users are equal</returns>
+        </member>
+        <member name="M:UserStorage.User.Equals(UserStorage.User)">
+            <summary>
+            Instance equals
+            </summary>
+            <param name="user">another user</param>
+            <returns>true if the objects are equal</returns>
+        </member>
+        <member name="M:UserStorage.User.GetHashCode">
+            <summary>
+            Override GetHashCode
+            </summary>
+            <returns>hash code of the user</returns>
+        </member>
+        <member name="M:UserStorage.User.ToString">
+            <summary>
+            Getting necessary information about user 
+            </summary>
+            <returns>string with necessary user information</returns>
+        </member>
+        <member name="P:UserStorage.User.Id">
+            <summary>
+            Gets or sets Id of user
+            </summary>
+        </member>
+        <member name="P:UserStorage.User.FirstName">
+            <summary>
+            Gets or sets a first name of user
+            </summary>
+        </member>
+        <member name="P:UserStorage.User.LastName">
+            <summary>
+            Gets or sets a first name of user
+            </summary>
+        </member>
+        <member name="P:UserStorage.User.DateOfBirth">
+            <summary>
+            Gets or sets birth of user
+            </summary>
+        </member>
+        <member name="P:UserStorage.User.UserGender">
+            <summary>
+            Gets or sets Gender of user
+            </summary>
+        </member>
+        <member name="P:UserStorage.User.VisaRecords">
+            <summary>
+            Gets or sets Visa records of user
+            </summary>
+        </member>
+        <member name="T:UserStorage.Validator.UserValidator">
+            <summary>
+            Description of user validation
+            </summary>
+        </member>
+        <member name="M:UserStorage.Validator.UserValidator.Validate(UserStorage.User)">
+            <summary>
+            Check whether entity is valid
+            </summary>
+            <param name="newUser">user for checking</param>
+            <returns>true if user is valid, else - false</returns>
+        </member>
+        <member name="T:UserStorage.VisaRecord">
+            <summary>
+            Visa records description
+            </summary>
+        </member>
+        <member name="P:UserStorage.VisaRecord.Country">
+            <summary>
+            Gets or sets country
+            </summary>
+        </member>
+        <member name="P:UserStorage.VisaRecord.StartDate">
+            <summary>
+            Gets or sets Date start of visa record
+            </summary>
+        </member>
+        <member name="P:UserStorage.VisaRecord.EndDate">
+            <summary>
+            Gets or sets Date end of visa record
+            </summary>
+        </member>
+    </members>
+</doc>

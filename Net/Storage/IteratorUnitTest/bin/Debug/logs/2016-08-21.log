@@ -1,0 +1,7 @@
+2016-08-20 21:17:34 UserRepository.Clear called
+2016-08-20 21:17:34 UserRepository.Add called. Create the user: 0 Max Bogdanovich 20.07.1960 18:30:25 Male
+2016-08-20 21:17:34 UserRepository.Add called. Create the user: 0 Max Mirnyi 20.07.1970 18:30:25 Male
+2016-08-20 21:17:34 UserRepository.GetAll called
+2016-08-20 21:17:34 UserRepository.WriteToXML called
+2016-08-20 21:17:38 UserRepository.ReadFromXML called
+2016-08-20 21:17:38 UserRepository.GetAll called

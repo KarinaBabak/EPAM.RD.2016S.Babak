@@ -68,11 +68,14 @@
       </violation>
     </violations>
   </sourcecode>
+  <project key="99712269">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
   <sourcecode name="ServiceInitializer.cs" parser="StyleCop.CSharp.CsParser">
     <timestamps>
       <styleCop>2016.05.12 20:26:32.000</styleCop>
       <settingsFile>2016.08.02 01:42:56.289</settingsFile>
-      <sourceFile>2016.08.02 02:02:09.702</sourceFile>
+      <sourceFile>2016.08.19 21:26:54.542</sourceFile>
       <parser>2016.05.12 20:26:32.000</parser>
       <StyleCop.CSharp.DocumentationRules>2016.05.12 20:26:32.000</StyleCop.CSharp.DocumentationRules>
       <StyleCop.CSharp.DocumentationRules.FilesHashCode>-221033329</StyleCop.CSharp.DocumentationRules.FilesHashCode>
@@ -107,27 +110,24 @@
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The property must have a documentation header.</context>
-        <line>20</line>
+        <line>21</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The property must have a documentation header.</context>
-        <line>22</line>
+        <line>23</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The property must have a documentation header.</context>
-        <line>24</line>
+        <line>25</line>
         <warning>False</warning>
       </violation>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
         <context>The method must have a documentation header.</context>
-        <line>26</line>
+        <line>28</line>
         <warning>False</warning>
       </violation>
     </violations>
   </sourcecode>
-  <project key="99712269">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
 </stylecopresultscache>

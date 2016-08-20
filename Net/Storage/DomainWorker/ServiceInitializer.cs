@@ -13,16 +13,18 @@ using UserStorage.NetworkWorker;
 
 namespace DomainWorker
 {
-    public class ServiceInitializer
+    public static class ServiceInitializer
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
+        #region Properties
         public static UserService Master { get; private set; }
 
         public static List<UserService> SlavesList { get; private set; }
 
-        public static Communicator MasterCommunicator { get; private set; }          
-
+        public static Communicator MasterCommunicator { get; private set; }
+        #endregion      
+        
         public static void InitializeServices(UserRepository repository)
         {            
             SlavesList = new List<UserService>();            
