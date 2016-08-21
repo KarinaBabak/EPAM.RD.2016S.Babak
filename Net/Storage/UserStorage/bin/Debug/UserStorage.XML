@@ -215,7 +215,7 @@
         </member>
         <member name="P:UserStorage.NetworkWorker.Receiver.IpPoint">
             <summary>
-            Gets or sets IP address
+            Gets IP address
             </summary>
         </member>
         <member name="T:UserStorage.NetworkWorker.Sender">
@@ -542,6 +542,11 @@
             <param name="criteria">criteria for search</param>
             <returns>users id</returns>
         </member>
+        <member name="T:UserStorage.Interfaces.UserRepository">
+            <summary>
+            Repository for working with users
+            </summary>
+        </member>
         <member name="F:UserStorage.Interfaces.UserRepository.Logger">
             <summary>
             NLog field
@@ -627,6 +632,11 @@
         <member name="M:UserStorage.Interfaces.UserRepository.ReadFromXML">
             <summary>
             Reading users from xml file
+            </summary>
+        </member>
+        <member name="P:UserStorage.Interfaces.UserRepository.Users">
+            <summary>
+            Gets collection of users
             </summary>
         </member>
         <member name="T:UserStorage.User">

@@ -7,6 +7,9 @@ using UserStorage.Interfaces;
 
 namespace DomainWorker
 {    
+    /// <summary>
+    /// Class for creating service
+    /// </summary>
     public class DomainAssemblyLoader : MarshalByRefObject
     {
         /// <summary>

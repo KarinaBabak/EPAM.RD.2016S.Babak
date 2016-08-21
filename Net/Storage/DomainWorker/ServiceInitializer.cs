@@ -13,19 +13,37 @@ using UserStorage.NetworkWorker;
 
 namespace DomainWorker
 {
-    public static class ServiceInitializer
+    /// <summary>
+    /// Static class for creating a new service in new domain
+    /// </summary>
+    public class ServiceInitializer
     {
+        /// <summary>
+        /// NLog field
+        /// </summary>
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
         #region Properties
+        /// <summary>
+        /// Gets service of Master
+        /// </summary>
         public static UserService Master { get; private set; }
 
+        /// <summary>
+        /// Gets slaves
+        /// </summary>
         public static List<UserService> SlavesList { get; private set; }
 
+        /// <summary>
+        /// Gets communicator between services
+        /// </summary>
         public static Communicator MasterCommunicator { get; private set; }
         #endregion      
         
-        public static void InitializeServices(UserRepository repository)
+        /// <summary>
+        /// Initialize services
+        /// </summary>        
+        public static void InitializeServices()
         {            
             SlavesList = new List<UserService>();            
             List<IPEndPoint> slavesIPEndPoints = new List<IPEndPoint>();

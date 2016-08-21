@@ -22,7 +22,6 @@ namespace IteratorUnitTest
             var result = validator.Validate((User)null);
         }
 
-
         [TestMethod]
         public void Validate_AgeIsNotValid_ReturnFalse()
         {

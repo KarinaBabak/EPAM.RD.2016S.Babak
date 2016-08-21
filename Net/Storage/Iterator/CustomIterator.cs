@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Iterator
 {
     [Serializable]
     public class CustomIterator : ICustomIterator
-    {
-        public int Current
-        {
-            get; set;
-        }
-
+    {      
         public CustomIterator()
         {
             Current = 1;
+        }
+
+        public int Current
+        {
+            get;
+            set;
         }
 
         public int GetNext()
@@ -26,6 +26,7 @@ namespace Iterator
             {
                 return this.Current;
             }
+
             return -2;
         }
 

@@ -77,6 +77,7 @@ namespace IteratorUnitTest
             {
                 resultIsUserExist = false;
             }
+
             Assert.AreEqual(true, resultIsUserExist);
         }
 

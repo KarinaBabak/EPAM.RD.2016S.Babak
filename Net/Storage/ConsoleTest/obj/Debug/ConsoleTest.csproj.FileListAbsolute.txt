@@ -47,3 +47,4 @@ D:\Epam\!Lab\Project\Net\Storage\ConsoleTest\bin\Debug\DomainWorker.dll
 D:\Epam\!Lab\Project\Net\Storage\ConsoleTest\bin\Debug\DomainWorker.pdb
 D:\Epam\!Lab\Project\Net\Storage\ConsoleTest\bin\Debug\ConfigurationService.xml
 D:\Epam\!Lab\Project\Net\Storage\ConsoleTest\bin\Debug\UserStorage.xml
+D:\Epam\!Lab\Project\Net\Storage\ConsoleTest\bin\Debug\DomainWorker.xml

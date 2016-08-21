@@ -14,3 +14,4 @@ D:\Epam\!Lab\Project\Net\Storage\DomainWorker\obj\Debug\DomainWorker.dll
 D:\Epam\!Lab\Project\Net\Storage\DomainWorker\obj\Debug\DomainWorker.pdb
 D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\ConfigurationService.xml
 D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\UserStorage.xml
+D:\Epam\!Lab\Project\Net\Storage\DomainWorker\bin\Debug\DomainWorker.XML

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DomainWorker</name>
+    </assembly>
+    <members>
+        <member name="T:DomainWorker.DomainAssemblyLoader">
+            <summary>
+            Class for creating service
+            </summary>
+        </member>
+        <member name="M:DomainWorker.DomainAssemblyLoader.CreateService(System.String)">
+            <summary>
+            Creating a new service
+            </summary>
+            <param name="typeService">string contains the type if service for creating</param>
+            <returns>create service</returns>
+        </member>
+        <member name="T:DomainWorker.ServiceInitializer">
+            <summary>
+            Static class for creating a new service in new domain
+            </summary>
+        </member>
+        <member name="F:DomainWorker.ServiceInitializer.Logger">
+            <summary>
+            NLog field
+            </summary>
+        </member>
+        <member name="M:DomainWorker.ServiceInitializer.InitializeServices">
+            <summary>
+            Initialize services
+            </summary>        
+        </member>
+        <member name="P:DomainWorker.ServiceInitializer.Master">
+            <summary>
+            Gets service of Master
+            </summary>
+        </member>
+        <member name="P:DomainWorker.ServiceInitializer.SlavesList">
+            <summary>
+            Gets slaves
+            </summary>
+        </member>
+        <member name="P:DomainWorker.ServiceInitializer.MasterCommunicator">
+            <summary>
+            Gets communicator between services
+            </summary>
+        </member>
+    </members>
+</doc>

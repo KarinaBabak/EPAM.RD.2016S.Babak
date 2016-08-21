@@ -14,6 +14,9 @@ using UserStorage.Interfaces;
 
 namespace UserStorage.Interfaces
 {
+    /// <summary>
+    /// Repository for working with users
+    /// </summary>
     [Serializable]
     public class UserRepository : MarshalByRefObject, IUserRepository
     {
@@ -62,6 +65,9 @@ namespace UserStorage.Interfaces
         }
         #endregion
 
+        /// <summary>
+        /// Gets collection of users
+        /// </summary>
         public List<User> Users { get; private set; }
 
         /// <summary>

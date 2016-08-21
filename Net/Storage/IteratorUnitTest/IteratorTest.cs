@@ -32,7 +32,7 @@ namespace IteratorUnitTest
         [TestMethod]
         public void IsPrime_NumberIsPrime_ReturnTrue()
         {
-            bool result = (11).IsPrime();
+            bool result = 11.IsPrime();
 
             Assert.IsNotNull(result);
             Assert.AreEqual(true, result);
@@ -62,8 +62,6 @@ namespace IteratorUnitTest
             iterator.Reset();
             int result = iterator.Current;
             Assert.AreEqual(1, result);
-        }
-
-        
+        }        
     }
 }

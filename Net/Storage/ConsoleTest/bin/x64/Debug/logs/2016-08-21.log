@@ -1,0 +1,78 @@
+2016-08-21 11:10:28 Domain for Slave is created
+2016-08-21 11:10:40 Domain for Slave is created
+2016-08-21 11:10:42 Wait Connection
+2016-08-21 11:10:42 Domain for Slave is created
+2016-08-21 11:10:43 Wait Connection
+2016-08-21 11:10:43 Domain for Master is created
+2016-08-21 11:10:44 Connection accepted
+2016-08-21 11:10:44 Connection accepted
+2016-08-21 11:10:44 Master is adding a new user
+2016-08-21 11:10:44 UserRepository.Add called. Create the user: 0 Bogdanovich0 Maxim0 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 Message send!
+2016-08-21 11:10:44 message
+2016-08-21 11:10:44 UserRepository.Add called. Create the user: 2 Bogdanovich0 Maxim0 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 message
+2016-08-21 11:10:44 UserRepository.Add called. Create the user: 2 Bogdanovich0 Maxim0 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 Master is adding a new user
+2016-08-21 11:10:44 UserRepository.Add called. Create the user: 0 Bogdanovich1 Maxim1 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 message
+2016-08-21 11:10:44 UserRepository.Add called. Create the user: 3 Bogdanovich1 Maxim1 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 Message send!
+2016-08-21 11:10:44 message
+2016-08-21 11:10:44 UserRepository.Add called. Create the user: 3 Bogdanovich1 Maxim1 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 Master is adding a new user
+2016-08-21 11:10:44 UserRepository.Add called. Create the user: 0 Bogdanovich2 Maxim2 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 message
+2016-08-21 11:10:44 UserRepository.Add called. Create the user: 5 Bogdanovich2 Maxim2 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 message
+2016-08-21 11:10:45 UserRepository.Add called. Create the user: 5 Bogdanovich2 Maxim2 09.12.1891 18:30:25 Male
+2016-08-21 11:10:44 Message send!
+2016-08-21 11:10:45 Master is adding a new user
+2016-08-21 11:10:45 UserRepository.Add called. Create the user: 0 Bogdanovich3 Maxim3 09.12.1891 18:30:25 Male
+2016-08-21 11:10:45 message
+2016-08-21 11:10:45 UserRepository.Add called. Create the user: 7 Bogdanovich3 Maxim3 09.12.1891 18:30:25 Male
+2016-08-21 11:10:45 message
+2016-08-21 11:10:45 UserRepository.Add called. Create the user: 7 Bogdanovich3 Maxim3 09.12.1891 18:30:25 Male
+2016-08-21 11:10:45 Message send!
+2016-08-21 11:10:45 Master is adding a new user
+2016-08-21 11:10:45 UserRepository.Add called. Create the user: 0 Bogdanovich4 Maxim4 09.12.1891 18:30:25 Male
+2016-08-21 11:10:45 message
+2016-08-21 11:10:45 message
+2016-08-21 11:10:45 UserRepository.Add called. Create the user: 11 Bogdanovich4 Maxim4 09.12.1891 18:30:25 Male
+2016-08-21 11:10:45 Message send!
+2016-08-21 11:10:45 UserRepository.Add called. Create the user: 11 Bogdanovich4 Maxim4 09.12.1891 18:30:25 Male
+2016-08-21 11:10:46 Master is adding a new user
+2016-08-21 11:10:46 UserRepository.Add called. Create the user: 0 Bogdanovich5 Maxim5 09.12.1891 18:30:25 Male
+2016-08-21 11:10:46 message
+2016-08-21 11:10:46 UserRepository.Add called. Create the user: 13 Bogdanovich5 Maxim5 09.12.1891 18:30:25 Male
+2016-08-21 11:10:46 message
+2016-08-21 11:10:46 UserRepository.Add called. Create the user: 13 Bogdanovich5 Maxim5 09.12.1891 18:30:25 Male
+2016-08-21 11:10:46 Message send!
+2016-08-21 11:10:46 Master is adding a new user
+2016-08-21 11:10:46 UserRepository.Add called. Create the user: 0 Bogdanovich6 Maxim6 09.12.1891 18:30:25 Male
+2016-08-21 11:10:46 message
+2016-08-21 11:10:46 UserRepository.Add called. Create the user: 17 Bogdanovich6 Maxim6 09.12.1891 18:30:25 Male
+2016-08-21 11:10:46 Message send!
+2016-08-21 11:10:46 message
+2016-08-21 11:10:46 UserRepository.Add called. Create the user: 17 Bogdanovich6 Maxim6 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 Master is adding a new user
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 0 Bogdanovich7 Maxim7 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 message
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 19 Bogdanovich7 Maxim7 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 message
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 19 Bogdanovich7 Maxim7 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 Message send!
+2016-08-21 11:10:47 Master is adding a new user
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 0 Bogdanovich8 Maxim8 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 message
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 23 Bogdanovich8 Maxim8 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 Message send!
+2016-08-21 11:10:47 message
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 23 Bogdanovich8 Maxim8 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 Master is adding a new user
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 0 Bogdanovich9 Maxim9 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 message
+2016-08-21 11:10:47 Message send!
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 29 Bogdanovich9 Maxim9 09.12.1891 18:30:25 Male
+2016-08-21 11:10:47 message
+2016-08-21 11:10:47 UserRepository.Add called. Create the user: 29 Bogdanovich9 Maxim9 09.12.1891 18:30:25 Male

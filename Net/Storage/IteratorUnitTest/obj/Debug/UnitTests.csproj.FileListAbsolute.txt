@@ -88,3 +88,9 @@ D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\obj\Debug\UnitTests.csprojReso
 D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\obj\Debug\IteratorUnitTest.dll
 D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\obj\Debug\IteratorUnitTest.pdb
 D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\UserStorage.xml
+D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\ConfigurationService.dll
+D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\DomainWorker.dll
+D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\ConfigurationService.pdb
+D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\ConfigurationService.xml
+D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\DomainWorker.pdb
+D:\Epam\!Lab\Project\Net\Storage\IteratorUnitTest\bin\Debug\DomainWorker.xml

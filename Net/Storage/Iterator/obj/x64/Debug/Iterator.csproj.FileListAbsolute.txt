@@ -1,0 +1,4 @@
+D:\Epam\!Lab\Project\Net\Storage\Iterator\bin\x64\Debug\Iterator.dll
+D:\Epam\!Lab\Project\Net\Storage\Iterator\bin\x64\Debug\Iterator.pdb
+D:\Epam\!Lab\Project\Net\Storage\Iterator\obj\x64\Debug\Iterator.dll
+D:\Epam\!Lab\Project\Net\Storage\Iterator\obj\x64\Debug\Iterator.pdb
